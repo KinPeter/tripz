@@ -5,15 +5,44 @@ import { useMutation } from '@tanstack/react-query';
 import { SESSION_KEY } from '../../lib/constants.ts';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { parseHash } from '../../lib/hashParser.ts';
+import { Button, Center, Flex, Loader, TextInput } from '@mantine/core';
+import { Icon123, IconAt, IconPlaneDeparture } from '@tabler/icons-react';
+import { theme } from '../../lib/mantine.ts';
+import styles from './Auth.module.scss';
+import { notifications } from '@mantine/notifications';
+import { hasLength, isEmail, useForm } from '@mantine/form';
+import { Session } from '@supabase/supabase-js';
+
+enum AuthProgressState {
+  INITIAL,
+  VERIFYING,
+}
 
 const Auth = () => {
   const navigate = useNavigate();
   const { hash } = useLocation();
   const handleLogin = useStore(state => state.handleLogin);
-  const isAuthenticated = useStore(state => state.isAuthenticated);
+  const handleLogout = useStore(state => state.handleLogout);
   const { login, verify, refresh } = useAuthApi();
-  const [email, setEmail] = useState<string>('kinpeter85@gmail.com');
-  const [otpToken, setOtpToken] = useState<string>('');
+  const [authProgressState, setAuthProgressState] = useState<AuthProgressState>(
+    AuthProgressState.INITIAL
+  );
+
+  const emailForm = useForm({
+    initialValues: { email: '' },
+    validate: {
+      email: isEmail(),
+    },
+    validateInputOnChange: true,
+  });
+
+  const otpForm = useForm({
+    initialValues: { otpToken: '' },
+    validate: {
+      otpToken: hasLength(6),
+    },
+    validateInputOnChange: true,
+  });
 
   const {
     mutate: startLogin,
@@ -21,7 +50,7 @@ const Auth = () => {
     error: loginError,
     isPending: loginLoading,
   } = useMutation({
-    mutationFn: () => login(email),
+    mutationFn: () => login(emailForm.values.email),
   });
 
   const {
@@ -30,7 +59,7 @@ const Auth = () => {
     error: verifyError,
     isPending: verifyLoading,
   } = useMutation({
-    mutationFn: () => verify(otpToken),
+    mutationFn: () => verify(otpForm.values.otpToken),
   });
 
   const {
@@ -44,53 +73,126 @@ const Auth = () => {
 
   useEffect(() => {
     if (hash) {
-      handleLogin(parseHash(hash));
-      navigate('/home');
+      const parsed = parseHash(hash);
+      if (parsed.success) {
+        handleLogin(parsed.payload as Session);
+        navigate('/home');
+      } else {
+        notifications.show({
+          title: 'Oops!',
+          message:
+            'Could not log you in. ' +
+            (parsed.payload as Record<string, string>).error_description?.replace(/\+/g, ' '),
+          color: 'red',
+        });
+        handleLogout();
+      }
     } else {
       const storedSessionData = localStorage.getItem(SESSION_KEY);
       if (storedSessionData) {
         refreshSession();
       }
     }
-  }, [hash, refreshSession, handleLogin, navigate]);
+  }, [hash, refreshSession, handleLogin, handleLogout, navigate]);
 
   useEffect(() => {
     if (refreshData) {
       handleLogin(refreshData);
       navigate('/home');
+    } else if (refreshError) {
+      notifications.show({
+        title: 'Oops!',
+        message: refreshError.message + ' Try to log in again.',
+        color: 'red',
+      });
+      setAuthProgressState(AuthProgressState.INITIAL);
+      handleLogout();
     }
-  }, [refreshData, handleLogin, navigate]);
+  }, [refreshData, refreshError, handleLogin, handleLogout, navigate]);
 
   useEffect(() => {
     if (loginData) {
-      console.log('login', loginData);
-      // TODO check your inbox
+      setAuthProgressState(AuthProgressState.VERIFYING);
+      notifications.show({
+        title: 'Great!',
+        message: 'Check your inbox, and use the one time password or click the magic link.',
+        color: 'green',
+      });
+    } else if (loginError) {
+      notifications.show({
+        title: 'Oops!',
+        message: loginError.message,
+        color: 'red',
+      });
     }
-  }, [loginData]);
+  }, [loginData, loginError]);
 
   useEffect(() => {
     if (verifyData) {
-      console.log('verify', verifyData);
       handleLogin(verifyData);
       navigate('/home');
+      notifications.show({
+        title: 'Welcome!',
+        message: 'Redirecting you to the home page.',
+        color: 'green',
+      });
+    } else if (verifyError) {
+      notifications.show({
+        title: 'Oops!',
+        message: verifyError.message,
+        color: 'red',
+      });
     }
-  }, [verifyData, handleLogin, navigate]);
+  }, [verifyData, verifyError, handleLogin, navigate]);
 
-  if (loginLoading || verifyLoading || refreshLoading) {
-    return <p>Loading...</p>;
-  }
-
-  if (loginError || verifyError || refreshError) {
-    return <p>Ooopps...</p>;
+  if (refreshLoading) {
+    return (
+      <Center h={'100vh'}>
+        <Loader size="xl" type="bars" />
+      </Center>
+    );
   }
 
   return (
     <>
-      <h1>{isAuthenticated ? 'Authenticated' : 'Not authenticated'}</h1>
-      <input value={email} type="text" onChange={e => setEmail(e.target.value)} />
-      <button onClick={() => startLogin()}>Sign in</button>
-      <input type="text" onChange={e => setOtpToken(e.target.value)} />
-      <button onClick={() => startVerify()}>Verify</button>
+      <Center h={'80vh'}>
+        <Flex direction="column" align="center">
+          <IconPlaneDeparture
+            size={128}
+            className={styles.logoIcon}
+            color={theme.colors!.tomato![6]}
+          />
+          {authProgressState === AuthProgressState.INITIAL ? (
+            <form className={styles.form} onSubmit={emailForm.onSubmit(() => startLogin())}>
+              <TextInput
+                size="md"
+                w={300}
+                mb={12}
+                leftSection={<IconAt size={16} />}
+                placeholder="Your email"
+                {...emailForm.getInputProps('email')}
+              />
+              <Button type="submit" disabled={!emailForm.isValid() || loginLoading}>
+                {loginLoading ? <Loader color="white" size="sm" type="dots" /> : 'Authenticate'}
+              </Button>
+            </form>
+          ) : (
+            <form className={styles.form} onSubmit={otpForm.onSubmit(() => startVerify())}>
+              <TextInput
+                size="md"
+                w={300}
+                mb={12}
+                leftSection={<Icon123 size={16} />}
+                placeholder="One time password"
+                {...otpForm.getInputProps('otpToken')}
+              />
+              <Button type="submit" disabled={!otpForm.isValid() || verifyLoading}>
+                {verifyLoading ? <Loader color="white" size="sm" type="dots" /> : 'Log in'}
+              </Button>
+            </form>
+          )}
+        </Flex>
+      </Center>
     </>
   );
 };

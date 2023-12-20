@@ -1,0 +1,18 @@
+.systemMenu {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+
+  .content {
+    position: fixed;
+    right: 54px;
+    top: 12px;
+    display: flex;
+    gap: 8px;
+
+    .logoutIcon {
+      position: relative;
+      left: 2px;
+    }
+  }
+}

@@ -1,7 +1,12 @@
 import { Session } from '@supabase/supabase-js';
 
-export function parseHash(hash: string): Session {
-  return hash
+type ParsedHash = {
+  success: boolean;
+  payload: Session | Record<string, string | number>;
+};
+
+export function parseHash(hash: string): ParsedHash {
+  const hasAsObject = hash
     .slice(1)
     .split('&')
     .map(entry => entry.split('='))
@@ -11,5 +16,10 @@ export function parseHash(hash: string): Session {
         return obj;
       },
       {} as Record<string, string | number>
-    ) as unknown as Session;
+    );
+
+  return {
+    success: !Object.keys(hasAsObject).some(key => key.startsWith('error')),
+    payload: hasAsObject,
+  };
 }

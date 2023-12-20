@@ -1,4 +1,5 @@
 import { useStore } from '../../store';
+import { Button } from '@mantine/core';
 
 const Home = () => {
   const handleLogout = useStore(state => state.handleLogout);
@@ -7,7 +8,7 @@ const Home = () => {
     <>
       <h1>Home</h1>
 
-      <button onClick={() => handleLogout()}>Log out</button>
+      <Button onClick={() => handleLogout()}>Log out</Button>
     </>
   );
 };
