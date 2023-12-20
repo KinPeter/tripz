@@ -1,14 +1,9 @@
-import { useStore } from '../../store';
-import { Button } from '@mantine/core';
+import Map from '../misc/Map.tsx';
 
 const Home = () => {
-  const handleLogout = useStore(state => state.handleLogout);
-
   return (
     <>
-      <h1>Home</h1>
-
-      <Button onClick={() => handleLogout()}>Log out</Button>
+      <Map />
     </>
   );
 };

@@ -4,8 +4,8 @@ import SystemMenu from '../misc/SystemMenu.tsx';
 const Root = () => {
   return (
     <>
-      <SystemMenu />
       <Outlet />
+      <SystemMenu />
     </>
   );
 };
