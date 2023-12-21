@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Sky Europe Airlines",
+    "iata": "5P",
+    "icao": "HSK",
+    "id": "8d43d304-80d7-4a11-b951-188b3835ed1c"
+  },
+  {
+    "name": "MALEV Hungarian Airlines",
+    "iata": "MA",
+    "icao": "MAH",
+    "id": "eac849a6-7525-4611-99d9-d6e878d29e1c"
+  },
+  {
+    "name": "KLM Royal Dutch Airlines",
+    "iata": "KL",
+    "icao": "KLM",
+    "id": "28d7305c-5a4b-4770-a125-46f77c78f95c"
+  },
+  {
+    "name": "Wizz Air",
+    "iata": "W6",
+    "icao": "WZZ",
+    "id": "a4d91507-e330-4656-911a-296f51a5e7cd"
+  },
+  {
+    "name": "Sterling",
+    "iata": "NB",
+    "icao": "SNB",
+    "id": "9f7560f5-9314-42e7-98fd-f77e9b29a947"
+  },
+  {
+    "name": "Scandinavian Airlines",
+    "iata": "SK",
+    "icao": "SAS",
+    "id": "4b37ecde-5983-4328-b547-89d7d7d7f8d6"
+  },
+  {
+    "name": "Norwegian Air Shuttle",
+    "iata": "DY",
+    "icao": "NAX",
+    "id": "c3da8567-e02a-443a-a686-cb72fad47012"
+  },
+  {
+    "name": "Tunisair",
+    "iata": "TU",
+    "icao": "TAR",
+    "id": "fb77ec02-503d-4540-b5f6-d2a5a51c02f2"
+  },
+  {
+    "name": "Travel Service",
+    "iata": "QS",
+    "icao": "TVS",
+    "id": "0f49886b-9186-49ea-80a4-bec517c6814a"
+  },
+  {
+    "name": "Qatar Airways",
+    "iata": "QR",
+    "icao": "QTR",
+    "id": "0861bd3a-6a7e-43bb-8729-b0118454b80c"
+  },
+  {
+    "name": "LOT",
+    "iata": "LO",
+    "icao": "LOT",
+    "id": "412553e7-7fa3-41df-8e3b-44eb442a48d5"
+  },
+  {
+    "name": "Turkish Airlines",
+    "iata": "TK",
+    "icao": "THY",
+    "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+  },
+  {
+    "name": "Lufthansa",
+    "iata": "LH",
+    "icao": "DLH",
+    "id": "44263d5f-58d9-4edc-9ac3-fb122b055358"
+  },
+  {
+    "name": "All Nippon Airways",
+    "iata": "NH",
+    "icao": "ANA",
+    "id": "ab937699-6d67-451a-b072-8390616d5f42"
+  },
+  {
+    "name": "Alitalia",
+    "iata": "AZ",
+    "icao": "AZA",
+    "id": "06fa43c8-cb98-4246-9d86-03d738e32dfe"
+  },
+  {
+    "name": "Finnair",
+    "iata": "AY",
+    "icao": "FIN",
+    "id": "240aa0e0-3008-4156-9833-13260aa51bf7"
+  },
+  {
+    "name": "Air China",
+    "iata": "CA",
+    "icao": "CCA",
+    "id": "7e58ef26-98ef-42cb-912e-01f97d24edbd"
+  },
+  {
+    "name": "Nordic Regional Airlines / Norra",
+    "iata": "N7",
+    "icao": "FIN",
+    "id": "96868354-0b68-410b-a434-d2aad912feac"
+  },
+  {
+    "name": "Asiana Airlines",
+    "iata": "OZ",
+    "icao": "AAR",
+    "id": "4db206f7-69df-4d4d-8051-ad93dbd5cdd9"
+  },
+  {
+    "name": "Ryanair",
+    "iata": "FR",
+    "icao": "RYR",
+    "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+  },
+  {
+    "name": "Travel Service",
+    "iata": "7O",
+    "icao": "TVL",
+    "id": "58b73020-3e19-41d6-b657-31800a2b2045"
+  },
+  {
+    "name": "Aegean Airlines",
+    "iata": "A3",
+    "icao": "AEE",
+    "id": "ff7a9a3d-c8cd-478b-87a8-1956db5d7cee"
+  }
+]

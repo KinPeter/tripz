@@ -1,0 +1,5897 @@
+[
+  {
+    "id": "ff247113-bb6e-4ac1-8e94-d11d7767c4b3",
+    "date": "2006-03-09",
+    "flightNumber": "5P853",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "departureTime": "13:05:00",
+    "arrivalTime": "15:05:00",
+    "duration": "02:00:00",
+    "airline": {
+      "name": "Sky Europe Airlines",
+      "iata": "5P",
+      "icao": "HSK",
+      "id": "8d43d304-80d7-4a11-b951-188b3835ed1c"
+    },
+    "aircraft": {
+      "name": "Boeing 737-500",
+      "icao": "B735",
+      "id": "a213973a-b756-4fef-97d3-cd56298a53ae"
+    },
+    "registration": "HA-LKV",
+    "seatNumber": "23F",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "712ed4cc-20fb-4e3c-910e-94a422940b1e",
+    "date": "2006-03-14",
+    "flightNumber": "5P852",
+    "from": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "15:35:00",
+    "arrivalTime": "17:25:00",
+    "duration": "01:50:00",
+    "airline": {
+      "name": "Sky Europe Airlines",
+      "iata": "5P",
+      "icao": "HSK",
+      "id": "8d43d304-80d7-4a11-b951-188b3835ed1c"
+    },
+    "aircraft": {
+      "name": "Boeing 737-500",
+      "icao": "B735",
+      "id": "a213973a-b756-4fef-97d3-cd56298a53ae"
+    },
+    "registration": "",
+    "seatNumber": "3A",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "063d67c0-1b19-4565-8361-4be8d9f3314f",
+    "date": "2007-02-01",
+    "flightNumber": "5P600",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Amsterdam",
+      "name": "Schiphol",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "lat": 52.3103,
+      "lng": 4.76028,
+      "id": "51f399b4-b5a8-4178-be66-5b116ad056db",
+      "country": "The Netherlands"
+    },
+    "departureTime": "07:10:00",
+    "arrivalTime": "09:30:00",
+    "duration": "02:20:00",
+    "airline": {
+      "name": "Sky Europe Airlines",
+      "iata": "5P",
+      "icao": "HSK",
+      "id": "8d43d304-80d7-4a11-b951-188b3835ed1c"
+    },
+    "aircraft": {
+      "name": "Boeing 737-500",
+      "icao": "B735",
+      "id": "a213973a-b756-4fef-97d3-cd56298a53ae"
+    },
+    "registration": "",
+    "seatNumber": "17A",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "aea4b970-41b7-42d5-84a3-96269a64d4a7",
+    "date": "2007-02-06",
+    "flightNumber": "5P607",
+    "from": {
+      "city": "Amsterdam",
+      "name": "Schiphol",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "lat": 52.3103,
+      "lng": 4.76028,
+      "id": "51f399b4-b5a8-4178-be66-5b116ad056db",
+      "country": "The Netherlands"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "20:30:00",
+    "arrivalTime": "22:40:00",
+    "duration": "02:10:00",
+    "airline": {
+      "name": "Sky Europe Airlines",
+      "iata": "5P",
+      "icao": "HSK",
+      "id": "8d43d304-80d7-4a11-b951-188b3835ed1c"
+    },
+    "aircraft": {
+      "name": "Boeing 737-500",
+      "icao": "B735",
+      "id": "a213973a-b756-4fef-97d3-cd56298a53ae"
+    },
+    "registration": "",
+    "seatNumber": "8F",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "a9d9788e-4f4e-4c27-b718-96d92285341a",
+    "date": "2007-09-01",
+    "flightNumber": "5P1850",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Burgas",
+      "name": "Burgas",
+      "iata": "BOJ",
+      "icao": "LBBG",
+      "lat": 42.56958,
+      "lng": 27.51524,
+      "id": "51dc3502-16a4-4dd2-8715-48c29753ac87",
+      "country": "Bulgaria"
+    },
+    "departureTime": "18:05:00",
+    "arrivalTime": "20:40:00",
+    "duration": "01:35:00",
+    "airline": {
+      "name": "Sky Europe Airlines",
+      "iata": "5P",
+      "icao": "HSK",
+      "id": "8d43d304-80d7-4a11-b951-188b3835ed1c"
+    },
+    "aircraft": {
+      "name": "Boeing 737",
+      "icao": "B73X",
+      "id": "7c16dc0d-3116-4d03-b90a-d6680206b364"
+    },
+    "registration": "",
+    "seatNumber": "1F",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "24bbcc33-16ab-4e6e-9bf6-3a42d5d31aca",
+    "date": "2007-09-04",
+    "flightNumber": "5P1851",
+    "from": {
+      "city": "Burgas",
+      "name": "Burgas",
+      "iata": "BOJ",
+      "icao": "LBBG",
+      "lat": 42.56958,
+      "lng": 27.51524,
+      "id": "51dc3502-16a4-4dd2-8715-48c29753ac87",
+      "country": "Bulgaria"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "21:20:00",
+    "arrivalTime": "22:00:00",
+    "duration": "01:40:00",
+    "airline": {
+      "name": "Sky Europe Airlines",
+      "iata": "5P",
+      "icao": "HSK",
+      "id": "8d43d304-80d7-4a11-b951-188b3835ed1c"
+    },
+    "aircraft": {
+      "name": "Boeing 737",
+      "icao": "B73X",
+      "id": "7c16dc0d-3116-4d03-b90a-d6680206b364"
+    },
+    "registration": "",
+    "seatNumber": "8A",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "54acb228-e697-4b97-a15d-a05f63689952",
+    "date": "2007-09-20",
+    "flightNumber": "5P852",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "departureTime": "13:05:00",
+    "arrivalTime": "15:05:00",
+    "duration": "02:00:00",
+    "airline": {
+      "name": "Sky Europe Airlines",
+      "iata": "5P",
+      "icao": "HSK",
+      "id": "8d43d304-80d7-4a11-b951-188b3835ed1c"
+    },
+    "aircraft": {
+      "name": "Boeing 737",
+      "icao": "B73X",
+      "id": "7c16dc0d-3116-4d03-b90a-d6680206b364"
+    },
+    "registration": "",
+    "seatNumber": "3A",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "2d4a9b1b-d88a-448d-a2ff-6eda37f74832",
+    "date": "2007-09-23",
+    "flightNumber": "5P853",
+    "from": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "19:55:00",
+    "arrivalTime": "21:45:00",
+    "duration": "01:50:00",
+    "airline": {
+      "name": "Sky Europe Airlines",
+      "iata": "5P",
+      "icao": "HSK",
+      "id": "8d43d304-80d7-4a11-b951-188b3835ed1c"
+    },
+    "aircraft": {
+      "name": "Boeing 737",
+      "icao": "B73X",
+      "id": "7c16dc0d-3116-4d03-b90a-d6680206b364"
+    },
+    "registration": "",
+    "seatNumber": "2F",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "24f53f89-dc00-45fc-a0df-122994117e6b",
+    "date": "2007-10-14",
+    "flightNumber": "5P390",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Rome",
+      "name": "Leonardo da Vinci-Fiumicino",
+      "iata": "FCO",
+      "icao": "LIRF",
+      "lat": 41.79352,
+      "lng": 12.25259,
+      "id": "88d6e5ca-ef6a-4398-9fc4-e88a0a2e771d",
+      "country": "Italy"
+    },
+    "departureTime": "13:00:00",
+    "arrivalTime": "14:45:00",
+    "duration": "01:45:00",
+    "airline": {
+      "name": "Sky Europe Airlines",
+      "iata": "5P",
+      "icao": "HSK",
+      "id": "8d43d304-80d7-4a11-b951-188b3835ed1c"
+    },
+    "aircraft": {
+      "name": "Boeing 737-700",
+      "icao": "B737",
+      "id": "d0000724-6455-4915-9f20-27f606b3d8a9"
+    },
+    "registration": "HA-LKM",
+    "seatNumber": "2D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "9e5b154a-5675-4e43-b15b-c3eee02f4c54",
+    "date": "2007-10-15",
+    "flightNumber": "5P391",
+    "from": {
+      "city": "Rome",
+      "name": "Leonardo da Vinci-Fiumicino",
+      "iata": "FCO",
+      "icao": "LIRF",
+      "lat": 41.79352,
+      "lng": 12.25259,
+      "id": "88d6e5ca-ef6a-4398-9fc4-e88a0a2e771d",
+      "country": "Italy"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "15:30:00",
+    "arrivalTime": "17:15:00",
+    "duration": "01:45:00",
+    "airline": {
+      "name": "Sky Europe Airlines",
+      "iata": "5P",
+      "icao": "HSK",
+      "id": "8d43d304-80d7-4a11-b951-188b3835ed1c"
+    },
+    "aircraft": {
+      "name": "Boeing 737-700",
+      "icao": "B737",
+      "id": "d0000724-6455-4915-9f20-27f606b3d8a9"
+    },
+    "registration": "HA-LKM",
+    "seatNumber": "4A",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "ea50b696-1e1c-49ce-90e8-a13321952e62",
+    "date": "2007-11-05",
+    "flightNumber": "MA662",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Amsterdam",
+      "name": "Schiphol",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "lat": 52.3103,
+      "lng": 4.76028,
+      "id": "51f399b4-b5a8-4178-be66-5b116ad056db",
+      "country": "The Netherlands"
+    },
+    "departureTime": "09:25:00",
+    "arrivalTime": "11:35:00",
+    "duration": "02:10:00",
+    "airline": {
+      "name": "MALEV Hungarian Airlines",
+      "iata": "MA",
+      "icao": "MAH",
+      "id": "eac849a6-7525-4611-99d9-d6e878d29e1c"
+    },
+    "aircraft": {
+      "name": "Fokker 70",
+      "icao": "F70",
+      "id": "5de7d576-e4ef-442b-9f43-866342f3827c"
+    },
+    "registration": "",
+    "seatNumber": "9D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "Menzies"
+  },
+  {
+    "id": "2c71b235-cb38-4401-b491-89bf4f55db54",
+    "date": "2007-11-05",
+    "flightNumber": "KL1147",
+    "from": {
+      "city": "Amsterdam",
+      "name": "Schiphol",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "lat": 52.3103,
+      "lng": 4.76028,
+      "id": "51f399b4-b5a8-4178-be66-5b116ad056db",
+      "country": "The Netherlands"
+    },
+    "to": {
+      "city": "Oslo",
+      "name": "Gardermoen",
+      "iata": "OSL",
+      "icao": "ENGM",
+      "lat": 60.19392,
+      "lng": 11.10036,
+      "id": "85de72ce-4732-4fe1-aaba-f1acfbba985a",
+      "country": "Norway"
+    },
+    "departureTime": "14:55:00",
+    "arrivalTime": "16:45:00",
+    "duration": "01:50:00",
+    "airline": {
+      "name": "KLM Royal Dutch Airlines",
+      "iata": "KL",
+      "icao": "KLM",
+      "id": "28d7305c-5a4b-4770-a125-46f77c78f95c"
+    },
+    "aircraft": {
+      "name": "Boeing 737",
+      "icao": "B73X",
+      "id": "7c16dc0d-3116-4d03-b90a-d6680206b364"
+    },
+    "registration": "",
+    "seatNumber": "20B",
+    "seatType": "Middle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "Menzies"
+  },
+  {
+    "id": "4ad58acc-446c-4bb9-980c-00ec9a2407dc",
+    "date": "2007-11-12",
+    "flightNumber": "KL1148",
+    "from": {
+      "city": "Oslo",
+      "name": "Gardermoen",
+      "iata": "OSL",
+      "icao": "ENGM",
+      "lat": 60.19392,
+      "lng": 11.10036,
+      "id": "85de72ce-4732-4fe1-aaba-f1acfbba985a",
+      "country": "Norway"
+    },
+    "to": {
+      "city": "Amsterdam",
+      "name": "Schiphol",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "lat": 52.3103,
+      "lng": 4.76028,
+      "id": "51f399b4-b5a8-4178-be66-5b116ad056db",
+      "country": "The Netherlands"
+    },
+    "departureTime": "17:40:00",
+    "arrivalTime": "19:35:00",
+    "duration": "01:55:00",
+    "airline": {
+      "name": "KLM Royal Dutch Airlines",
+      "iata": "KL",
+      "icao": "KLM",
+      "id": "28d7305c-5a4b-4770-a125-46f77c78f95c"
+    },
+    "aircraft": {
+      "name": "Boeing 737",
+      "icao": "B73X",
+      "id": "7c16dc0d-3116-4d03-b90a-d6680206b364"
+    },
+    "registration": "",
+    "seatNumber": "20A",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "Menzies"
+  },
+  {
+    "id": "fafc43cd-12bf-4254-bf73-98d1d5a0e4fb",
+    "date": "2007-11-12",
+    "flightNumber": "MA669",
+    "from": {
+      "city": "Amsterdam",
+      "name": "Schiphol",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "lat": 52.3103,
+      "lng": 4.76028,
+      "id": "51f399b4-b5a8-4178-be66-5b116ad056db",
+      "country": "The Netherlands"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "20:30:00",
+    "arrivalTime": "22:30:00",
+    "duration": "02:00:00",
+    "airline": {
+      "name": "MALEV Hungarian Airlines",
+      "iata": "MA",
+      "icao": "MAH",
+      "id": "eac849a6-7525-4611-99d9-d6e878d29e1c"
+    },
+    "aircraft": {
+      "name": "Boeing 737",
+      "icao": "B73X",
+      "id": "7c16dc0d-3116-4d03-b90a-d6680206b364"
+    },
+    "registration": "",
+    "seatNumber": "10A",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "Menzies"
+  },
+  {
+    "id": "4ab99c38-3607-415e-b3d2-4c4854b57b20",
+    "date": "2008-04-15",
+    "flightNumber": "W60277",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Stockholm",
+      "name": "Skavsta",
+      "iata": "NYO",
+      "icao": "ESKN",
+      "lat": 58.78864,
+      "lng": 16.91219,
+      "id": "79d1d0a0-95cf-4efb-a0d9-eaa8992882c3",
+      "country": "Sweden"
+    },
+    "departureTime": "12:35:00",
+    "arrivalTime": "14:40:00",
+    "duration": "02:05:00",
+    "airline": {
+      "name": "Wizz Air",
+      "iata": "W6",
+      "icao": "WZZ",
+      "id": "a4d91507-e330-4656-911a-296f51a5e7cd"
+    },
+    "aircraft": {
+      "name": "Airbus A320",
+      "icao": "A320",
+      "id": "738532da-7c28-4b53-9610-5968b8a61961"
+    },
+    "registration": "HA-LPD",
+    "seatNumber": "4A",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "8d14bc56-8237-4ea2-b244-e55a74279811",
+    "date": "2008-04-18",
+    "flightNumber": "NB457",
+    "from": {
+      "city": "Stockholm",
+      "name": "Arlanda",
+      "iata": "ARN",
+      "icao": "ESSA",
+      "lat": 59.652,
+      "lng": 17.93132,
+      "id": "957182c3-49be-4a9b-8ecb-812f110ca936",
+      "country": "Sweden"
+    },
+    "to": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "departureTime": "16:20:00",
+    "arrivalTime": "17:35:00",
+    "duration": "01:15:00",
+    "airline": {
+      "name": "Sterling",
+      "iata": "NB",
+      "icao": "SNB",
+      "id": "9f7560f5-9314-42e7-98fd-f77e9b29a947"
+    },
+    "aircraft": {
+      "name": "Boeing 737",
+      "icao": "B73X",
+      "id": "7c16dc0d-3116-4d03-b90a-d6680206b364"
+    },
+    "registration": "",
+    "seatNumber": "5C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "01fa11b6-2b23-436f-88c2-e4412286fb13",
+    "date": "2008-04-20",
+    "flightNumber": "NB567",
+    "from": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "11:10:00",
+    "arrivalTime": "13:15:00",
+    "duration": "02:05:00",
+    "airline": {
+      "name": "Sterling",
+      "iata": "NB",
+      "icao": "SNB",
+      "id": "9f7560f5-9314-42e7-98fd-f77e9b29a947"
+    },
+    "aircraft": {
+      "name": "Boeing 737-700",
+      "icao": "B737",
+      "id": "d0000724-6455-4915-9f20-27f606b3d8a9"
+    },
+    "registration": "OY-MRG",
+    "seatNumber": "2C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "88749929-b033-4506-a4c4-4d58de1b92be",
+    "date": "2008-09-22",
+    "flightNumber": "NB568",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "departureTime": "12:20:00",
+    "arrivalTime": "14:30:00",
+    "duration": "02:10:00",
+    "airline": {
+      "name": "Sterling",
+      "iata": "NB",
+      "icao": "SNB",
+      "id": "9f7560f5-9314-42e7-98fd-f77e9b29a947"
+    },
+    "aircraft": {
+      "name": "Boeing 737",
+      "icao": "B73X",
+      "id": "7c16dc0d-3116-4d03-b90a-d6680206b364"
+    },
+    "registration": "",
+    "seatNumber": "1F",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "50f3e638-7d6c-4a1b-bdb1-0f1d269efac1",
+    "date": "2008-11-14",
+    "flightNumber": "SK1470",
+    "from": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "to": {
+      "city": "Oslo",
+      "name": "Gardermoen",
+      "iata": "OSL",
+      "icao": "ENGM",
+      "lat": 60.19392,
+      "lng": 11.10036,
+      "id": "85de72ce-4732-4fe1-aaba-f1acfbba985a",
+      "country": "Norway"
+    },
+    "departureTime": "19:10:00",
+    "arrivalTime": "20:20:00",
+    "duration": "01:10:00",
+    "airline": {
+      "name": "Scandinavian Airlines",
+      "iata": "SK",
+      "icao": "SAS",
+      "id": "4b37ecde-5983-4328-b547-89d7d7d7f8d6"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "LN-RRL",
+    "seatNumber": "27C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": "AC: Jarlabanke Viking"
+  },
+  {
+    "id": "3b79d6d3-be91-4708-b530-fcb501aafbdf",
+    "date": "2008-11-16",
+    "flightNumber": "SK467",
+    "from": {
+      "city": "Oslo",
+      "name": "Gardermoen",
+      "iata": "OSL",
+      "icao": "ENGM",
+      "lat": 60.19392,
+      "lng": 11.10036,
+      "id": "85de72ce-4732-4fe1-aaba-f1acfbba985a",
+      "country": "Norway"
+    },
+    "to": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "departureTime": "20:20:00",
+    "arrivalTime": "21:30:00",
+    "duration": "01:10:00",
+    "airline": {
+      "name": "Scandinavian Airlines",
+      "iata": "SK",
+      "icao": "SAS",
+      "id": "4b37ecde-5983-4328-b547-89d7d7d7f8d6"
+    },
+    "aircraft": {
+      "name": "McDonnell Douglas MD-82",
+      "icao": "MD82",
+      "id": "1136d838-3ca0-4ce3-97c2-6d595e096739"
+    },
+    "registration": "LN-ROY",
+    "seatNumber": "28F",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": "AC: Spjute Viking"
+  },
+  {
+    "id": "1a475751-74e2-4809-a4aa-e56996b0d6c3",
+    "date": "2008-12-21",
+    "flightNumber": "MA753",
+    "from": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "20:25:00",
+    "arrivalTime": "22:15:00",
+    "duration": "01:50:00",
+    "airline": {
+      "name": "MALEV Hungarian Airlines",
+      "iata": "MA",
+      "icao": "MAH",
+      "id": "eac849a6-7525-4611-99d9-d6e878d29e1c"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "HA-LOH",
+    "seatNumber": "7C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "b8cbfc42-c5de-4756-a58e-49237cfa3a5a",
+    "date": "2008-12-28",
+    "flightNumber": "MA750",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "departureTime": "07:20:00",
+    "arrivalTime": "09:15:00",
+    "duration": "01:55:00",
+    "airline": {
+      "name": "MALEV Hungarian Airlines",
+      "iata": "MA",
+      "icao": "MAH",
+      "id": "eac849a6-7525-4611-99d9-d6e878d29e1c"
+    },
+    "aircraft": {
+      "name": "Boeing 737",
+      "icao": "B73X",
+      "id": "7c16dc0d-3116-4d03-b90a-d6680206b364"
+    },
+    "registration": "",
+    "seatNumber": "5D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "8ccf6a7a-01d9-4b34-958e-aa63c1f2982b",
+    "date": "2010-06-17",
+    "flightNumber": "DY3551",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "departureTime": "14:35:00",
+    "arrivalTime": "16:25:00",
+    "duration": "01:50:00",
+    "airline": {
+      "name": "Norwegian Air Shuttle",
+      "iata": "DY",
+      "icao": "NAX",
+      "id": "c3da8567-e02a-443a-a686-cb72fad47012"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "LN-KKG",
+    "seatNumber": "2D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "16370c62-2d94-4dad-933c-f3669ccc7dfa",
+    "date": "2010-06-20",
+    "flightNumber": "DY3550",
+    "from": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "14:05:00",
+    "arrivalTime": "16:00:00",
+    "duration": "01:55:00",
+    "airline": {
+      "name": "Norwegian Air Shuttle",
+      "iata": "DY",
+      "icao": "NAX",
+      "id": "c3da8567-e02a-443a-a686-cb72fad47012"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "LN-KKT",
+    "seatNumber": "3D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "b9a5aead-6575-499b-8c1c-c8bcc3a4edc7",
+    "date": "2012-05-25",
+    "flightNumber": "TU6095",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Monastir",
+      "name": "Habib Bourguiba",
+      "iata": "MIR",
+      "icao": "DTMB",
+      "lat": 35.75806,
+      "lng": 10.75472,
+      "id": "74b56fa0-19a0-43c4-9e42-c9853394dc2e",
+      "country": "Tunisia"
+    },
+    "departureTime": "14:10:00",
+    "arrivalTime": "15:35:00",
+    "duration": "02:25:00",
+    "airline": {
+      "name": "Tunisair",
+      "iata": "TU",
+      "icao": "TAR",
+      "id": "fb77ec02-503d-4540-b5f6-d2a5a51c02f2"
+    },
+    "aircraft": {
+      "name": "Boeing 737-500",
+      "icao": "B735",
+      "id": "a213973a-b756-4fef-97d3-cd56298a53ae"
+    },
+    "registration": "TI-IOH",
+    "seatNumber": "10C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "Sunfun Study"
+  },
+  {
+    "id": "74f71864-2feb-4b7a-b023-1994adbb20a0",
+    "date": "2012-06-01",
+    "flightNumber": "TU6094",
+    "from": {
+      "city": "Enfidha",
+      "name": "Enfidha",
+      "iata": "NBE",
+      "icao": "DTNH",
+      "lat": 36.07579,
+      "lng": 10.43859,
+      "id": "7ebd0036-2ead-4a44-a79b-d9f46447164d",
+      "country": "Tunisia"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "14:00:00",
+    "arrivalTime": "17:15:00",
+    "duration": "02:15:00",
+    "airline": {
+      "name": "Tunisair",
+      "iata": "TU",
+      "icao": "TAR",
+      "id": "fb77ec02-503d-4540-b5f6-d2a5a51c02f2"
+    },
+    "aircraft": {
+      "name": "Airbus A319",
+      "icao": "A319",
+      "id": "da8a11a9-50ce-4dc8-8914-b7b6420fafe3"
+    },
+    "registration": "TI-IMJ",
+    "seatNumber": "19C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "Sunfun Study"
+  },
+  {
+    "id": "bf452310-a189-4c91-b2ea-899b4a42afc2",
+    "date": "2012-09-10",
+    "flightNumber": "QS2376",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Kefallinia",
+      "name": "Kefalinia",
+      "iata": "EFL",
+      "icao": "LGKF",
+      "lat": 38.12007,
+      "lng": 20.50048,
+      "id": "2f286123-8399-4a68-a7db-b2a931fe78d6",
+      "country": "Greece"
+    },
+    "departureTime": "05:10:00",
+    "arrivalTime": "08:15:00",
+    "duration": "02:05:00",
+    "airline": {
+      "name": "Travel Service",
+      "iata": "QS",
+      "icao": "TVS",
+      "id": "0f49886b-9186-49ea-80a4-bec517c6814a"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "HA-LKB",
+    "seatNumber": "6E",
+    "seatType": "Middle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "1bd9880c-8650-499b-ab9a-ef66c9348f40",
+    "date": "2012-09-17",
+    "flightNumber": "QS2377",
+    "from": {
+      "city": "Kefallinia",
+      "name": "Kefalinia",
+      "iata": "EFL",
+      "icao": "LGKF",
+      "lat": 38.12007,
+      "lng": 20.50048,
+      "id": "2f286123-8399-4a68-a7db-b2a931fe78d6",
+      "country": "Greece"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "09:05:00",
+    "arrivalTime": "10:00:00",
+    "duration": "01:55:00",
+    "airline": {
+      "name": "Travel Service",
+      "iata": "QS",
+      "icao": "TVS",
+      "id": "0f49886b-9186-49ea-80a4-bec517c6814a"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "HA-LKB",
+    "seatNumber": "25F",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "89c12091-1a00-4094-adbc-b5c73748e152",
+    "date": "2012-10-26",
+    "flightNumber": "QR948",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Doha",
+      "name": "Doha Airport",
+      "iata": "DIA",
+      "icao": "OTBD",
+      "lat": 25.26486,
+      "lng": 51.56356,
+      "id": "3c62a270-4f63-415e-8fd2-4375e6f4d4ea",
+      "country": "Qatar"
+    },
+    "departureTime": "17:05:00",
+    "arrivalTime": "23:20:00",
+    "duration": "05:15:00",
+    "airline": {
+      "name": "Qatar Airways",
+      "iata": "QR",
+      "icao": "QTR",
+      "id": "0861bd3a-6a7e-43bb-8729-b0118454b80c"
+    },
+    "aircraft": {
+      "name": "Airbus A320",
+      "icao": "A320",
+      "id": "738532da-7c28-4b53-9610-5968b8a61961"
+    },
+    "registration": "A7-AHL",
+    "seatNumber": "11F",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "87b389b3-6c74-4cee-a8b0-b80f21c7b137",
+    "date": "2012-10-27",
+    "flightNumber": "QR802",
+    "from": {
+      "city": "Doha",
+      "name": "Doha Airport",
+      "iata": "DIA",
+      "icao": "OTBD",
+      "lat": 25.26486,
+      "lng": 51.56356,
+      "id": "3c62a270-4f63-415e-8fd2-4375e6f4d4ea",
+      "country": "Qatar"
+    },
+    "to": {
+      "city": "Tokyo",
+      "name": "Narita",
+      "iata": "NRT",
+      "icao": "RJAA",
+      "lat": 35.76472,
+      "lng": 140.38639,
+      "id": "66ae6143-b5b9-4b96-b127-daec9e6f60b0",
+      "country": "Japan"
+    },
+    "departureTime": "01:25:00",
+    "arrivalTime": "19:50:00",
+    "duration": "12:25:00",
+    "airline": {
+      "name": "Qatar Airways",
+      "iata": "QR",
+      "icao": "QTR",
+      "id": "0861bd3a-6a7e-43bb-8729-b0118454b80c"
+    },
+    "aircraft": {
+      "name": "Boeing 777-300ER",
+      "icao": "B77W",
+      "id": "29ab61ce-89e7-4f62-8b64-db4e01c5bba1"
+    },
+    "registration": "A7-BAA",
+    "seatNumber": "12H",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "fde4f8fd-fc2d-417b-ad4e-bf5d99158b37",
+    "date": "2012-11-02",
+    "flightNumber": "QR805",
+    "from": {
+      "city": "Tokyo",
+      "name": "Narita",
+      "iata": "NRT",
+      "icao": "RJAA",
+      "lat": 35.76472,
+      "lng": 140.38639,
+      "id": "66ae6143-b5b9-4b96-b127-daec9e6f60b0",
+      "country": "Japan"
+    },
+    "to": {
+      "city": "Doha",
+      "name": "Doha Airport",
+      "iata": "DIA",
+      "icao": "OTBD",
+      "lat": 25.26486,
+      "lng": 51.56356,
+      "id": "3c62a270-4f63-415e-8fd2-4375e6f4d4ea",
+      "country": "Qatar"
+    },
+    "departureTime": "22:30:00",
+    "arrivalTime": "04:30:00",
+    "duration": "12:00:00",
+    "airline": {
+      "name": "Qatar Airways",
+      "iata": "QR",
+      "icao": "QTR",
+      "id": "0861bd3a-6a7e-43bb-8729-b0118454b80c"
+    },
+    "aircraft": {
+      "name": "Boeing 777-200LR",
+      "icao": "B77L",
+      "id": "03fd5379-2b2e-49d8-94d1-2591f4865971"
+    },
+    "registration": "A7-BBC",
+    "seatNumber": "12H",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "bd61a2a2-ea54-44cd-b08d-afe331e22d99",
+    "date": "2012-11-03",
+    "flightNumber": "QR947",
+    "from": {
+      "city": "Doha",
+      "name": "Doha Airport",
+      "iata": "DIA",
+      "icao": "OTBD",
+      "lat": 25.26486,
+      "lng": 51.56356,
+      "id": "3c62a270-4f63-415e-8fd2-4375e6f4d4ea",
+      "country": "Qatar"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "07:40:00",
+    "arrivalTime": "11:35:00",
+    "duration": "05:55:00",
+    "airline": {
+      "name": "Qatar Airways",
+      "iata": "QR",
+      "icao": "QTR",
+      "id": "0861bd3a-6a7e-43bb-8729-b0118454b80c"
+    },
+    "aircraft": {
+      "name": "Airbus A320",
+      "icao": "A320",
+      "id": "738532da-7c28-4b53-9610-5968b8a61961"
+    },
+    "registration": "A7-AHO",
+    "seatNumber": "9D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "0aad5150-3bbc-4a49-8d89-ba5f3b479fdb",
+    "date": "2013-12-14",
+    "flightNumber": "LO534",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Warsaw",
+      "name": "Chopin",
+      "iata": "WAW",
+      "icao": "EPWA",
+      "lat": 52.16575,
+      "lng": 20.96712,
+      "id": "93240106-5992-4f39-97c5-91794b4776f1",
+      "country": "Poland"
+    },
+    "departureTime": "09:10:00",
+    "arrivalTime": "10:20:00",
+    "duration": "01:10:00",
+    "airline": {
+      "name": "LOT",
+      "iata": "LO",
+      "icao": "LOT",
+      "id": "412553e7-7fa3-41df-8e3b-44eb442a48d5"
+    },
+    "aircraft": {
+      "name": "Embraer ERJ-170",
+      "icao": "E170",
+      "id": "e78e8c3d-27c6-49fc-800d-f5c6b9f91a0c"
+    },
+    "registration": "SP-LDA",
+    "seatNumber": "11C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "LOT Study"
+  },
+  {
+    "id": "10554cda-63ce-4ed7-b55d-4a9f3371ebfd",
+    "date": "2013-12-16",
+    "flightNumber": "LO531",
+    "from": {
+      "city": "Warsaw",
+      "name": "Chopin",
+      "iata": "WAW",
+      "icao": "EPWA",
+      "lat": 52.16575,
+      "lng": 20.96712,
+      "id": "93240106-5992-4f39-97c5-91794b4776f1",
+      "country": "Poland"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "18:05:00",
+    "arrivalTime": "19:20:00",
+    "duration": "01:15:00",
+    "airline": {
+      "name": "LOT",
+      "iata": "LO",
+      "icao": "LOT",
+      "id": "412553e7-7fa3-41df-8e3b-44eb442a48d5"
+    },
+    "aircraft": {
+      "name": "Embraer ERJ-170",
+      "icao": "E170",
+      "id": "e78e8c3d-27c6-49fc-800d-f5c6b9f91a0c"
+    },
+    "registration": "SP-LDB",
+    "seatNumber": "9C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "LOT Study"
+  },
+  {
+    "id": "0bfcc95a-1248-497c-9a7a-0ca5cad6ad13",
+    "date": "2014-03-03",
+    "flightNumber": "KL1972",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Amsterdam",
+      "name": "Schiphol",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "lat": 52.3103,
+      "lng": 4.76028,
+      "id": "51f399b4-b5a8-4178-be66-5b116ad056db",
+      "country": "The Netherlands"
+    },
+    "departureTime": "06:30:00",
+    "arrivalTime": "08:45:00",
+    "duration": "02:15:00",
+    "airline": {
+      "name": "KLM Royal Dutch Airlines",
+      "iata": "KL",
+      "icao": "KLM",
+      "id": "28d7305c-5a4b-4770-a125-46f77c78f95c"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "PH-BGC",
+    "seatNumber": "11D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "JTB Europe meeting"
+  },
+  {
+    "id": "c81cc6fc-9812-48f4-bb19-8ab4375ce5fe",
+    "date": "2014-03-04",
+    "flightNumber": "KL1979",
+    "from": {
+      "city": "Amsterdam",
+      "name": "Schiphol",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "lat": 52.3103,
+      "lng": 4.76028,
+      "id": "51f399b4-b5a8-4178-be66-5b116ad056db",
+      "country": "The Netherlands"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "20:55:00",
+    "arrivalTime": "22:55:00",
+    "duration": "02:00:00",
+    "airline": {
+      "name": "KLM Royal Dutch Airlines",
+      "iata": "KL",
+      "icao": "KLM",
+      "id": "28d7305c-5a4b-4770-a125-46f77c78f95c"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "PH-BXI",
+    "seatNumber": "10D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "JTB Europe meeting"
+  },
+  {
+    "id": "f3dd7d0f-8039-4327-b3e3-1860bb743771",
+    "date": "2014-03-15",
+    "flightNumber": "TK1036",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Istanbul",
+      "name": "Ataturk",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "lat": 40.97692,
+      "lng": 28.81461,
+      "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
+      "country": "Turkey"
+    },
+    "departureTime": "10:50:00",
+    "arrivalTime": "13:45:00",
+    "duration": "01:55:00",
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY",
+      "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+    },
+    "aircraft": {
+      "name": "Airbus A321",
+      "icao": "A321",
+      "id": "7fe5c108-b947-495f-ac3e-2380a586b393"
+    },
+    "registration": "TC-JRK",
+    "seatNumber": "5D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "31f05b94-a817-4422-bed9-9ad9a5994fbf",
+    "date": "2014-03-15",
+    "flightNumber": "TK0050",
+    "from": {
+      "city": "Istanbul",
+      "name": "Ataturk",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "lat": 40.97692,
+      "lng": 28.81461,
+      "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
+      "country": "Turkey"
+    },
+    "to": {
+      "city": "Tokyo",
+      "name": "Narita",
+      "iata": "NRT",
+      "icao": "RJAA",
+      "lat": 35.76472,
+      "lng": 140.38639,
+      "id": "66ae6143-b5b9-4b96-b127-daec9e6f60b0",
+      "country": "Japan"
+    },
+    "departureTime": "17:15:00",
+    "arrivalTime": "11:30:00",
+    "duration": "11:15:00",
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY",
+      "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+    },
+    "aircraft": {
+      "name": "Boeing 777-300ER",
+      "icao": "B77W",
+      "id": "29ab61ce-89e7-4f62-8b64-db4e01c5bba1"
+    },
+    "registration": "TC-JJF",
+    "seatNumber": "31H",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "fe0c1b0d-08f9-4ce5-afe4-3dc3628b776f",
+    "date": "2014-03-26",
+    "flightNumber": "TK0053",
+    "from": {
+      "city": "Tokyo",
+      "name": "Narita",
+      "iata": "NRT",
+      "icao": "RJAA",
+      "lat": 35.76472,
+      "lng": 140.38639,
+      "id": "66ae6143-b5b9-4b96-b127-daec9e6f60b0",
+      "country": "Japan"
+    },
+    "to": {
+      "city": "Istanbul",
+      "name": "Ataturk",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "lat": 40.97692,
+      "lng": 28.81461,
+      "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
+      "country": "Turkey"
+    },
+    "departureTime": "21:40:00",
+    "arrivalTime": "03:30:00",
+    "duration": "12:50:00",
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY",
+      "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+    },
+    "aircraft": {
+      "name": "Airbus A330-200",
+      "icao": "A332",
+      "id": "9cffdb52-18c5-4c70-b9ac-5516de3b37c1"
+    },
+    "registration": "TC-JNE",
+    "seatNumber": "30J",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "aa72c6bb-1fc6-4cfc-8c85-41c211d1d391",
+    "date": "2014-03-27",
+    "flightNumber": "TK1035",
+    "from": {
+      "city": "Istanbul",
+      "name": "Ataturk",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "lat": 40.97692,
+      "lng": 28.81461,
+      "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
+      "country": "Turkey"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "08:50:00",
+    "arrivalTime": "09:50:00",
+    "duration": "02:00:00",
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY",
+      "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "TC-JHF",
+    "seatNumber": "9D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "34e4004d-f32e-4396-8fce-981931e43532",
+    "date": "2014-11-05",
+    "flightNumber": "TK1036",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Istanbul",
+      "name": "Ataturk",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "lat": 40.97692,
+      "lng": 28.81461,
+      "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
+      "country": "Turkey"
+    },
+    "departureTime": "09:25:00",
+    "arrivalTime": "12:20:00",
+    "duration": "01:55:00",
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY",
+      "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+    },
+    "aircraft": {
+      "name": "Boeing 737-700",
+      "icao": "B737",
+      "id": "d0000724-6455-4915-9f20-27f606b3d8a9"
+    },
+    "registration": "TC-JKJ",
+    "seatNumber": "02A",
+    "seatType": "Window",
+    "flightClass": "Business",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "e4023a74-c52b-43f4-ab1a-2817f4073950",
+    "date": "2014-11-05",
+    "flightNumber": "TK0050",
+    "from": {
+      "city": "Istanbul",
+      "name": "Ataturk",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "lat": 40.97692,
+      "lng": 28.81461,
+      "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
+      "country": "Turkey"
+    },
+    "to": {
+      "city": "Tokyo",
+      "name": "Narita",
+      "iata": "NRT",
+      "icao": "RJAA",
+      "lat": 35.76472,
+      "lng": 140.38639,
+      "id": "66ae6143-b5b9-4b96-b127-daec9e6f60b0",
+      "country": "Japan"
+    },
+    "departureTime": "17:15:00",
+    "arrivalTime": "11:30:00",
+    "duration": "11:15:00",
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY",
+      "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+    },
+    "aircraft": {
+      "name": "Boeing 777-300ER",
+      "icao": "B77W",
+      "id": "29ab61ce-89e7-4f62-8b64-db4e01c5bba1"
+    },
+    "registration": "TC-jjm",
+    "seatNumber": "1K",
+    "seatType": "Window",
+    "flightClass": "Business",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "2e33a6dc-6bea-4e50-9579-d412e9137625",
+    "date": "2014-11-13",
+    "flightNumber": "TK0051",
+    "from": {
+      "city": "Tokyo",
+      "name": "Narita",
+      "iata": "NRT",
+      "icao": "RJAA",
+      "lat": 35.76472,
+      "lng": 140.38639,
+      "id": "66ae6143-b5b9-4b96-b127-daec9e6f60b0",
+      "country": "Japan"
+    },
+    "to": {
+      "city": "Istanbul",
+      "name": "Ataturk",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "lat": 40.97692,
+      "lng": 28.81461,
+      "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
+      "country": "Turkey"
+    },
+    "departureTime": "12:55:00",
+    "arrivalTime": "18:10:00",
+    "duration": "12:15:00",
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY",
+      "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+    },
+    "aircraft": {
+      "name": "Boeing 777-300ER",
+      "icao": "B77W",
+      "id": "29ab61ce-89e7-4f62-8b64-db4e01c5bba1"
+    },
+    "registration": "tc-JJK",
+    "seatNumber": "4j",
+    "seatType": "Aisle",
+    "flightClass": "Business",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "721fcf2e-edee-4c1a-a454-6e868ae431b5",
+    "date": "2014-11-15",
+    "flightNumber": "TK1037",
+    "from": {
+      "city": "Istanbul",
+      "name": "Ataturk",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "lat": 40.97692,
+      "lng": 28.81461,
+      "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
+      "country": "Turkey"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "18:10:00",
+    "arrivalTime": "19:10:00",
+    "duration": "02:00:00",
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY",
+      "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+    },
+    "aircraft": {
+      "name": "Airbus A320",
+      "icao": "A320",
+      "id": "738532da-7c28-4b53-9610-5968b8a61961"
+    },
+    "registration": "TC-JUJ",
+    "seatNumber": "2a",
+    "seatType": "Window",
+    "flightClass": "Business",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "b4c05d00-d074-46a1-a807-c45c53fca612",
+    "date": "2015-01-18",
+    "flightNumber": "LH1339",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Frankfurt am Main",
+      "name": "Frankfurt",
+      "iata": "FRA",
+      "icao": "EDDF",
+      "lat": 50.0406,
+      "lng": 8.55603,
+      "id": "c7b76600-55c9-4ac2-a121-8320569a53e1",
+      "country": "Germany"
+    },
+    "departureTime": "14:25:00",
+    "arrivalTime": "16:10:00",
+    "duration": "01:45:00",
+    "airline": {
+      "name": "Lufthansa",
+      "iata": "LH",
+      "icao": "DLH",
+      "id": "44263d5f-58d9-4edc-9ac3-fb122b055358"
+    },
+    "aircraft": {
+      "name": "Airbus A320",
+      "icao": "A320",
+      "id": "738532da-7c28-4b53-9610-5968b8a61961"
+    },
+    "registration": "D-AIQT",
+    "seatNumber": "16C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "Okinawa FAM trip"
+  },
+  {
+    "id": "3557665f-6630-49c7-9f06-b07961bbd621",
+    "date": "2015-01-18",
+    "flightNumber": "LH716",
+    "from": {
+      "city": "Frankfurt am Main",
+      "name": "Frankfurt",
+      "iata": "FRA",
+      "icao": "EDDF",
+      "lat": 50.0406,
+      "lng": 8.55603,
+      "id": "c7b76600-55c9-4ac2-a121-8320569a53e1",
+      "country": "Germany"
+    },
+    "to": {
+      "city": "Tokyo",
+      "name": "Haneda",
+      "iata": "HND",
+      "icao": "RJTT",
+      "lat": 35.55226,
+      "lng": 139.77969,
+      "id": "723dc593-adc4-4598-8b2e-59e0345eb856",
+      "country": "Japan"
+    },
+    "departureTime": "18:00:00",
+    "arrivalTime": "13:05:00",
+    "duration": "11:05:00",
+    "airline": {
+      "name": "Lufthansa",
+      "iata": "LH",
+      "icao": "DLH",
+      "id": "44263d5f-58d9-4edc-9ac3-fb122b055358"
+    },
+    "aircraft": {
+      "name": "Boeing 747-8",
+      "icao": "B748",
+      "id": "25a68a16-3ab8-4cb1-9f05-fece291f845f"
+    },
+    "registration": "D-ABYJ",
+    "seatNumber": "41C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "Okinawa FAM trip"
+  },
+  {
+    "id": "0501ba85-57e2-4bd3-b081-d4e189aa4002",
+    "date": "2015-01-21",
+    "flightNumber": "NH471",
+    "from": {
+      "city": "Tokyo",
+      "name": "Haneda",
+      "iata": "HND",
+      "icao": "RJTT",
+      "lat": 35.55226,
+      "lng": 139.77969,
+      "id": "723dc593-adc4-4598-8b2e-59e0345eb856",
+      "country": "Japan"
+    },
+    "to": {
+      "city": "Naha",
+      "name": "Naha",
+      "iata": "OKA",
+      "icao": "ROAH",
+      "lat": 26.19581,
+      "lng": 127.64587,
+      "id": "f6896642-9273-47c1-9725-55e6314cf124",
+      "country": "Japan"
+    },
+    "departureTime": "11:10:00",
+    "arrivalTime": "14:05:00",
+    "duration": "02:55:00",
+    "airline": {
+      "name": "All Nippon Airways",
+      "iata": "NH",
+      "icao": "ANA",
+      "id": "ab937699-6d67-451a-b072-8390616d5f42"
+    },
+    "aircraft": {
+      "name": "Boeing 777-200",
+      "icao": "B772",
+      "id": "a05badda-b334-45e6-bb4d-9130486b21a7"
+    },
+    "registration": "JA707A",
+    "seatNumber": "14G",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "Okinawa FAM trip"
+  },
+  {
+    "id": "a24eed8e-bd57-44d5-9594-0dba3d3be4d9",
+    "date": "2015-01-23",
+    "flightNumber": "NH1763",
+    "from": {
+      "city": "Naha",
+      "name": "Naha",
+      "iata": "OKA",
+      "icao": "ROAH",
+      "lat": 26.19581,
+      "lng": 127.64587,
+      "id": "f6896642-9273-47c1-9725-55e6314cf124",
+      "country": "Japan"
+    },
+    "to": {
+      "city": "Ishigaki I",
+      "name": "Ishigaki",
+      "iata": "ISG",
+      "icao": "ROIG",
+      "lat": 24.39693,
+      "lng": 124.24675,
+      "id": "d9946a39-bf8f-49fe-b345-c9ac0b63e9eb",
+      "country": "Japan"
+    },
+    "departureTime": "09:50:00",
+    "arrivalTime": "10:50:00",
+    "duration": "01:00:00",
+    "airline": {
+      "name": "All Nippon Airways",
+      "iata": "NH",
+      "icao": "ANA",
+      "id": "ab937699-6d67-451a-b072-8390616d5f42"
+    },
+    "aircraft": {
+      "name": "Boeing 737-500",
+      "icao": "B735",
+      "id": "a213973a-b756-4fef-97d3-cd56298a53ae"
+    },
+    "registration": "JA304K",
+    "seatNumber": "19D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "Okinawa FAM trip"
+  },
+  {
+    "id": "08202195-f560-4309-bb13-9000e0c4caea",
+    "date": "2015-01-24",
+    "flightNumber": "NH1776",
+    "from": {
+      "city": "Ishigaki I",
+      "name": "Ishigaki",
+      "iata": "ISG",
+      "icao": "ROIG",
+      "lat": 24.39693,
+      "lng": 124.24675,
+      "id": "d9946a39-bf8f-49fe-b345-c9ac0b63e9eb",
+      "country": "Japan"
+    },
+    "to": {
+      "city": "Naha",
+      "name": "Naha",
+      "iata": "OKA",
+      "icao": "ROAH",
+      "lat": 26.19581,
+      "lng": 127.64587,
+      "id": "f6896642-9273-47c1-9725-55e6314cf124",
+      "country": "Japan"
+    },
+    "departureTime": "16:30:00",
+    "arrivalTime": "17:25:00",
+    "duration": "00:55:00",
+    "airline": {
+      "name": "All Nippon Airways",
+      "iata": "NH",
+      "icao": "ANA",
+      "id": "ab937699-6d67-451a-b072-8390616d5f42"
+    },
+    "aircraft": {
+      "name": "Boeing 737-500",
+      "icao": "B735",
+      "id": "a213973a-b756-4fef-97d3-cd56298a53ae"
+    },
+    "registration": "JA357K",
+    "seatNumber": "17C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "Okinawa FAM trip"
+  },
+  {
+    "id": "0a357112-50b1-4d3c-85b4-2e262672194d",
+    "date": "2015-01-27",
+    "flightNumber": "NH476",
+    "from": {
+      "city": "Naha",
+      "name": "Naha",
+      "iata": "OKA",
+      "icao": "ROAH",
+      "lat": 26.19581,
+      "lng": 127.64587,
+      "id": "f6896642-9273-47c1-9725-55e6314cf124",
+      "country": "Japan"
+    },
+    "to": {
+      "city": "Tokyo",
+      "name": "Haneda",
+      "iata": "HND",
+      "icao": "RJTT",
+      "lat": 35.55226,
+      "lng": 139.77969,
+      "id": "723dc593-adc4-4598-8b2e-59e0345eb856",
+      "country": "Japan"
+    },
+    "departureTime": "19:30:00",
+    "arrivalTime": "21:40:00",
+    "duration": "02:10:00",
+    "airline": {
+      "name": "All Nippon Airways",
+      "iata": "NH",
+      "icao": "ANA",
+      "id": "ab937699-6d67-451a-b072-8390616d5f42"
+    },
+    "aircraft": {
+      "name": "Boeing 777-300",
+      "icao": "B773",
+      "id": "59a18d99-1d0c-4c54-9704-3ef77114d197"
+    },
+    "registration": "JA751A",
+    "seatNumber": "15D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "Okinawa FAM trip"
+  },
+  {
+    "id": "0a12d309-455e-47cd-ac7c-c8db5386779c",
+    "date": "2015-01-28",
+    "flightNumber": "NH203",
+    "from": {
+      "city": "Tokyo",
+      "name": "Haneda",
+      "iata": "HND",
+      "icao": "RJTT",
+      "lat": 35.55226,
+      "lng": 139.77969,
+      "id": "723dc593-adc4-4598-8b2e-59e0345eb856",
+      "country": "Japan"
+    },
+    "to": {
+      "city": "Frankfurt am Main",
+      "name": "Frankfurt",
+      "iata": "FRA",
+      "icao": "EDDF",
+      "lat": 50.0406,
+      "lng": 8.55603,
+      "id": "c7b76600-55c9-4ac2-a121-8320569a53e1",
+      "country": "Germany"
+    },
+    "departureTime": "03:40:00",
+    "arrivalTime": "07:40:00",
+    "duration": "12:00:00",
+    "airline": {
+      "name": "All Nippon Airways",
+      "iata": "NH",
+      "icao": "ANA",
+      "id": "ab937699-6d67-451a-b072-8390616d5f42"
+    },
+    "aircraft": {
+      "name": "Boeing 787-8",
+      "icao": "B788",
+      "id": "0e2ca15f-1408-42ce-8174-031ede28129d"
+    },
+    "registration": "JA820A",
+    "seatNumber": "27H",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "Okinawa FAM trip"
+  },
+  {
+    "id": "0ea0c29c-5b62-4587-8852-996b3c2d6a53",
+    "date": "2015-01-28",
+    "flightNumber": "LH1338",
+    "from": {
+      "city": "Frankfurt am Main",
+      "name": "Frankfurt",
+      "iata": "FRA",
+      "icao": "EDDF",
+      "lat": 50.0406,
+      "lng": 8.55603,
+      "id": "c7b76600-55c9-4ac2-a121-8320569a53e1",
+      "country": "Germany"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "12:15:00",
+    "arrivalTime": "13:50:00",
+    "duration": "01:35:00",
+    "airline": {
+      "name": "Lufthansa",
+      "iata": "LH",
+      "icao": "DLH",
+      "id": "44263d5f-58d9-4edc-9ac3-fb122b055358"
+    },
+    "aircraft": {
+      "name": "Airbus A320",
+      "icao": "A320",
+      "id": "738532da-7c28-4b53-9610-5968b8a61961"
+    },
+    "registration": "D-AISG",
+    "seatNumber": "21D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": "Okinawa FAM trip"
+  },
+  {
+    "id": "c2d6ddf3-c971-4433-a3c3-6ad77a424407",
+    "date": "2015-04-30",
+    "flightNumber": "SK780",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "departureTime": "12:30:00",
+    "arrivalTime": "14:20:00",
+    "duration": "01:50:00",
+    "airline": {
+      "name": "Scandinavian Airlines",
+      "iata": "SK",
+      "icao": "SAS",
+      "id": "4b37ecde-5983-4328-b547-89d7d7d7f8d6"
+    },
+    "aircraft": {
+      "name": "Airbus A320",
+      "icao": "A320",
+      "id": "738532da-7c28-4b53-9610-5968b8a61961"
+    },
+    "registration": "oy-kay",
+    "seatNumber": "16c",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "4106c726-80d8-45c4-9924-eef268bfd9d7",
+    "date": "2015-05-04",
+    "flightNumber": "SK779",
+    "from": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "20:05:00",
+    "arrivalTime": "21:50:00",
+    "duration": "01:45:00",
+    "airline": {
+      "name": "Scandinavian Airlines",
+      "iata": "SK",
+      "icao": "SAS",
+      "id": "4b37ecde-5983-4328-b547-89d7d7d7f8d6"
+    },
+    "aircraft": {
+      "name": "Bombardier CRJ-900",
+      "icao": "CRJ9",
+      "id": "2e28b239-254e-4f89-8c7f-3766b1dd0a4d"
+    },
+    "registration": "oy-kfm",
+    "seatNumber": "9c",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "66ffb4d1-4066-47ce-8b69-4433a5418467",
+    "date": "2015-10-22",
+    "flightNumber": "TK1034",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Istanbul",
+      "name": "Ataturk",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "lat": 40.97692,
+      "lng": 28.81461,
+      "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
+      "country": "Turkey"
+    },
+    "departureTime": "13:50:00",
+    "arrivalTime": "16:55:00",
+    "duration": "02:05:00",
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY",
+      "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "TC-JGD",
+    "seatNumber": "1A",
+    "seatType": "Window",
+    "flightClass": "Business",
+    "flightReason": "Leisure",
+    "note": "Upgrade"
+  },
+  {
+    "id": "2147f61e-23e0-45e9-be48-cadfc6e47f62",
+    "date": "2015-10-22",
+    "flightNumber": "TK0088",
+    "from": {
+      "city": "Istanbul",
+      "name": "Ataturk",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "lat": 40.97692,
+      "lng": 28.81461,
+      "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
+      "country": "Turkey"
+    },
+    "to": {
+      "city": "Seoul",
+      "name": "Incheon",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "id": "21a038db-b57a-458c-8534-23637f90edec",
+      "country": "Korea"
+    },
+    "departureTime": "18:20:00",
+    "arrivalTime": "10:25:00",
+    "duration": "10:05:00",
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY",
+      "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+    },
+    "aircraft": {
+      "name": "Airbus A330-300",
+      "icao": "A333",
+      "id": "91875bf0-f54d-4c7c-a18b-3cb072615170"
+    },
+    "registration": "TC-JOJ",
+    "seatNumber": "07J",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "c00927c8-31da-4c6d-9fcb-ca8b025eb4a9",
+    "date": "2015-10-30",
+    "flightNumber": "TK0091",
+    "from": {
+      "city": "Seoul",
+      "name": "Incheon",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "id": "21a038db-b57a-458c-8534-23637f90edec",
+      "country": "Korea"
+    },
+    "to": {
+      "city": "Istanbul",
+      "name": "Ataturk",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "lat": 40.97692,
+      "lng": 28.81461,
+      "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
+      "country": "Turkey"
+    },
+    "departureTime": "00:20:00",
+    "arrivalTime": "06:00:00",
+    "duration": "12:40:00",
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY",
+      "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+    },
+    "aircraft": {
+      "name": "Boeing 777-300ER",
+      "icao": "B77W",
+      "id": "29ab61ce-89e7-4f62-8b64-db4e01c5bba1"
+    },
+    "registration": "TC-JJH",
+    "seatNumber": "27G",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "9f3fd864-961c-4200-b139-d6a904b14bd6",
+    "date": "2015-10-30",
+    "flightNumber": "TK1035",
+    "from": {
+      "city": "Istanbul",
+      "name": "Ataturk",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "lat": 40.97692,
+      "lng": 28.81461,
+      "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
+      "country": "Turkey"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "08:20:00",
+    "arrivalTime": "08:20:00",
+    "duration": "02:00:00",
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY",
+      "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+    },
+    "aircraft": {
+      "name": "Airbus A319",
+      "icao": "A319",
+      "id": "da8a11a9-50ce-4dc8-8914-b7b6420fafe3"
+    },
+    "registration": "TC-JUD",
+    "seatNumber": "6D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "87ce5709-582c-4582-8184-f557318fc972",
+    "date": "2015-12-09",
+    "flightNumber": "KL1978",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Amsterdam",
+      "name": "Schiphol",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "lat": 52.3103,
+      "lng": 4.76028,
+      "id": "51f399b4-b5a8-4178-be66-5b116ad056db",
+      "country": "The Netherlands"
+    },
+    "departureTime": "17:05:00",
+    "arrivalTime": "19:20:00",
+    "duration": "02:15:00",
+    "airline": {
+      "name": "KLM Royal Dutch Airlines",
+      "iata": "KL",
+      "icao": "KLM",
+      "id": "28d7305c-5a4b-4770-a125-46f77c78f95c"
+    },
+    "aircraft": {
+      "name": "Boeing 737-700",
+      "icao": "B737",
+      "id": "d0000724-6455-4915-9f20-27f606b3d8a9"
+    },
+    "registration": "PHBGP",
+    "seatNumber": "10C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "67230325-7c12-41df-8361-d7f6fb1c9357",
+    "date": "2015-12-11",
+    "flightNumber": "KL1979",
+    "from": {
+      "city": "Amsterdam",
+      "name": "Schiphol",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "lat": 52.3103,
+      "lng": 4.76028,
+      "id": "51f399b4-b5a8-4178-be66-5b116ad056db",
+      "country": "The Netherlands"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "21:05:00",
+    "arrivalTime": "23:05:00",
+    "duration": "02:00:00",
+    "airline": {
+      "name": "KLM Royal Dutch Airlines",
+      "iata": "KL",
+      "icao": "KLM",
+      "id": "28d7305c-5a4b-4770-a125-46f77c78f95c"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "PHBXY",
+    "seatNumber": "24D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "dc352b3c-3b6f-43e1-80d8-5d54ad526825",
+    "date": "2016-10-05",
+    "flightNumber": "AZ477",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Rome",
+      "name": "Leonardo da Vinci-Fiumicino",
+      "iata": "FCO",
+      "icao": "LIRF",
+      "lat": 41.79352,
+      "lng": 12.25259,
+      "id": "88d6e5ca-ef6a-4398-9fc4-e88a0a2e771d",
+      "country": "Italy"
+    },
+    "departureTime": "07:05:00",
+    "arrivalTime": "08:45:00",
+    "duration": "01:40:00",
+    "airline": {
+      "name": "Alitalia",
+      "iata": "AZ",
+      "icao": "AZA",
+      "id": "06fa43c8-cb98-4246-9d86-03d738e32dfe"
+    },
+    "aircraft": {
+      "name": "Airbus A320",
+      "icao": "A320",
+      "id": "738532da-7c28-4b53-9610-5968b8a61961"
+    },
+    "registration": "EIEIC",
+    "seatNumber": "5C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "e59da350-5e93-483d-b518-74536b653336",
+    "date": "2016-10-05",
+    "flightNumber": "AZ584",
+    "from": {
+      "city": "Rome",
+      "name": "Leonardo da Vinci-Fiumicino",
+      "iata": "FCO",
+      "icao": "LIRF",
+      "lat": 41.79352,
+      "lng": 12.25259,
+      "id": "88d6e5ca-ef6a-4398-9fc4-e88a0a2e771d",
+      "country": "Italy"
+    },
+    "to": {
+      "city": "Tirana",
+      "name": "Rinas",
+      "iata": "TIA",
+      "icao": "LATI",
+      "lat": 41.4219,
+      "lng": 19.71296,
+      "id": "01610f96-9af6-456f-ac91-d58e84238420",
+      "country": "Albania"
+    },
+    "departureTime": "15:40:00",
+    "arrivalTime": "17:10:00",
+    "duration": "01:30:00",
+    "airline": {
+      "name": "Alitalia",
+      "iata": "AZ",
+      "icao": "AZA",
+      "id": "06fa43c8-cb98-4246-9d86-03d738e32dfe"
+    },
+    "aircraft": {
+      "name": "Airbus A321",
+      "icao": "A321",
+      "id": "7fe5c108-b947-495f-ac3e-2380a586b393"
+    },
+    "registration": "IBIXQ",
+    "seatNumber": "16C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "509626b7-6536-4be3-9905-6c561e240e08",
+    "date": "2016-10-09",
+    "flightNumber": "AZ583",
+    "from": {
+      "city": "Tirana",
+      "name": "Rinas",
+      "iata": "TIA",
+      "icao": "LATI",
+      "lat": 41.4219,
+      "lng": 19.71296,
+      "id": "01610f96-9af6-456f-ac91-d58e84238420",
+      "country": "Albania"
+    },
+    "to": {
+      "city": "Rome",
+      "name": "Leonardo da Vinci-Fiumicino",
+      "iata": "FCO",
+      "icao": "LIRF",
+      "lat": 41.79352,
+      "lng": 12.25259,
+      "id": "88d6e5ca-ef6a-4398-9fc4-e88a0a2e771d",
+      "country": "Italy"
+    },
+    "departureTime": "18:00:00",
+    "arrivalTime": "19:25:00",
+    "duration": "01:25:00",
+    "airline": {
+      "name": "Alitalia",
+      "iata": "AZ",
+      "icao": "AZA",
+      "id": "06fa43c8-cb98-4246-9d86-03d738e32dfe"
+    },
+    "aircraft": {
+      "name": "Airbus A320",
+      "icao": "A320",
+      "id": "738532da-7c28-4b53-9610-5968b8a61961"
+    },
+    "registration": "EIDSC",
+    "seatNumber": "21C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "f3b73a80-6649-4730-93c8-61a587d042b7",
+    "date": "2016-10-09",
+    "flightNumber": "AZ476",
+    "from": {
+      "city": "Rome",
+      "name": "Leonardo da Vinci-Fiumicino",
+      "iata": "FCO",
+      "icao": "LIRF",
+      "lat": 41.79352,
+      "lng": 12.25259,
+      "id": "88d6e5ca-ef6a-4398-9fc4-e88a0a2e771d",
+      "country": "Italy"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "21:30:00",
+    "arrivalTime": "23:10:00",
+    "duration": "01:40:00",
+    "airline": {
+      "name": "Alitalia",
+      "iata": "AZ",
+      "icao": "AZA",
+      "id": "06fa43c8-cb98-4246-9d86-03d738e32dfe"
+    },
+    "aircraft": {
+      "name": "Airbus A320",
+      "icao": "A320",
+      "id": "738532da-7c28-4b53-9610-5968b8a61961"
+    },
+    "registration": "EIDTL",
+    "seatNumber": "14C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "b7a6d0c3-7b05-400b-8422-61f27ff73e32",
+    "date": "2016-10-29",
+    "flightNumber": "QR200",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Doha",
+      "name": "Doha Airport",
+      "iata": "DIA",
+      "icao": "OTBD",
+      "lat": 25.26486,
+      "lng": 51.56356,
+      "id": "3c62a270-4f63-415e-8fd2-4375e6f4d4ea",
+      "country": "Qatar"
+    },
+    "departureTime": "11:15:00",
+    "arrivalTime": "18:30:00",
+    "duration": "05:15:00",
+    "airline": {
+      "name": "Qatar Airways",
+      "iata": "QR",
+      "icao": "QTR",
+      "id": "0861bd3a-6a7e-43bb-8729-b0118454b80c"
+    },
+    "aircraft": {
+      "name": "Airbus A320",
+      "icao": "A320",
+      "id": "738532da-7c28-4b53-9610-5968b8a61961"
+    },
+    "registration": "A7AHQ",
+    "seatNumber": "28D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "31d57a0d-6d9a-44bc-9fcf-9bbd4ee96a80",
+    "date": "2016-10-30",
+    "flightNumber": "QR858",
+    "from": {
+      "city": "Doha",
+      "name": "Doha Airport",
+      "iata": "DIA",
+      "icao": "OTBD",
+      "lat": 25.26486,
+      "lng": 51.56356,
+      "id": "3c62a270-4f63-415e-8fd2-4375e6f4d4ea",
+      "country": "Qatar"
+    },
+    "to": {
+      "city": "Seoul",
+      "name": "Incheon",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "id": "21a038db-b57a-458c-8534-23637f90edec",
+      "country": "Korea"
+    },
+    "departureTime": "02:59:00",
+    "arrivalTime": "17:35:00",
+    "duration": "08:36:00",
+    "airline": {
+      "name": "Qatar Airways",
+      "iata": "QR",
+      "icao": "QTR",
+      "id": "0861bd3a-6a7e-43bb-8729-b0118454b80c"
+    },
+    "aircraft": {
+      "name": "Boeing 777-300ER",
+      "icao": "B77W",
+      "id": "29ab61ce-89e7-4f62-8b64-db4e01c5bba1"
+    },
+    "registration": "A7BAT",
+    "seatNumber": "4B",
+    "seatType": "Aisle",
+    "flightClass": "Business",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "c2f66063-2528-43b9-9448-b3a36ca61368",
+    "date": "2016-11-12",
+    "flightNumber": "QR859",
+    "from": {
+      "city": "Seoul",
+      "name": "Incheon",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "id": "21a038db-b57a-458c-8534-23637f90edec",
+      "country": "Korea"
+    },
+    "to": {
+      "city": "Doha",
+      "name": "Doha Airport",
+      "iata": "DIA",
+      "icao": "OTBD",
+      "lat": 25.26486,
+      "lng": 51.56356,
+      "id": "3c62a270-4f63-415e-8fd2-4375e6f4d4ea",
+      "country": "Qatar"
+    },
+    "departureTime": "00:50:00",
+    "arrivalTime": "05:05:00",
+    "duration": "10:15:00",
+    "airline": {
+      "name": "Qatar Airways",
+      "iata": "QR",
+      "icao": "QTR",
+      "id": "0861bd3a-6a7e-43bb-8729-b0118454b80c"
+    },
+    "aircraft": {
+      "name": "Boeing 777-300ER",
+      "icao": "B77W",
+      "id": "29ab61ce-89e7-4f62-8b64-db4e01c5bba1"
+    },
+    "registration": "A7BAS",
+    "seatNumber": "18C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "a379b0b4-fdfd-4f3d-b86a-1e8bfd52a3ef",
+    "date": "2016-11-12",
+    "flightNumber": "QR199",
+    "from": {
+      "city": "Doha",
+      "name": "Doha Airport",
+      "iata": "DIA",
+      "icao": "OTBD",
+      "lat": 25.26486,
+      "lng": 51.56356,
+      "id": "3c62a270-4f63-415e-8fd2-4375e6f4d4ea",
+      "country": "Qatar"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "06:30:00",
+    "arrivalTime": "10:20:00",
+    "duration": "05:50:00",
+    "airline": {
+      "name": "Qatar Airways",
+      "iata": "QR",
+      "icao": "QTR",
+      "id": "0861bd3a-6a7e-43bb-8729-b0118454b80c"
+    },
+    "aircraft": {
+      "name": "Airbus A320",
+      "icao": "A320",
+      "id": "738532da-7c28-4b53-9610-5968b8a61961"
+    },
+    "registration": "A7AHT",
+    "seatNumber": "3F",
+    "seatType": "Window",
+    "flightClass": "Business",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "b9256b24-a1e5-43f8-8cab-cd1263a6e8f7",
+    "date": "2016-12-08",
+    "flightNumber": "KL1978",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Amsterdam",
+      "name": "Schiphol",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "lat": 52.3103,
+      "lng": 4.76028,
+      "id": "51f399b4-b5a8-4178-be66-5b116ad056db",
+      "country": "The Netherlands"
+    },
+    "departureTime": "17:05:00",
+    "arrivalTime": "19:15:00",
+    "duration": "02:10:00",
+    "airline": {
+      "name": "KLM Royal Dutch Airlines",
+      "iata": "KL",
+      "icao": "KLM",
+      "id": "28d7305c-5a4b-4770-a125-46f77c78f95c"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "PHBXA",
+    "seatNumber": "19C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "161c3e1c-df46-4db9-b88e-0ca184e48828",
+    "date": "2016-12-09",
+    "flightNumber": "KL1979",
+    "from": {
+      "city": "Amsterdam",
+      "name": "Schiphol",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "lat": 52.3103,
+      "lng": 4.76028,
+      "id": "51f399b4-b5a8-4178-be66-5b116ad056db",
+      "country": "The Netherlands"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "21:05:00",
+    "arrivalTime": "23:05:00",
+    "duration": "02:00:00",
+    "airline": {
+      "name": "KLM Royal Dutch Airlines",
+      "iata": "KL",
+      "icao": "KLM",
+      "id": "28d7305c-5a4b-4770-a125-46f77c78f95c"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "PHBXB",
+    "seatNumber": "7D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "fae1f148-34a6-4464-a987-ee0301899d53",
+    "date": "2017-01-14",
+    "flightNumber": "AY754",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Helsinki",
+      "name": "Vantaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "lat": 60.31722,
+      "lng": 24.96333,
+      "id": "ab696095-f853-4f64-a678-c7323d02494b",
+      "country": "Finland"
+    },
+    "departureTime": "11:35:00",
+    "arrivalTime": "14:55:00",
+    "duration": "02:20:00",
+    "airline": {
+      "name": "Finnair",
+      "iata": "AY",
+      "icao": "FIN",
+      "id": "240aa0e0-3008-4156-9833-13260aa51bf7"
+    },
+    "aircraft": {
+      "name": "Embraer ERJ-190",
+      "icao": "E190",
+      "id": "ea19c1fe-2c05-444c-bc7e-5bec35bf6f85"
+    },
+    "registration": "OHLKI",
+    "seatNumber": "19D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "91a89984-4399-42ea-b0a9-698af3be5e3e",
+    "date": "2017-01-14",
+    "flightNumber": "AY73",
+    "from": {
+      "city": "Helsinki",
+      "name": "Vantaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "lat": 60.31722,
+      "lng": 24.96333,
+      "id": "ab696095-f853-4f64-a678-c7323d02494b",
+      "country": "Finland"
+    },
+    "to": {
+      "city": "Tokyo",
+      "name": "Narita",
+      "iata": "NRT",
+      "icao": "RJAA",
+      "lat": 35.76472,
+      "lng": 140.38639,
+      "id": "66ae6143-b5b9-4b96-b127-daec9e6f60b0",
+      "country": "Japan"
+    },
+    "departureTime": "17:20:00",
+    "arrivalTime": "10:00:00",
+    "duration": "09:40:00",
+    "airline": {
+      "name": "Finnair",
+      "iata": "AY",
+      "icao": "FIN",
+      "id": "240aa0e0-3008-4156-9833-13260aa51bf7"
+    },
+    "aircraft": {
+      "name": "Airbus A340-300",
+      "icao": "A343",
+      "id": "33a8da29-4302-40c8-89c9-502f3907dbc1"
+    },
+    "registration": "OHLQE",
+    "seatNumber": "29D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "88bcfcbc-1dab-4f1f-a3fb-07d6dfe3896d",
+    "date": "2017-01-26",
+    "flightNumber": "AY78",
+    "from": {
+      "city": "Osaka",
+      "name": "Kansai",
+      "iata": "KIX",
+      "icao": "RJBB",
+      "lat": 34.42731,
+      "lng": 135.24407,
+      "id": "f5e985f7-fe84-4f38-adb2-126adb0e9d95",
+      "country": "Japan"
+    },
+    "to": {
+      "city": "Helsinki",
+      "name": "Vantaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "lat": 60.31722,
+      "lng": 24.96333,
+      "id": "ab696095-f853-4f64-a678-c7323d02494b",
+      "country": "Finland"
+    },
+    "departureTime": "11:45:00",
+    "arrivalTime": "15:10:00",
+    "duration": "10:25:00",
+    "airline": {
+      "name": "Finnair",
+      "iata": "AY",
+      "icao": "FIN",
+      "id": "240aa0e0-3008-4156-9833-13260aa51bf7"
+    },
+    "aircraft": {
+      "name": "Airbus A330-300",
+      "icao": "A333",
+      "id": "91875bf0-f54d-4c7c-a18b-3cb072615170"
+    },
+    "registration": "OHLTR",
+    "seatNumber": "30C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "ced96e3c-3142-4f48-b057-382ed7d5be7d",
+    "date": "2017-01-26",
+    "flightNumber": "AY755",
+    "from": {
+      "city": "Helsinki",
+      "name": "Vantaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "lat": 60.31722,
+      "lng": 24.96333,
+      "id": "ab696095-f853-4f64-a678-c7323d02494b",
+      "country": "Finland"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "17:10:00",
+    "arrivalTime": "18:30:00",
+    "duration": "02:20:00",
+    "airline": {
+      "name": "Finnair",
+      "iata": "AY",
+      "icao": "FIN",
+      "id": "240aa0e0-3008-4156-9833-13260aa51bf7"
+    },
+    "aircraft": {
+      "name": "Airbus A319",
+      "icao": "A319",
+      "id": "da8a11a9-50ce-4dc8-8914-b7b6420fafe3"
+    },
+    "registration": "OHLVK",
+    "seatNumber": "10A",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "b0a3af9b-502a-4ede-a608-94dfc63f7b78",
+    "date": "2017-04-07",
+    "flightNumber": "CA722",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Beijing",
+      "name": "Peking-Capital",
+      "iata": "PEK",
+      "icao": "ZBAA",
+      "lat": 40.08011,
+      "lng": 116.58456,
+      "id": "dfe2737a-6c1c-4c94-9a54-598f4f08fdd6",
+      "country": "China"
+    },
+    "departureTime": "21:10:00",
+    "arrivalTime": "13:05:00",
+    "duration": "09:55:00",
+    "airline": {
+      "name": "Air China",
+      "iata": "CA",
+      "icao": "CCA",
+      "id": "7e58ef26-98ef-42cb-912e-01f97d24edbd"
+    },
+    "aircraft": {
+      "name": "Airbus A330-200",
+      "icao": "A332",
+      "id": "9cffdb52-18c5-4c70-b9ac-5516de3b37c1"
+    },
+    "registration": "B5933",
+    "seatNumber": "49J",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "c5347274-416b-47ac-ac6b-6552311b7152",
+    "date": "2017-04-08",
+    "flightNumber": "CA137",
+    "from": {
+      "city": "Beijing",
+      "name": "Peking-Capital",
+      "iata": "PEK",
+      "icao": "ZBAA",
+      "lat": 40.08011,
+      "lng": 116.58456,
+      "id": "dfe2737a-6c1c-4c94-9a54-598f4f08fdd6",
+      "country": "China"
+    },
+    "to": {
+      "city": "Seoul",
+      "name": "Gimpo",
+      "iata": "GMP",
+      "icao": "RKSS",
+      "lat": 37.566,
+      "lng": 126.80077,
+      "id": "08ec70b1-fae5-4ccb-be77-ae12896c1fb2",
+      "country": "Korea"
+    },
+    "departureTime": "18:45:00",
+    "arrivalTime": "21:50:00",
+    "duration": "02:05:00",
+    "airline": {
+      "name": "Air China",
+      "iata": "CA",
+      "icao": "CCA",
+      "id": "7e58ef26-98ef-42cb-912e-01f97d24edbd"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "B6106",
+    "seatNumber": "20C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "6647b719-43c1-4ce4-a000-96c1e096c9a7",
+    "date": "2017-04-16",
+    "flightNumber": "CA138",
+    "from": {
+      "city": "Seoul",
+      "name": "Gimpo",
+      "iata": "GMP",
+      "icao": "RKSS",
+      "lat": 37.566,
+      "lng": 126.80077,
+      "id": "08ec70b1-fae5-4ccb-be77-ae12896c1fb2",
+      "country": "Korea"
+    },
+    "to": {
+      "city": "Beijing",
+      "name": "Peking-Capital",
+      "iata": "PEK",
+      "icao": "ZBAA",
+      "lat": 40.08011,
+      "lng": 116.58456,
+      "id": "dfe2737a-6c1c-4c94-9a54-598f4f08fdd6",
+      "country": "China"
+    },
+    "departureTime": "09:25:00",
+    "arrivalTime": "10:50:00",
+    "duration": "02:25:00",
+    "airline": {
+      "name": "Air China",
+      "iata": "CA",
+      "icao": "CCA",
+      "id": "7e58ef26-98ef-42cb-912e-01f97d24edbd"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "B5328",
+    "seatNumber": "23C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "f61a3466-380f-4228-a4c9-91dc4c394d98",
+    "date": "2017-04-16",
+    "flightNumber": "CA721",
+    "from": {
+      "city": "Beijing",
+      "name": "Peking-Capital",
+      "iata": "PEK",
+      "icao": "ZBAA",
+      "lat": 40.08011,
+      "lng": 116.58456,
+      "id": "dfe2737a-6c1c-4c94-9a54-598f4f08fdd6",
+      "country": "China"
+    },
+    "to": {
+      "city": "Minsk",
+      "name": "Minsk International",
+      "iata": "MSQ",
+      "icao": "UMMS",
+      "lat": 53.88247,
+      "lng": 28.03073,
+      "id": "37c024e7-d5ac-412f-8e2d-89dda9a02d0d",
+      "country": "Belarus"
+    },
+    "departureTime": "13:05:00",
+    "arrivalTime": "17:20:00",
+    "duration": "09:15:00",
+    "airline": {
+      "name": "Air China",
+      "iata": "CA",
+      "icao": "CCA",
+      "id": "7e58ef26-98ef-42cb-912e-01f97d24edbd"
+    },
+    "aircraft": {
+      "name": "Airbus A330-200",
+      "icao": "A332",
+      "id": "9cffdb52-18c5-4c70-b9ac-5516de3b37c1"
+    },
+    "registration": "B5925",
+    "seatNumber": "44C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "fc0402d1-d9e6-4713-9c8c-d83713e62460",
+    "date": "2017-04-16",
+    "flightNumber": "CA721",
+    "from": {
+      "city": "Minsk",
+      "name": "Minsk International",
+      "iata": "MSQ",
+      "icao": "UMMS",
+      "lat": 53.88247,
+      "lng": 28.03073,
+      "id": "37c024e7-d5ac-412f-8e2d-89dda9a02d0d",
+      "country": "Belarus"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "18:50:00",
+    "arrivalTime": "19:40:00",
+    "duration": "01:50:00",
+    "airline": {
+      "name": "Air China",
+      "iata": "CA",
+      "icao": "CCA",
+      "id": "7e58ef26-98ef-42cb-912e-01f97d24edbd"
+    },
+    "aircraft": {
+      "name": "Airbus A330-200",
+      "icao": "A332",
+      "id": "9cffdb52-18c5-4c70-b9ac-5516de3b37c1"
+    },
+    "registration": "B5925",
+    "seatNumber": "44C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "5cca3dcf-7c3e-47fb-aaaf-f708154d1ccc",
+    "date": "2017-11-16",
+    "flightNumber": "AY1252",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Helsinki",
+      "name": "Vantaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "lat": 60.31722,
+      "lng": 24.96333,
+      "id": "ab696095-f853-4f64-a678-c7323d02494b",
+      "country": "Finland"
+    },
+    "departureTime": "11:35:00",
+    "arrivalTime": "14:55:00",
+    "duration": "02:20:00",
+    "airline": {
+      "name": "Nordic Regional Airlines / Norra",
+      "iata": "N7",
+      "icao": "FIN",
+      "id": "96868354-0b68-410b-a434-d2aad912feac"
+    },
+    "aircraft": {
+      "name": "Airbus A319",
+      "icao": "A319",
+      "id": "da8a11a9-50ce-4dc8-8914-b7b6420fafe3"
+    },
+    "registration": "OH-LVB",
+    "seatNumber": "16C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "14dfd303-72e7-46af-b6e5-5adfdb735572",
+    "date": "2017-11-16",
+    "flightNumber": "AY41",
+    "from": {
+      "city": "Helsinki",
+      "name": "Vantaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "lat": 60.31722,
+      "lng": 24.96333,
+      "id": "ab696095-f853-4f64-a678-c7323d02494b",
+      "country": "Finland"
+    },
+    "to": {
+      "city": "Seoul",
+      "name": "Incheon",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "id": "21a038db-b57a-458c-8534-23637f90edec",
+      "country": "Korea"
+    },
+    "departureTime": "17:30:00",
+    "arrivalTime": "09:10:00",
+    "duration": "08:40:00",
+    "airline": {
+      "name": "Nordic Regional Airlines / Norra",
+      "iata": "N7",
+      "icao": "FIN",
+      "id": "96868354-0b68-410b-a434-d2aad912feac"
+    },
+    "aircraft": {
+      "name": "Airbus A350-900",
+      "icao": "A359",
+      "id": "226877bc-cb90-4621-8664-4fc107b1f189"
+    },
+    "registration": "OH-LWL",
+    "seatNumber": "27C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "c26a906d-c670-402a-8663-f61945fd704c",
+    "date": "2017-11-18",
+    "flightNumber": "OZ713",
+    "from": {
+      "city": "Seoul",
+      "name": "Incheon",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "id": "21a038db-b57a-458c-8534-23637f90edec",
+      "country": "Korea"
+    },
+    "to": {
+      "city": "Taipei",
+      "name": "Taoyuan",
+      "iata": "TPE",
+      "icao": "RCTP",
+      "lat": 25.07773,
+      "lng": 121.23282,
+      "id": "62f0a427-5098-4881-a815-df346cf1b81d",
+      "country": "Taiwan"
+    },
+    "departureTime": "14:00:00",
+    "arrivalTime": "15:35:00",
+    "duration": "02:35:00",
+    "airline": {
+      "name": "Asiana Airlines",
+      "iata": "OZ",
+      "icao": "AAR",
+      "id": "4db206f7-69df-4d4d-8051-ad93dbd5cdd9"
+    },
+    "aircraft": {
+      "name": "Boeing 767-300",
+      "icao": "B763",
+      "id": "d6aba8ab-3bc8-4964-952f-4dc72438af93"
+    },
+    "registration": "HL7248",
+    "seatNumber": "22H",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "95728b3b-b844-4066-9887-4e9097a24054",
+    "date": "2017-11-22",
+    "flightNumber": "OZ712",
+    "from": {
+      "city": "Taipei",
+      "name": "Taoyuan",
+      "iata": "TPE",
+      "icao": "RCTP",
+      "lat": 25.07773,
+      "lng": 121.23282,
+      "id": "62f0a427-5098-4881-a815-df346cf1b81d",
+      "country": "Taiwan"
+    },
+    "to": {
+      "city": "Seoul",
+      "name": "Incheon",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "id": "21a038db-b57a-458c-8534-23637f90edec",
+      "country": "Korea"
+    },
+    "departureTime": "13:00:00",
+    "arrivalTime": "16:30:00",
+    "duration": "02:30:00",
+    "airline": {
+      "name": "Asiana Airlines",
+      "iata": "OZ",
+      "icao": "AAR",
+      "id": "4db206f7-69df-4d4d-8051-ad93dbd5cdd9"
+    },
+    "aircraft": {
+      "name": "Airbus A330-300",
+      "icao": "A333",
+      "id": "91875bf0-f54d-4c7c-a18b-3cb072615170"
+    },
+    "registration": "HL7792",
+    "seatNumber": "16C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "4b89a940-d800-4d8b-941e-44f7e02714a3",
+    "date": "2017-11-28",
+    "flightNumber": "AY42",
+    "from": {
+      "city": "Seoul",
+      "name": "Incheon",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "id": "21a038db-b57a-458c-8534-23637f90edec",
+      "country": "Korea"
+    },
+    "to": {
+      "city": "Helsinki",
+      "name": "Vantaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "lat": 60.31722,
+      "lng": 24.96333,
+      "id": "ab696095-f853-4f64-a678-c7323d02494b",
+      "country": "Finland"
+    },
+    "departureTime": "11:05:00",
+    "arrivalTime": "14:10:00",
+    "duration": "10:05:00",
+    "airline": {
+      "name": "Finnair",
+      "iata": "AY",
+      "icao": "FIN",
+      "id": "240aa0e0-3008-4156-9833-13260aa51bf7"
+    },
+    "aircraft": {
+      "name": "Airbus A350-900",
+      "icao": "A359",
+      "id": "226877bc-cb90-4621-8664-4fc107b1f189"
+    },
+    "registration": "OH-LWF",
+    "seatNumber": "32C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "3fc5baa5-4966-4460-b3c1-8f0e5091aacd",
+    "date": "2017-11-28",
+    "flightNumber": "AY1255",
+    "from": {
+      "city": "Helsinki",
+      "name": "Vantaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "lat": 60.31722,
+      "lng": 24.96333,
+      "id": "ab696095-f853-4f64-a678-c7323d02494b",
+      "country": "Finland"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "17:10:00",
+    "arrivalTime": "18:30:00",
+    "duration": "02:20:00",
+    "airline": {
+      "name": "Finnair",
+      "iata": "AY",
+      "icao": "FIN",
+      "id": "240aa0e0-3008-4156-9833-13260aa51bf7"
+    },
+    "aircraft": {
+      "name": "Airbus A319",
+      "icao": "A319",
+      "id": "da8a11a9-50ce-4dc8-8914-b7b6420fafe3"
+    },
+    "registration": "OH-LVK",
+    "seatNumber": "11A",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "e48fe673-96dc-4a31-b2f7-fc1b35607254",
+    "date": "2017-12-03",
+    "flightNumber": "KL1976",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Amsterdam",
+      "name": "Schiphol",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "lat": 52.3103,
+      "lng": 4.76028,
+      "id": "51f399b4-b5a8-4178-be66-5b116ad056db",
+      "country": "The Netherlands"
+    },
+    "departureTime": "12:50:00",
+    "arrivalTime": "15:05:00",
+    "duration": "02:15:00",
+    "airline": {
+      "name": "KLM Royal Dutch Airlines",
+      "iata": "KL",
+      "icao": "KLM",
+      "id": "28d7305c-5a4b-4770-a125-46f77c78f95c"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "PH-BXU",
+    "seatNumber": "19C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "0a840ed8-4a4e-453b-a0a3-71af030ba417",
+    "date": "2017-12-08",
+    "flightNumber": "KL1979",
+    "from": {
+      "city": "Amsterdam",
+      "name": "Schiphol",
+      "iata": "AMS",
+      "icao": "EHAM",
+      "lat": 52.3103,
+      "lng": 4.76028,
+      "id": "51f399b4-b5a8-4178-be66-5b116ad056db",
+      "country": "The Netherlands"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "21:05:00",
+    "arrivalTime": "23:05:00",
+    "duration": "02:00:00",
+    "airline": {
+      "name": "KLM Royal Dutch Airlines",
+      "iata": "KL",
+      "icao": "KLM",
+      "id": "28d7305c-5a4b-4770-a125-46f77c78f95c"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "PH-BXD",
+    "seatNumber": "12C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "869d8897-43bf-43fd-ae6c-662c0aa088e6",
+    "date": "2018-01-08",
+    "flightNumber": "FR4091",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Prague",
+      "name": "Praha-Ruzyne",
+      "iata": "PRG",
+      "icao": "LKPR",
+      "lat": 50.10083,
+      "lng": 14.26,
+      "id": "398a2332-90ee-4961-b359-7fe1c08a5cfe",
+      "country": "Czechia"
+    },
+    "departureTime": "16:20:00",
+    "arrivalTime": "17:30:00",
+    "duration": "01:10:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "EI-FZN",
+    "seatNumber": "6F",
+    "seatType": "Window",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "6391d165-a1dc-4b0c-abe3-aff3a91b613e",
+    "date": "2018-01-10",
+    "flightNumber": "FR4092",
+    "from": {
+      "city": "Prague",
+      "name": "Praha-Ruzyne",
+      "iata": "PRG",
+      "icao": "LKPR",
+      "lat": 50.10083,
+      "lng": 14.26,
+      "id": "398a2332-90ee-4961-b359-7fe1c08a5cfe",
+      "country": "Czechia"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "17:20:00",
+    "arrivalTime": "18:30:00",
+    "duration": "01:10:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "EI-ESV",
+    "seatNumber": "26D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "ab0850a0-efec-4a81-8fcc-ebd4902d04bc",
+    "date": "2018-02-06",
+    "flightNumber": "FR605",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "departureTime": "19:30:00",
+    "arrivalTime": "21:30:00",
+    "duration": "02:00:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "EI-ENG",
+    "seatNumber": "24D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "b0c0c09c-f2b4-4de8-b831-7ec5d07baf3f",
+    "date": "2018-02-08",
+    "flightNumber": "FR604",
+    "from": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "21:55:00",
+    "arrivalTime": "23:45:00",
+    "duration": "01:50:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "EI-ENG",
+    "seatNumber": "24D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "c8a88a77-ad39-4e30-aa72-b50a74953cdb",
+    "date": "2018-02-14",
+    "flightNumber": "TK1038",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Istanbul",
+      "name": "Ataturk",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "lat": 40.97692,
+      "lng": 28.81461,
+      "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
+      "country": "Turkey"
+    },
+    "departureTime": "20:05:00",
+    "arrivalTime": "00:15:00",
+    "duration": "02:10:00",
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY",
+      "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "TC-JGP",
+    "seatNumber": "7C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "3fcf9211-34a3-4e40-b794-bd734f46dc7c",
+    "date": "2018-02-15",
+    "flightNumber": "TK90",
+    "from": {
+      "city": "Istanbul",
+      "name": "Ataturk",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "lat": 40.97692,
+      "lng": 28.81461,
+      "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
+      "country": "Turkey"
+    },
+    "to": {
+      "city": "Seoul",
+      "name": "Incheon",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "id": "21a038db-b57a-458c-8534-23637f90edec",
+      "country": "Korea"
+    },
+    "departureTime": "02:20:00",
+    "arrivalTime": "18:25:00",
+    "duration": "10:05:00",
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY",
+      "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+    },
+    "aircraft": {
+      "name": "Boeing 777-300ER",
+      "icao": "B77W",
+      "id": "29ab61ce-89e7-4f62-8b64-db4e01c5bba1"
+    },
+    "registration": "TC-JJE",
+    "seatNumber": "24C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "85c5c503-4933-4830-9ae7-352e308306ae",
+    "date": "2018-02-19",
+    "flightNumber": "TK89",
+    "from": {
+      "city": "Seoul",
+      "name": "Incheon",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "id": "21a038db-b57a-458c-8534-23637f90edec",
+      "country": "Korea"
+    },
+    "to": {
+      "city": "Istanbul",
+      "name": "Ataturk",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "lat": 40.97692,
+      "lng": 28.81461,
+      "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
+      "country": "Turkey"
+    },
+    "departureTime": "23:20:00",
+    "arrivalTime": "05:35:00",
+    "duration": "12:15:00",
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY",
+      "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+    },
+    "aircraft": {
+      "name": "Airbus A330-300",
+      "icao": "A333",
+      "id": "91875bf0-f54d-4c7c-a18b-3cb072615170"
+    },
+    "registration": "TC-JOA",
+    "seatNumber": "22B",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "d6943847-3098-45ba-acbf-c06a894c26b6",
+    "date": "2018-02-20",
+    "flightNumber": "TK1035",
+    "from": {
+      "city": "Istanbul",
+      "name": "Ataturk",
+      "iata": "ISL",
+      "icao": "LTBA",
+      "lat": 40.97692,
+      "lng": 28.81461,
+      "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
+      "country": "Turkey"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "08:20:00",
+    "arrivalTime": "08:20:00",
+    "duration": "02:00:00",
+    "airline": {
+      "name": "Turkish Airlines",
+      "iata": "TK",
+      "icao": "THY",
+      "id": "62700157-fad0-472a-8cbd-3913f85f1079"
+    },
+    "aircraft": {
+      "name": "Boeing 737-900",
+      "icao": "B739",
+      "id": "34e9ecd6-30cb-4f74-b4bb-ed2f3a9878c5"
+    },
+    "registration": "TC-JYE",
+    "seatNumber": "6D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "31a52079-8c96-449c-ab7e-9be0df9a30e4",
+    "date": "2018-02-25",
+    "flightNumber": "FR4091",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Prague",
+      "name": "Praha-Ruzyne",
+      "iata": "PRG",
+      "icao": "LKPR",
+      "lat": 50.10083,
+      "lng": 14.26,
+      "id": "398a2332-90ee-4961-b359-7fe1c08a5cfe",
+      "country": "Czechia"
+    },
+    "departureTime": "16:25:00",
+    "arrivalTime": "17:35:00",
+    "duration": "01:10:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "EI-ENW",
+    "seatNumber": "28D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "4439c539-9b64-44c3-ba5a-dbd378720099",
+    "date": "2018-02-26",
+    "flightNumber": "FR4092",
+    "from": {
+      "city": "Prague",
+      "name": "Praha-Ruzyne",
+      "iata": "PRG",
+      "icao": "LKPR",
+      "lat": 50.10083,
+      "lng": 14.26,
+      "id": "398a2332-90ee-4961-b359-7fe1c08a5cfe",
+      "country": "Czechia"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "17:55:00",
+    "arrivalTime": "19:05:00",
+    "duration": "01:10:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "EI-EKT",
+    "seatNumber": "27D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "36725b9f-d209-404d-b6c0-0f924a7a66cc",
+    "date": "2018-04-08",
+    "flightNumber": "AY1252",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Helsinki",
+      "name": "Vantaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "lat": 60.31722,
+      "lng": 24.96333,
+      "id": "ab696095-f853-4f64-a678-c7323d02494b",
+      "country": "Finland"
+    },
+    "departureTime": "11:40:00",
+    "arrivalTime": "15:00:00",
+    "duration": "02:20:00",
+    "airline": {
+      "name": "Finnair",
+      "iata": "AY",
+      "icao": "FIN",
+      "id": "240aa0e0-3008-4156-9833-13260aa51bf7"
+    },
+    "aircraft": {
+      "name": "Airbus A319",
+      "icao": "A319",
+      "id": "da8a11a9-50ce-4dc8-8914-b7b6420fafe3"
+    },
+    "registration": "OH-LVK",
+    "seatNumber": "7D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "8021bac3-39f6-4356-86f8-77b10e6adda7",
+    "date": "2018-04-08",
+    "flightNumber": "AY41",
+    "from": {
+      "city": "Helsinki",
+      "name": "Vantaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "lat": 60.31722,
+      "lng": 24.96333,
+      "id": "ab696095-f853-4f64-a678-c7323d02494b",
+      "country": "Finland"
+    },
+    "to": {
+      "city": "Seoul",
+      "name": "Incheon",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "id": "21a038db-b57a-458c-8534-23637f90edec",
+      "country": "Korea"
+    },
+    "departureTime": "17:30:00",
+    "arrivalTime": "08:20:00",
+    "duration": "08:50:00",
+    "airline": {
+      "name": "Finnair",
+      "iata": "AY",
+      "icao": "FIN",
+      "id": "240aa0e0-3008-4156-9833-13260aa51bf7"
+    },
+    "aircraft": {
+      "name": "Airbus A350-900",
+      "icao": "A359",
+      "id": "226877bc-cb90-4621-8664-4fc107b1f189"
+    },
+    "registration": "OH-LWI",
+    "seatNumber": "33C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "ca5aebe5-f46d-4f7f-b953-67b1fed7dbd1",
+    "date": "2018-04-20",
+    "flightNumber": "AY42",
+    "from": {
+      "city": "Seoul",
+      "name": "Incheon",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "id": "21a038db-b57a-458c-8534-23637f90edec",
+      "country": "Korea"
+    },
+    "to": {
+      "city": "Helsinki",
+      "name": "Vantaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "lat": 60.31722,
+      "lng": 24.96333,
+      "id": "ab696095-f853-4f64-a678-c7323d02494b",
+      "country": "Finland"
+    },
+    "departureTime": "10:20:00",
+    "arrivalTime": "13:55:00",
+    "duration": "09:35:00",
+    "airline": {
+      "name": "Finnair",
+      "iata": "AY",
+      "icao": "FIN",
+      "id": "240aa0e0-3008-4156-9833-13260aa51bf7"
+    },
+    "aircraft": {
+      "name": "Airbus A350-900",
+      "icao": "A359",
+      "id": "226877bc-cb90-4621-8664-4fc107b1f189"
+    },
+    "registration": "OH-LWI",
+    "seatNumber": "33C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "356e9365-d7f7-42d9-8d86-0855599bf6f9",
+    "date": "2018-04-20",
+    "flightNumber": "AY1255",
+    "from": {
+      "city": "Helsinki",
+      "name": "Vantaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "lat": 60.31722,
+      "lng": 24.96333,
+      "id": "ab696095-f853-4f64-a678-c7323d02494b",
+      "country": "Finland"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "16:45:00",
+    "arrivalTime": "18:05:00",
+    "duration": "02:20:00",
+    "airline": {
+      "name": "Finnair",
+      "iata": "AY",
+      "icao": "FIN",
+      "id": "240aa0e0-3008-4156-9833-13260aa51bf7"
+    },
+    "aircraft": {
+      "name": "Airbus A319",
+      "icao": "A319",
+      "id": "da8a11a9-50ce-4dc8-8914-b7b6420fafe3"
+    },
+    "registration": "OH-LVK",
+    "seatNumber": "8C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "076f9d9b-3933-404c-a52e-e79f49b1ee49",
+    "date": "2018-05-09",
+    "flightNumber": "FR4091",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Prague",
+      "name": "Praha-Ruzyne",
+      "iata": "PRG",
+      "icao": "LKPR",
+      "lat": 50.10083,
+      "lng": 14.26,
+      "id": "398a2332-90ee-4961-b359-7fe1c08a5cfe",
+      "country": "Czechia"
+    },
+    "departureTime": "19:30:00",
+    "arrivalTime": "20:40:00",
+    "duration": "01:10:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "EI-DHV",
+    "seatNumber": "28C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "893ce4e1-d93e-4a64-a49a-10d816abe222",
+    "date": "2018-05-10",
+    "flightNumber": "FR4092",
+    "from": {
+      "city": "Prague",
+      "name": "Praha-Ruzyne",
+      "iata": "PRG",
+      "icao": "LKPR",
+      "lat": 50.10083,
+      "lng": 14.26,
+      "id": "398a2332-90ee-4961-b359-7fe1c08a5cfe",
+      "country": "Czechia"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "21:05:00",
+    "arrivalTime": "22:15:00",
+    "duration": "01:10:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "EI-DHV",
+    "seatNumber": "28C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "d486c43e-48cb-46ea-80eb-9880c9d6e6d9",
+    "date": "2018-05-31",
+    "flightNumber": "AY1252",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Helsinki",
+      "name": "Vantaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "lat": 60.31722,
+      "lng": 24.96333,
+      "id": "ab696095-f853-4f64-a678-c7323d02494b",
+      "country": "Finland"
+    },
+    "departureTime": "11:40:00",
+    "arrivalTime": "15:00:00",
+    "duration": "02:20:00",
+    "airline": {
+      "name": "Finnair",
+      "iata": "AY",
+      "icao": "FIN",
+      "id": "240aa0e0-3008-4156-9833-13260aa51bf7"
+    },
+    "aircraft": {
+      "name": "Airbus A321",
+      "icao": "A321",
+      "id": "7fe5c108-b947-495f-ac3e-2380a586b393"
+    },
+    "registration": "OH-LZN",
+    "seatNumber": "6D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "4a32255f-bfe5-4291-b262-a2a56669ca5a",
+    "date": "2018-05-31",
+    "flightNumber": "AY41",
+    "from": {
+      "city": "Helsinki",
+      "name": "Vantaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "lat": 60.31722,
+      "lng": 24.96333,
+      "id": "ab696095-f853-4f64-a678-c7323d02494b",
+      "country": "Finland"
+    },
+    "to": {
+      "city": "Seoul",
+      "name": "Incheon",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "id": "21a038db-b57a-458c-8534-23637f90edec",
+      "country": "Korea"
+    },
+    "departureTime": "17:30:00",
+    "arrivalTime": "08:20:00",
+    "duration": "08:50:00",
+    "airline": {
+      "name": "Finnair",
+      "iata": "AY",
+      "icao": "FIN",
+      "id": "240aa0e0-3008-4156-9833-13260aa51bf7"
+    },
+    "aircraft": {
+      "name": "Airbus A350-900",
+      "icao": "A359",
+      "id": "226877bc-cb90-4621-8664-4fc107b1f189"
+    },
+    "registration": "OH-LWI",
+    "seatNumber": "33C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "4ece7bf5-b89a-49a3-ba88-59e2308c5080",
+    "date": "2018-06-04",
+    "flightNumber": "OZ114",
+    "from": {
+      "city": "Seoul",
+      "name": "Incheon",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "id": "21a038db-b57a-458c-8534-23637f90edec",
+      "country": "Korea"
+    },
+    "to": {
+      "city": "Osaka",
+      "name": "Kansai",
+      "iata": "KIX",
+      "icao": "RJBB",
+      "lat": 34.42731,
+      "lng": 135.24407,
+      "id": "f5e985f7-fe84-4f38-adb2-126adb0e9d95",
+      "country": "Japan"
+    },
+    "departureTime": "14:05:00",
+    "arrivalTime": "15:50:00",
+    "duration": "01:45:00",
+    "airline": {
+      "name": "Asiana Airlines",
+      "iata": "OZ",
+      "icao": "AAR",
+      "id": "4db206f7-69df-4d4d-8051-ad93dbd5cdd9"
+    },
+    "aircraft": {
+      "name": "Boeing 767-300",
+      "icao": "B763",
+      "id": "d6aba8ab-3bc8-4964-952f-4dc72438af93"
+    },
+    "registration": "HL7516",
+    "seatNumber": "20C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "8ee87eb4-b1ed-40cf-8fc9-7d0dc1cf84ab",
+    "date": "2018-06-07",
+    "flightNumber": "AY78",
+    "from": {
+      "city": "Osaka",
+      "name": "Kansai",
+      "iata": "KIX",
+      "icao": "RJBB",
+      "lat": 34.42731,
+      "lng": 135.24407,
+      "id": "f5e985f7-fe84-4f38-adb2-126adb0e9d95",
+      "country": "Japan"
+    },
+    "to": {
+      "city": "Helsinki",
+      "name": "Vantaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "lat": 60.31722,
+      "lng": 24.96333,
+      "id": "ab696095-f853-4f64-a678-c7323d02494b",
+      "country": "Finland"
+    },
+    "departureTime": "10:45:00",
+    "arrivalTime": "14:45:00",
+    "duration": "10:00:00",
+    "airline": {
+      "name": "Finnair",
+      "iata": "AY",
+      "icao": "FIN",
+      "id": "240aa0e0-3008-4156-9833-13260aa51bf7"
+    },
+    "aircraft": {
+      "name": "Airbus A350-900",
+      "icao": "A359",
+      "id": "226877bc-cb90-4621-8664-4fc107b1f189"
+    },
+    "registration": "OH-LWD",
+    "seatNumber": "6A",
+    "seatType": "Window",
+    "flightClass": "Business",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "5786ad37-9f65-493d-bca3-fc968c572c9f",
+    "date": "2018-06-07",
+    "flightNumber": "AY1267",
+    "from": {
+      "city": "Helsinki",
+      "name": "Vantaa",
+      "iata": "HEL",
+      "icao": "EFHK",
+      "lat": 60.31722,
+      "lng": 24.96333,
+      "id": "ab696095-f853-4f64-a678-c7323d02494b",
+      "country": "Finland"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "22:10:00",
+    "arrivalTime": "23:40:00",
+    "duration": "02:30:00",
+    "airline": {
+      "name": "Finnair",
+      "iata": "AY",
+      "icao": "FIN",
+      "id": "240aa0e0-3008-4156-9833-13260aa51bf7"
+    },
+    "aircraft": {
+      "name": "Airbus A319",
+      "icao": "A319",
+      "id": "da8a11a9-50ce-4dc8-8914-b7b6420fafe3"
+    },
+    "registration": "OH-LVL",
+    "seatNumber": "6D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "71898272-5fb5-4774-9173-a9662815077b",
+    "date": "2018-07-31",
+    "flightNumber": "FR4091",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Prague",
+      "name": "Praha-Ruzyne",
+      "iata": "PRG",
+      "icao": "LKPR",
+      "lat": 50.10083,
+      "lng": 14.26,
+      "id": "398a2332-90ee-4961-b359-7fe1c08a5cfe",
+      "country": "Czechia"
+    },
+    "departureTime": "13:15:00",
+    "arrivalTime": "14:25:00",
+    "duration": "01:10:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "EI-EVF",
+    "seatNumber": "28D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "27b0eaca-d7b5-4b07-8972-f8f066a5e0d4",
+    "date": "2018-08-01",
+    "flightNumber": "FR4092",
+    "from": {
+      "city": "Prague",
+      "name": "Praha-Ruzyne",
+      "iata": "PRG",
+      "icao": "LKPR",
+      "lat": 50.10083,
+      "lng": 14.26,
+      "id": "398a2332-90ee-4961-b359-7fe1c08a5cfe",
+      "country": "Czechia"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "21:05:00",
+    "arrivalTime": "22:15:00",
+    "duration": "01:10:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "EI-EVF",
+    "seatNumber": "25D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Business",
+    "note": ""
+  },
+  {
+    "id": "811a82ac-9c36-4ab7-b0df-7ceb8274950d",
+    "date": "2018-08-14",
+    "flightNumber": "7O5046",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Iraklion",
+      "name": "Nikos Kazantzakis",
+      "iata": "HER",
+      "icao": "LGIR",
+      "lat": 35.33907,
+      "lng": 25.17513,
+      "id": "963ac2ba-5400-4d5e-a3e6-cf0f7db62b14",
+      "country": "Greece"
+    },
+    "departureTime": "20:05:00",
+    "arrivalTime": "23:20:00",
+    "duration": "02:15:00",
+    "airline": {
+      "name": "Travel Service",
+      "iata": "7O",
+      "icao": "TVL",
+      "id": "58b73020-3e19-41d6-b657-31800a2b2045"
+    },
+    "aircraft": {
+      "name": "Boeing 737-700",
+      "icao": "B737",
+      "id": "d0000724-6455-4915-9f20-27f606b3d8a9"
+    },
+    "registration": "HA-LKG",
+    "seatNumber": "1C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "5da34d81-059c-4bae-b765-6f3e4b1b5d73",
+    "date": "2018-08-22",
+    "flightNumber": "7O5047",
+    "from": {
+      "city": "Iraklion",
+      "name": "Nikos Kazantzakis",
+      "iata": "HER",
+      "icao": "LGIR",
+      "lat": 35.33907,
+      "lng": 25.17513,
+      "id": "963ac2ba-5400-4d5e-a3e6-cf0f7db62b14",
+      "country": "Greece"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "00:10:00",
+    "arrivalTime": "01:35:00",
+    "duration": "02:25:00",
+    "airline": {
+      "name": "Travel Service",
+      "iata": "7O",
+      "icao": "TVL",
+      "id": "58b73020-3e19-41d6-b657-31800a2b2045"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "OK-TVJ",
+    "seatNumber": "16D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "7ce6fa0d-99f9-4c6f-b5a9-e7f0eb4f13c8",
+    "date": "2018-11-17",
+    "flightNumber": "FR4091",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Prague",
+      "name": "Praha-Ruzyne",
+      "iata": "PRG",
+      "icao": "LKPR",
+      "lat": 50.10083,
+      "lng": 14.26,
+      "id": "398a2332-90ee-4961-b359-7fe1c08a5cfe",
+      "country": "Czechia"
+    },
+    "departureTime": "10:35:00",
+    "arrivalTime": "11:45:00",
+    "duration": "01:10:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "EI-DLE",
+    "seatNumber": "28D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "122d75cf-5937-4034-a541-8cb08f237bbc",
+    "date": "2018-11-19",
+    "flightNumber": "FR4092",
+    "from": {
+      "city": "Prague",
+      "name": "Praha-Ruzyne",
+      "iata": "PRG",
+      "icao": "LKPR",
+      "lat": 50.10083,
+      "lng": 14.26,
+      "id": "398a2332-90ee-4961-b359-7fe1c08a5cfe",
+      "country": "Czechia"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "17:25:00",
+    "arrivalTime": "18:35:00",
+    "duration": "01:10:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "EI-DPT",
+    "seatNumber": "28D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "053ff535-4e98-400e-bdec-79102ecd5e80",
+    "date": "2018-12-15",
+    "flightNumber": "FR4090",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Naples",
+      "name": "Capodichino",
+      "iata": "NAP",
+      "icao": "LIRN",
+      "lat": 40.88603,
+      "lng": 14.29078,
+      "id": "b09bd9ca-6cae-462f-ac4f-392e9fb00805",
+      "country": "Italy"
+    },
+    "departureTime": "06:25:00",
+    "arrivalTime": "08:05:00",
+    "duration": "01:40:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "EI-FIT",
+    "seatNumber": "30D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "51bdcbf0-92ab-4ff0-b646-9957ab62f003",
+    "date": "2018-12-18",
+    "flightNumber": "FR4089",
+    "from": {
+      "city": "Naples",
+      "name": "Capodichino",
+      "iata": "NAP",
+      "icao": "LIRN",
+      "lat": 40.88603,
+      "lng": 14.29078,
+      "id": "b09bd9ca-6cae-462f-ac4f-392e9fb00805",
+      "country": "Italy"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "08:35:00",
+    "arrivalTime": "10:15:00",
+    "duration": "01:40:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "EI-GDW",
+    "seatNumber": "30C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "ac2d45a4-7043-4118-92be-1e10efca6af2",
+    "date": "2019-12-03",
+    "flightNumber": "W62375",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Barcelona",
+      "name": "El Prat",
+      "iata": "BCN",
+      "icao": "LEBL",
+      "lat": 41.29708,
+      "lng": 2.07846,
+      "id": "016d0cca-7d5b-4394-a7cb-c6761d0da475",
+      "country": "Spain"
+    },
+    "departureTime": "06:05:00",
+    "arrivalTime": "08:40:00",
+    "duration": "02:35:00",
+    "airline": {
+      "name": "Wizz Air",
+      "iata": "W6",
+      "icao": "WZZ",
+      "id": "a4d91507-e330-4656-911a-296f51a5e7cd"
+    },
+    "aircraft": {
+      "name": "Airbus A321neo",
+      "icao": "A21N",
+      "id": "7632b463-8e49-4a65-9436-1df432ebbf4c"
+    },
+    "registration": "HA-LVC",
+    "seatNumber": "16C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "eddae990-a841-4b59-afbc-41959947dccb",
+    "date": "2019-12-07",
+    "flightNumber": "W62376",
+    "from": {
+      "city": "Barcelona",
+      "name": "El Prat",
+      "iata": "BCN",
+      "icao": "LEBL",
+      "lat": 41.29708,
+      "lng": 2.07846,
+      "id": "016d0cca-7d5b-4394-a7cb-c6761d0da475",
+      "country": "Spain"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "09:20:00",
+    "arrivalTime": "12:00:00",
+    "duration": "02:40:00",
+    "airline": {
+      "name": "Wizz Air",
+      "iata": "W6",
+      "icao": "WZZ",
+      "id": "a4d91507-e330-4656-911a-296f51a5e7cd"
+    },
+    "aircraft": {
+      "name": "Airbus A321neo",
+      "icao": "A21N",
+      "id": "7632b463-8e49-4a65-9436-1df432ebbf4c"
+    },
+    "registration": "HA-LVC",
+    "seatNumber": "16C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "e6086c4b-5f1a-469a-a349-e13c2d07cff9",
+    "date": "2021-10-04",
+    "flightNumber": "LO2001",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Seoul",
+      "name": "Incheon",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "id": "21a038db-b57a-458c-8534-23637f90edec",
+      "country": "Korea"
+    },
+    "departureTime": "15:15:00",
+    "arrivalTime": "08:55:00",
+    "duration": "10:40:00",
+    "airline": {
+      "name": "LOT",
+      "iata": "LO",
+      "icao": "LOT",
+      "id": "412553e7-7fa3-41df-8e3b-44eb442a48d5"
+    },
+    "aircraft": {
+      "name": "Boeing 787-8",
+      "icao": "B788",
+      "id": "0e2ca15f-1408-42ce-8174-031ede28129d"
+    },
+    "registration": "SP-LRC",
+    "seatNumber": "26G",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "9e45d522-34c8-4363-9951-b4bbe14372e2",
+    "date": "2022-02-03",
+    "flightNumber": "LO98",
+    "from": {
+      "city": "Seoul",
+      "name": "Incheon",
+      "iata": "ICN",
+      "icao": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "id": "21a038db-b57a-458c-8534-23637f90edec",
+      "country": "Korea"
+    },
+    "to": {
+      "city": "Warsaw",
+      "name": "Chopin",
+      "iata": "WAW",
+      "icao": "EPWA",
+      "lat": 52.16575,
+      "lng": 20.96712,
+      "id": "93240106-5992-4f39-97c5-91794b4776f1",
+      "country": "Poland"
+    },
+    "departureTime": "11:40:00",
+    "arrivalTime": "14:35:00",
+    "duration": "09:55:00",
+    "airline": {
+      "name": "LOT",
+      "iata": "LO",
+      "icao": "LOT",
+      "id": "412553e7-7fa3-41df-8e3b-44eb442a48d5"
+    },
+    "aircraft": {
+      "name": "Boeing 787-8",
+      "icao": "B788",
+      "id": "0e2ca15f-1408-42ce-8174-031ede28129d"
+    },
+    "registration": "SP-LRD",
+    "seatNumber": "22G",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "47b07c0a-c682-4c51-b033-b06f384e0ae8",
+    "date": "2022-02-03",
+    "flightNumber": "LO537",
+    "from": {
+      "city": "Warsaw",
+      "name": "Chopin",
+      "iata": "WAW",
+      "icao": "EPWA",
+      "lat": 52.16575,
+      "lng": 20.96712,
+      "id": "93240106-5992-4f39-97c5-91794b4776f1",
+      "country": "Poland"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "16:00:00",
+    "arrivalTime": "17:25:00",
+    "duration": "01:25:00",
+    "airline": {
+      "name": "LOT",
+      "iata": "LO",
+      "icao": "LOT",
+      "id": "412553e7-7fa3-41df-8e3b-44eb442a48d5"
+    },
+    "aircraft": {
+      "name": "Embraer ERJ-195",
+      "icao": "E195",
+      "id": "7a3dbd19-9a86-4e0b-90d0-f9fd06e265ac"
+    },
+    "registration": "SP-LNP",
+    "seatNumber": "13C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "0d87f5e8-b3ce-4aa1-97d4-197b02577813",
+    "date": "2022-04-22",
+    "flightNumber": "FR605",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "departureTime": "19:50:00",
+    "arrivalTime": "21:45:00",
+    "duration": "01:55:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "SP-RSR",
+    "seatNumber": "12D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "1c8680cd-4741-49ca-96b7-f8effb195cdc",
+    "date": "2022-04-26",
+    "flightNumber": "FR604",
+    "from": {
+      "city": "Copenhagen",
+      "name": "Kastrup",
+      "iata": "CPH",
+      "icao": "EKCH",
+      "lat": 55.61792,
+      "lng": 12.65597,
+      "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
+      "country": "Denmark"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "21:10:00",
+    "arrivalTime": "22:55:00",
+    "duration": "01:45:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "SP-RKT",
+    "seatNumber": "15D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "7f456586-2399-481d-995a-90c7c4bb76ae",
+    "date": "2023-05-12",
+    "flightNumber": "7O5436",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Monastir",
+      "name": "Habib Bourguiba",
+      "iata": "MIR",
+      "icao": "DTMB",
+      "lat": 35.75806,
+      "lng": 10.75472,
+      "id": "74b56fa0-19a0-43c4-9e42-c9853394dc2e",
+      "country": "Tunisia"
+    },
+    "departureTime": "08:00:00",
+    "arrivalTime": "09:25:00",
+    "duration": "02:25:00",
+    "airline": {
+      "name": "Travel Service",
+      "iata": "7O",
+      "icao": "TVL",
+      "id": "58b73020-3e19-41d6-b657-31800a2b2045"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "OM-TSG",
+    "seatNumber": "18C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "2fb22ce0-8750-4aa7-8883-ed2059264ca5",
+    "date": "2023-05-19",
+    "flightNumber": "7O5437",
+    "from": {
+      "city": "Monastir",
+      "name": "Habib Bourguiba",
+      "iata": "MIR",
+      "icao": "DTMB",
+      "lat": 35.75806,
+      "lng": 10.75472,
+      "id": "74b56fa0-19a0-43c4-9e42-c9853394dc2e",
+      "country": "Tunisia"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "10:15:00",
+    "arrivalTime": "13:45:00",
+    "duration": "02:30:00",
+    "airline": {
+      "name": "Travel Service",
+      "iata": "7O",
+      "icao": "TVL",
+      "id": "58b73020-3e19-41d6-b657-31800a2b2045"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "OK-TVO",
+    "seatNumber": "4D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "d21b2b18-192c-4b28-a500-4499a91f4748",
+    "date": "2023-06-27",
+    "flightNumber": "7O5008",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Chania",
+      "name": "Souda",
+      "iata": "CHQ",
+      "icao": "LGSA",
+      "lat": 35.53175,
+      "lng": 24.14968,
+      "id": "31884fff-08fe-479f-a834-bde21db26908",
+      "country": "Greece"
+    },
+    "departureTime": "05:00:00",
+    "arrivalTime": "08:40:00",
+    "duration": "02:40:00",
+    "airline": {
+      "name": "Travel Service",
+      "iata": "7O",
+      "icao": "TVL",
+      "id": "58b73020-3e19-41d6-b657-31800a2b2045"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "OK-TVO",
+    "seatNumber": "17C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "ae57c523-e5fb-483e-82f7-775470301b1c",
+    "date": "2023-07-04",
+    "flightNumber": "7O5009",
+    "from": {
+      "city": "Chania",
+      "name": "Souda",
+      "iata": "CHQ",
+      "icao": "LGSA",
+      "lat": 35.53175,
+      "lng": 24.14968,
+      "id": "31884fff-08fe-479f-a834-bde21db26908",
+      "country": "Greece"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "09:30:00",
+    "arrivalTime": "11:10:00",
+    "duration": "02:40:00",
+    "airline": {
+      "name": "Travel Service",
+      "iata": "7O",
+      "icao": "TVL",
+      "id": "58b73020-3e19-41d6-b657-31800a2b2045"
+    },
+    "aircraft": {
+      "name": "Airbus A320",
+      "icao": "A320",
+      "id": "738532da-7c28-4b53-9610-5968b8a61961"
+    },
+    "registration": "LY-WSM",
+    "seatNumber": "13D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "ed070e30-2dcd-42e2-8825-2d4e2f10c66a",
+    "date": "2023-10-16",
+    "flightNumber": "FR2277",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Malta",
+      "name": "Luqa",
+      "iata": "MLA",
+      "icao": "LMML",
+      "lat": 35.8575,
+      "lng": 14.47722,
+      "id": "476c0906-03ab-4353-acc8-a52b37667429",
+      "country": "Malta"
+    },
+    "departureTime": "18:55:00",
+    "arrivalTime": "21:10:00",
+    "duration": "02:15:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737-800",
+      "icao": "B738",
+      "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+    },
+    "registration": "SP-RSK",
+    "seatNumber": "28C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "75f70966-6632-458f-b21c-dc0e8022070f",
+    "date": "2023-10-20",
+    "flightNumber": "FR2278",
+    "from": {
+      "city": "Malta",
+      "name": "Luqa",
+      "iata": "MLA",
+      "icao": "LMML",
+      "lat": 35.8575,
+      "lng": 14.47722,
+      "id": "476c0906-03ab-4353-acc8-a52b37667429",
+      "country": "Malta"
+    },
+    "to": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "departureTime": "13:05:00",
+    "arrivalTime": "15:20:00",
+    "duration": "02:15:00",
+    "airline": {
+      "name": "Ryanair",
+      "iata": "FR",
+      "icao": "RYR",
+      "id": "9838d263-e6bc-4923-a3ce-a5546ebcc140"
+    },
+    "aircraft": {
+      "name": "Boeing 737 MAX 8",
+      "icao": "B38M",
+      "id": "759666c0-4293-441c-a1c0-f2b74bc5927f"
+    },
+    "registration": "9H-VUX",
+    "seatNumber": "28C",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "1ee3c715-f240-4503-8099-73f7abda9191",
+    "date": "2023-12-16",
+    "flightNumber": "A3877",
+    "from": {
+      "city": "Budapest",
+      "name": "Franz Liszt International",
+      "iata": "BUD",
+      "icao": "LHBP",
+      "lat": 47.43693,
+      "lng": 19.25559,
+      "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
+      "country": "Hungary"
+    },
+    "to": {
+      "city": "Athens",
+      "name": "Eleftherios Venizelos",
+      "iata": "ATH",
+      "icao": "LGAV",
+      "lat": 37.93636,
+      "lng": 23.94447,
+      "id": "2dcc4e3e-790c-4f74-bd7e-746762f64a7d",
+      "country": "Greece"
+    },
+    "departureTime": "10:45:00",
+    "arrivalTime": "13:45:00",
+    "duration": "02:00:00",
+    "airline": {
+      "name": "Aegean Airlines",
+      "iata": "A3",
+      "icao": "AEE",
+      "id": "ff7a9a3d-c8cd-478b-87a8-1956db5d7cee"
+    },
+    "aircraft": {
+      "name": "Airbus A320",
+      "icao": "A320",
+      "id": "738532da-7c28-4b53-9610-5968b8a61961"
+    },
+    "registration": "SX-DVR",
+    "seatNumber": "18D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  },
+  {
+    "id": "347f4474-137a-4c17-bfac-48b05c82d471",
+    "date": "2023-12-16",
+    "flightNumber": "A3336",
+    "from": {
+      "city": "Athens",
+      "name": "Eleftherios Venizelos",
+      "iata": "ATH",
+      "icao": "LGAV",
+      "lat": 37.93636,
+      "lng": 23.94447,
+      "id": "2dcc4e3e-790c-4f74-bd7e-746762f64a7d",
+      "country": "Greece"
+    },
+    "to": {
+      "city": "Chania",
+      "name": "Souda",
+      "iata": "CHQ",
+      "icao": "LGSA",
+      "lat": 35.53175,
+      "lng": 24.14968,
+      "id": "31884fff-08fe-479f-a834-bde21db26908",
+      "country": "Greece"
+    },
+    "departureTime": "17:05:00",
+    "arrivalTime": "17:55:00",
+    "duration": "00:50:00",
+    "airline": {
+      "name": "Aegean Airlines",
+      "iata": "A3",
+      "icao": "AEE",
+      "id": "ff7a9a3d-c8cd-478b-87a8-1956db5d7cee"
+    },
+    "aircraft": {
+      "name": "Airbus A320",
+      "icao": "A320",
+      "id": "738532da-7c28-4b53-9610-5968b8a61961"
+    },
+    "registration": "SX-DVL",
+    "seatNumber": "19D",
+    "seatType": "Aisle",
+    "flightClass": "Economy",
+    "flightReason": "Leisure",
+    "note": ""
+  }
+]

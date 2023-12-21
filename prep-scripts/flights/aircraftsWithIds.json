@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Boeing 737-500",
+    "icao": "B735",
+    "id": "a213973a-b756-4fef-97d3-cd56298a53ae"
+  },
+  {
+    "name": "Boeing 737",
+    "icao": "B73X",
+    "id": "7c16dc0d-3116-4d03-b90a-d6680206b364"
+  },
+  {
+    "name": "Boeing 737-700",
+    "icao": "B737",
+    "id": "d0000724-6455-4915-9f20-27f606b3d8a9"
+  },
+  {
+    "name": "Fokker 70",
+    "icao": "F70",
+    "id": "5de7d576-e4ef-442b-9f43-866342f3827c"
+  },
+  {
+    "name": "Airbus A320",
+    "icao": "A320",
+    "id": "738532da-7c28-4b53-9610-5968b8a61961"
+  },
+  {
+    "name": "Boeing 737-800",
+    "icao": "B738",
+    "id": "d423aba5-005f-4a4b-9cf7-23407d8e0cfc"
+  },
+  {
+    "name": "McDonnell Douglas MD-82",
+    "icao": "MD82",
+    "id": "1136d838-3ca0-4ce3-97c2-6d595e096739"
+  },
+  {
+    "name": "Airbus A319",
+    "icao": "A319",
+    "id": "da8a11a9-50ce-4dc8-8914-b7b6420fafe3"
+  },
+  {
+    "name": "Boeing 777-300ER",
+    "icao": "B77W",
+    "id": "29ab61ce-89e7-4f62-8b64-db4e01c5bba1"
+  },
+  {
+    "name": "Boeing 777-200LR",
+    "icao": "B77L",
+    "id": "03fd5379-2b2e-49d8-94d1-2591f4865971"
+  },
+  {
+    "name": "Embraer ERJ-170",
+    "icao": "E170",
+    "id": "e78e8c3d-27c6-49fc-800d-f5c6b9f91a0c"
+  },
+  {
+    "name": "Airbus A321",
+    "icao": "A321",
+    "id": "7fe5c108-b947-495f-ac3e-2380a586b393"
+  },
+  {
+    "name": "Airbus A330-200",
+    "icao": "A332",
+    "id": "9cffdb52-18c5-4c70-b9ac-5516de3b37c1"
+  },
+  {
+    "name": "Boeing 747-8",
+    "icao": "B748",
+    "id": "25a68a16-3ab8-4cb1-9f05-fece291f845f"
+  },
+  {
+    "name": "Boeing 777-200",
+    "icao": "B772",
+    "id": "a05badda-b334-45e6-bb4d-9130486b21a7"
+  },
+  {
+    "name": "Boeing 777-300",
+    "icao": "B773",
+    "id": "59a18d99-1d0c-4c54-9704-3ef77114d197"
+  },
+  {
+    "name": "Boeing 787-8",
+    "icao": "B788",
+    "id": "0e2ca15f-1408-42ce-8174-031ede28129d"
+  },
+  {
+    "name": "Bombardier CRJ-900",
+    "icao": "CRJ9",
+    "id": "2e28b239-254e-4f89-8c7f-3766b1dd0a4d"
+  },
+  {
+    "name": "Airbus A330-300",
+    "icao": "A333",
+    "id": "91875bf0-f54d-4c7c-a18b-3cb072615170"
+  },
+  {
+    "name": "Embraer ERJ-190",
+    "icao": "E190",
+    "id": "ea19c1fe-2c05-444c-bc7e-5bec35bf6f85"
+  },
+  {
+    "name": "Airbus A340-300",
+    "icao": "A343",
+    "id": "33a8da29-4302-40c8-89c9-502f3907dbc1"
+  },
+  {
+    "name": "Airbus A350-900",
+    "icao": "A359",
+    "id": "226877bc-cb90-4621-8664-4fc107b1f189"
+  },
+  {
+    "name": "Boeing 767-300",
+    "icao": "B763",
+    "id": "d6aba8ab-3bc8-4964-952f-4dc72438af93"
+  },
+  {
+    "name": "Boeing 737-900",
+    "icao": "B739",
+    "id": "34e9ecd6-30cb-4f74-b4bb-ed2f3a9878c5"
+  },
+  {
+    "name": "Airbus A321neo",
+    "icao": "A21N",
+    "id": "7632b463-8e49-4a65-9436-1df432ebbf4c"
+  },
+  {
+    "name": "Embraer ERJ-195",
+    "icao": "E195",
+    "id": "7a3dbd19-9a86-4e0b-90d0-f9fd06e265ac"
+  },
+  {
+    "name": "Boeing 737 MAX 8",
+    "icao": "B38M",
+    "id": "759666c0-4293-441c-a1c0-f2b74bc5927f"
+  }
+]
