@@ -1,110 +1,110 @@
 [
   {
     "name": "Boeing 737-500",
-    "abbreviation": "B735"
+    "icao": "B735"
   },
   {
     "name": "Boeing 737",
-    "abbreviation": "B73X"
+    "icao": "B73X"
   },
   {
     "name": "Boeing 737-700",
-    "abbreviation": "B737"
+    "icao": "B737"
   },
   {
     "name": "Fokker 70",
-    "abbreviation": "F70"
+    "icao": "F70"
   },
   {
     "name": "Airbus A320",
-    "abbreviation": "A320"
+    "icao": "A320"
   },
   {
     "name": "Boeing 737-800",
-    "abbreviation": "B738"
+    "icao": "B738"
   },
   {
     "name": "McDonnell Douglas MD-82",
-    "abbreviation": "MD82"
+    "icao": "MD82"
   },
   {
     "name": "Airbus A319",
-    "abbreviation": "A319"
+    "icao": "A319"
   },
   {
     "name": "Boeing 777-300ER",
-    "abbreviation": "B77W"
+    "icao": "B77W"
   },
   {
     "name": "Boeing 777-200LR",
-    "abbreviation": "B77L"
+    "icao": "B77L"
   },
   {
     "name": "Embraer ERJ-170",
-    "abbreviation": "E170"
+    "icao": "E170"
   },
   {
     "name": "Airbus A321",
-    "abbreviation": "A321"
+    "icao": "A321"
   },
   {
     "name": "Airbus A330-200",
-    "abbreviation": "A332"
+    "icao": "A332"
   },
   {
     "name": "Boeing 747-8",
-    "abbreviation": "B748"
+    "icao": "B748"
   },
   {
     "name": "Boeing 777-200",
-    "abbreviation": "B772"
+    "icao": "B772"
   },
   {
     "name": "Boeing 777-300",
-    "abbreviation": "B773"
+    "icao": "B773"
   },
   {
     "name": "Boeing 787-8",
-    "abbreviation": "B788"
+    "icao": "B788"
   },
   {
     "name": "Bombardier CRJ-900",
-    "abbreviation": "CRJ9"
+    "icao": "CRJ9"
   },
   {
     "name": "Airbus A330-300",
-    "abbreviation": "A333"
+    "icao": "A333"
   },
   {
     "name": "Embraer ERJ-190",
-    "abbreviation": "E190"
+    "icao": "E190"
   },
   {
     "name": "Airbus A340-300",
-    "abbreviation": "A343"
+    "icao": "A343"
   },
   {
     "name": "Airbus A350-900",
-    "abbreviation": "A359"
+    "icao": "A359"
   },
   {
     "name": "Boeing 767-300",
-    "abbreviation": "B763"
+    "icao": "B763"
   },
   {
     "name": "Boeing 737-900",
-    "abbreviation": "B739"
+    "icao": "B739"
   },
   {
     "name": "Airbus A321neo",
-    "abbreviation": "A21N"
+    "icao": "A21N"
   },
   {
     "name": "Embraer ERJ-195",
-    "abbreviation": "E195"
+    "icao": "E195"
   },
   {
     "name": "Boeing 737 MAX 8",
-    "abbreviation": "B38M"
+    "icao": "B38M"
   }
 ]

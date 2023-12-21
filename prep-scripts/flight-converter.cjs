@@ -80,8 +80,8 @@ function parseAircraft(stringValue) {
   if (!stringValue) return {};
   const matches = stringValue.match(/^([^(]+)\s*\(([^)]+)\)$/);
   if (matches) {
-    const [_, name, abbreviation] = matches;
-    return { name: name.trim(), abbreviation };
+    const [_, name, icao] = matches;
+    return { name: name.trim(), icao };
   }
   return {};
 }

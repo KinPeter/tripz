@@ -20,9 +20,7 @@ try {
   data.forEach(flight => {
     const fromExists = airports.find(({ iata }) => iata === flight.from.iata);
     const toExists = airports.find(({ iata }) => iata === flight.to.iata);
-    const aircraftExists = aircrafts.find(
-      ({ abbreviation }) => abbreviation === flight.aircraft.abbreviation
-    );
+    const aircraftExists = aircrafts.find(({ icao }) => icao === flight.aircraft.icao);
     const airlineExists = airlines.find(({ iata }) => iata === flight.airline.iata);
 
     if (!fromExists) airports.push(flight.from);
@@ -35,7 +33,7 @@ try {
       from: flight.from.iata,
       to: flight.to.iata,
       airline: flight.airline.iata,
-      aircraft: flight.aircraft.abbreviation,
+      aircraft: flight.aircraft.icao,
     });
   });
 

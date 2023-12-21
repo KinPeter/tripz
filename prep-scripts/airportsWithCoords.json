@@ -1,1 +1,274 @@
-{}
+[
+  {
+    "city": "Budapest",
+    "name": "Franz Liszt International",
+    "iata": "BUD",
+    "icao": "LHBP",
+    "lat": 47.43693,
+    "lng": 19.25559
+  },
+  {
+    "city": "Copenhagen",
+    "name": "Kastrup",
+    "iata": "CPH",
+    "icao": "EKCH",
+    "lat": 55.61792,
+    "lng": 12.65597
+  },
+  {
+    "city": "Amsterdam",
+    "name": "Schiphol",
+    "iata": "AMS",
+    "icao": "EHAM",
+    "lat": 52.3103,
+    "lng": 4.76028
+  },
+  {
+    "city": "Burgas",
+    "name": "Burgas",
+    "iata": "BOJ",
+    "icao": "LBBG",
+    "lat": 42.56958,
+    "lng": 27.51524
+  },
+  {
+    "city": "Rome",
+    "name": "Leonardo da Vinci-Fiumicino",
+    "iata": "FCO",
+    "icao": "LIRF",
+    "lat": 41.79352,
+    "lng": 12.25259
+  },
+  {
+    "city": "Oslo",
+    "name": "Gardermoen",
+    "iata": "OSL",
+    "icao": "ENGM",
+    "lat": 60.19392,
+    "lng": 11.10036
+  },
+  {
+    "city": "Stockholm",
+    "name": "Skavsta",
+    "iata": "NYO",
+    "icao": "ESKN",
+    "lat": 58.78864,
+    "lng": 16.91219
+  },
+  {
+    "city": "Stockholm",
+    "name": "Arlanda",
+    "iata": "ARN",
+    "icao": "ESSA",
+    "lat": 59.652,
+    "lng": 17.93132
+  },
+  {
+    "city": "Monastir",
+    "name": "Habib Bourguiba",
+    "iata": "MIR",
+    "icao": "DTMB",
+    "lat": 35.75806,
+    "lng": 10.75472
+  },
+  {
+    "city": "Enfidha",
+    "name": "Enfidha",
+    "iata": "NBE",
+    "icao": "DTNH",
+    "lat": 36.07579,
+    "lng": 10.43859
+  },
+  {
+    "city": "Kefallinia",
+    "name": "Kefalinia",
+    "iata": "EFL",
+    "icao": "LGKF",
+    "lat": 38.12007,
+    "lng": 20.50048
+  },
+  {
+    "city": "Doha",
+    "name": "Doha Airport",
+    "iata": "DIA",
+    "icao": "OTBD",
+    "lat": 25.26486,
+    "lng": 51.56356
+  },
+  {
+    "city": "Tokyo",
+    "name": "Narita",
+    "iata": "NRT",
+    "icao": "RJAA",
+    "lat": 35.76472,
+    "lng": 140.38639
+  },
+  {
+    "city": "Warsaw",
+    "name": "Chopin",
+    "iata": "WAW",
+    "icao": "EPWA",
+    "lat": 52.16575,
+    "lng": 20.96712
+  },
+  {
+    "city": "Istanbul",
+    "name": "Ataturk",
+    "iata": "ISL",
+    "icao": "LTBA",
+    "lat": 40.97692,
+    "lng": 28.81461
+  },
+  {
+    "city": "Frankfurt am Main",
+    "name": "Frankfurt",
+    "iata": "FRA",
+    "icao": "EDDF",
+    "lat": 50.0406,
+    "lng": 8.55603
+  },
+  {
+    "city": "Tokyo",
+    "name": "Haneda",
+    "iata": "HND",
+    "icao": "RJTT",
+    "lat": 35.55226,
+    "lng": 139.77969
+  },
+  {
+    "city": "Naha",
+    "name": "Naha",
+    "iata": "OKA",
+    "icao": "ROAH",
+    "lat": 26.19581,
+    "lng": 127.64587
+  },
+  {
+    "city": "Ishigaki I",
+    "name": "Ishigaki",
+    "iata": "ISG",
+    "icao": "ROIG",
+    "lat": 24.39693,
+    "lng": 124.24675
+  },
+  {
+    "city": "Seoul",
+    "name": "Incheon",
+    "iata": "ICN",
+    "icao": "RKSI",
+    "lat": 37.4492,
+    "lng": 126.45095
+  },
+  {
+    "city": "Tirana",
+    "name": "Rinas",
+    "iata": "TIA",
+    "icao": "LATI",
+    "lat": 41.4219,
+    "lng": 19.71296
+  },
+  {
+    "city": "Helsinki",
+    "name": "Vantaa",
+    "iata": "HEL",
+    "icao": "EFHK",
+    "lat": 60.31722,
+    "lng": 24.96333
+  },
+  {
+    "city": "Osaka",
+    "name": "Kansai",
+    "iata": "KIX",
+    "icao": "RJBB",
+    "lat": 34.42731,
+    "lng": 135.24407
+  },
+  {
+    "city": "Beijing",
+    "name": "Peking-Capital",
+    "iata": "PEK",
+    "icao": "ZBAA",
+    "lat": 40.08011,
+    "lng": 116.58456
+  },
+  {
+    "city": "Seoul",
+    "name": "Gimpo",
+    "iata": "GMP",
+    "icao": "RKSS",
+    "lat": 37.566,
+    "lng": 126.80077
+  },
+  {
+    "city": "Minsk",
+    "name": "Minsk International",
+    "iata": "MSQ",
+    "icao": "UMMS",
+    "lat": 53.88247,
+    "lng": 28.03073
+  },
+  {
+    "city": "Taipei",
+    "name": "Taoyuan",
+    "iata": "TPE",
+    "icao": "RCTP",
+    "lat": 25.07773,
+    "lng": 121.23282
+  },
+  {
+    "city": "Prague",
+    "name": "Praha-Ruzyne",
+    "iata": "PRG",
+    "icao": "LKPR",
+    "lat": 50.10083,
+    "lng": 14.26
+  },
+  {
+    "city": "Iraklion",
+    "name": "Nikos Kazantzakis",
+    "iata": "HER",
+    "icao": "LGIR",
+    "lat": 35.33907,
+    "lng": 25.17513
+  },
+  {
+    "city": "Naples",
+    "name": "Capodichino",
+    "iata": "NAP",
+    "icao": "LIRN",
+    "lat": 40.88603,
+    "lng": 14.29078
+  },
+  {
+    "city": "Barcelona",
+    "name": "El Prat",
+    "iata": "BCN",
+    "icao": "LEBL",
+    "lat": 41.29708,
+    "lng": 2.07846
+  },
+  {
+    "city": "Chania",
+    "name": "Souda",
+    "iata": "CHQ",
+    "icao": "LGSA",
+    "lat": 35.53175,
+    "lng": 24.14968
+  },
+  {
+    "city": "Malta",
+    "name": "Luqa",
+    "iata": "MLA",
+    "icao": "LMML",
+    "lat": 35.8575,
+    "lng": 14.47722
+  },
+  {
+    "city": "Athens",
+    "name": "Eleftherios Venizelos",
+    "iata": "ATH",
+    "icao": "LGAV",
+    "lat": 37.93636,
+    "lng": 23.94447
+  }
+]

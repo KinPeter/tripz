@@ -24,7 +24,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-500",
-      "abbreviation": "B735"
+      "icao": "B735"
     },
     "registration": "HA-LKV",
     "seatNumber": "23F",
@@ -58,7 +58,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-500",
-      "abbreviation": "B735"
+      "icao": "B735"
     },
     "registration": "",
     "seatNumber": "3A",
@@ -92,7 +92,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-500",
-      "abbreviation": "B735"
+      "icao": "B735"
     },
     "registration": "",
     "seatNumber": "17A",
@@ -126,7 +126,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-500",
-      "abbreviation": "B735"
+      "icao": "B735"
     },
     "registration": "",
     "seatNumber": "8F",
@@ -160,7 +160,7 @@
     },
     "aircraft": {
       "name": "Boeing 737",
-      "abbreviation": "B73X"
+      "icao": "B73X"
     },
     "registration": "",
     "seatNumber": "1F",
@@ -194,7 +194,7 @@
     },
     "aircraft": {
       "name": "Boeing 737",
-      "abbreviation": "B73X"
+      "icao": "B73X"
     },
     "registration": "",
     "seatNumber": "8A",
@@ -228,7 +228,7 @@
     },
     "aircraft": {
       "name": "Boeing 737",
-      "abbreviation": "B73X"
+      "icao": "B73X"
     },
     "registration": "",
     "seatNumber": "3A",
@@ -262,7 +262,7 @@
     },
     "aircraft": {
       "name": "Boeing 737",
-      "abbreviation": "B73X"
+      "icao": "B73X"
     },
     "registration": "",
     "seatNumber": "2F",
@@ -296,7 +296,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-700",
-      "abbreviation": "B737"
+      "icao": "B737"
     },
     "registration": "HA-LKM",
     "seatNumber": "2D",
@@ -330,7 +330,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-700",
-      "abbreviation": "B737"
+      "icao": "B737"
     },
     "registration": "HA-LKM",
     "seatNumber": "4A",
@@ -364,7 +364,7 @@
     },
     "aircraft": {
       "name": "Fokker 70",
-      "abbreviation": "F70"
+      "icao": "F70"
     },
     "registration": "",
     "seatNumber": "9D",
@@ -398,7 +398,7 @@
     },
     "aircraft": {
       "name": "Boeing 737",
-      "abbreviation": "B73X"
+      "icao": "B73X"
     },
     "registration": "",
     "seatNumber": "20B",
@@ -432,7 +432,7 @@
     },
     "aircraft": {
       "name": "Boeing 737",
-      "abbreviation": "B73X"
+      "icao": "B73X"
     },
     "registration": "",
     "seatNumber": "20A",
@@ -466,7 +466,7 @@
     },
     "aircraft": {
       "name": "Boeing 737",
-      "abbreviation": "B73X"
+      "icao": "B73X"
     },
     "registration": "",
     "seatNumber": "10A",
@@ -500,7 +500,7 @@
     },
     "aircraft": {
       "name": "Airbus A320",
-      "abbreviation": "A320"
+      "icao": "A320"
     },
     "registration": "HA-LPD",
     "seatNumber": "4A",
@@ -534,7 +534,7 @@
     },
     "aircraft": {
       "name": "Boeing 737",
-      "abbreviation": "B73X"
+      "icao": "B73X"
     },
     "registration": "",
     "seatNumber": "5C",
@@ -568,7 +568,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-700",
-      "abbreviation": "B737"
+      "icao": "B737"
     },
     "registration": "OY-MRG",
     "seatNumber": "2C",
@@ -602,7 +602,7 @@
     },
     "aircraft": {
       "name": "Boeing 737",
-      "abbreviation": "B73X"
+      "icao": "B73X"
     },
     "registration": "",
     "seatNumber": "1F",
@@ -636,7 +636,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "LN-RRL",
     "seatNumber": "27C",
@@ -670,7 +670,7 @@
     },
     "aircraft": {
       "name": "McDonnell Douglas MD-82",
-      "abbreviation": "MD82"
+      "icao": "MD82"
     },
     "registration": "LN-ROY",
     "seatNumber": "28F",
@@ -704,7 +704,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "HA-LOH",
     "seatNumber": "7C",
@@ -738,7 +738,7 @@
     },
     "aircraft": {
       "name": "Boeing 737",
-      "abbreviation": "B73X"
+      "icao": "B73X"
     },
     "registration": "",
     "seatNumber": "5D",
@@ -772,7 +772,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "LN-KKG",
     "seatNumber": "2D",
@@ -806,7 +806,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "LN-KKT",
     "seatNumber": "3D",
@@ -840,7 +840,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-500",
-      "abbreviation": "B735"
+      "icao": "B735"
     },
     "registration": "TI-IOH",
     "seatNumber": "10C",
@@ -874,7 +874,7 @@
     },
     "aircraft": {
       "name": "Airbus A319",
-      "abbreviation": "A319"
+      "icao": "A319"
     },
     "registration": "TI-IMJ",
     "seatNumber": "19C",
@@ -908,7 +908,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "HA-LKB",
     "seatNumber": "6E",
@@ -942,7 +942,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "HA-LKB",
     "seatNumber": "25F",
@@ -976,7 +976,7 @@
     },
     "aircraft": {
       "name": "Airbus A320",
-      "abbreviation": "A320"
+      "icao": "A320"
     },
     "registration": "A7-AHL",
     "seatNumber": "11F",
@@ -1010,7 +1010,7 @@
     },
     "aircraft": {
       "name": "Boeing 777-300ER",
-      "abbreviation": "B77W"
+      "icao": "B77W"
     },
     "registration": "A7-BAA",
     "seatNumber": "12H",
@@ -1044,7 +1044,7 @@
     },
     "aircraft": {
       "name": "Boeing 777-200LR",
-      "abbreviation": "B77L"
+      "icao": "B77L"
     },
     "registration": "A7-BBC",
     "seatNumber": "12H",
@@ -1078,7 +1078,7 @@
     },
     "aircraft": {
       "name": "Airbus A320",
-      "abbreviation": "A320"
+      "icao": "A320"
     },
     "registration": "A7-AHO",
     "seatNumber": "9D",
@@ -1112,7 +1112,7 @@
     },
     "aircraft": {
       "name": "Embraer ERJ-170",
-      "abbreviation": "E170"
+      "icao": "E170"
     },
     "registration": "SP-LDA",
     "seatNumber": "11C",
@@ -1146,7 +1146,7 @@
     },
     "aircraft": {
       "name": "Embraer ERJ-170",
-      "abbreviation": "E170"
+      "icao": "E170"
     },
     "registration": "SP-LDB",
     "seatNumber": "9C",
@@ -1180,7 +1180,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "PH-BGC",
     "seatNumber": "11D",
@@ -1214,7 +1214,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "PH-BXI",
     "seatNumber": "10D",
@@ -1248,7 +1248,7 @@
     },
     "aircraft": {
       "name": "Airbus A321",
-      "abbreviation": "A321"
+      "icao": "A321"
     },
     "registration": "TC-JRK",
     "seatNumber": "5D",
@@ -1282,7 +1282,7 @@
     },
     "aircraft": {
       "name": "Boeing 777-300ER",
-      "abbreviation": "B77W"
+      "icao": "B77W"
     },
     "registration": "TC-JJF",
     "seatNumber": "31H",
@@ -1316,7 +1316,7 @@
     },
     "aircraft": {
       "name": "Airbus A330-200",
-      "abbreviation": "A332"
+      "icao": "A332"
     },
     "registration": "TC-JNE",
     "seatNumber": "30J",
@@ -1350,7 +1350,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "TC-JHF",
     "seatNumber": "9D",
@@ -1384,7 +1384,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-700",
-      "abbreviation": "B737"
+      "icao": "B737"
     },
     "registration": "TC-JKJ",
     "seatNumber": "02A",
@@ -1418,7 +1418,7 @@
     },
     "aircraft": {
       "name": "Boeing 777-300ER",
-      "abbreviation": "B77W"
+      "icao": "B77W"
     },
     "registration": "TC-jjm",
     "seatNumber": "1K",
@@ -1452,7 +1452,7 @@
     },
     "aircraft": {
       "name": "Boeing 777-300ER",
-      "abbreviation": "B77W"
+      "icao": "B77W"
     },
     "registration": "tc-JJK",
     "seatNumber": "4j",
@@ -1486,7 +1486,7 @@
     },
     "aircraft": {
       "name": "Airbus A320-200",
-      "abbreviation": "A320"
+      "icao": "A320"
     },
     "registration": "TC-JUJ",
     "seatNumber": "2a",
@@ -1520,7 +1520,7 @@
     },
     "aircraft": {
       "name": "Airbus A320",
-      "abbreviation": "A320"
+      "icao": "A320"
     },
     "registration": "D-AIQT",
     "seatNumber": "16C",
@@ -1554,7 +1554,7 @@
     },
     "aircraft": {
       "name": "Boeing 747-8",
-      "abbreviation": "B748"
+      "icao": "B748"
     },
     "registration": "D-ABYJ",
     "seatNumber": "41C",
@@ -1588,7 +1588,7 @@
     },
     "aircraft": {
       "name": "Boeing 777-200",
-      "abbreviation": "B772"
+      "icao": "B772"
     },
     "registration": "JA707A",
     "seatNumber": "14G",
@@ -1622,7 +1622,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-500",
-      "abbreviation": "B735"
+      "icao": "B735"
     },
     "registration": "JA304K",
     "seatNumber": "19D",
@@ -1656,7 +1656,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-500",
-      "abbreviation": "B735"
+      "icao": "B735"
     },
     "registration": "JA357K",
     "seatNumber": "17C",
@@ -1690,7 +1690,7 @@
     },
     "aircraft": {
       "name": "Boeing 777-300",
-      "abbreviation": "B773"
+      "icao": "B773"
     },
     "registration": "JA751A",
     "seatNumber": "15D",
@@ -1724,7 +1724,7 @@
     },
     "aircraft": {
       "name": "Boeing 787-8",
-      "abbreviation": "B788"
+      "icao": "B788"
     },
     "registration": "JA820A",
     "seatNumber": "27H",
@@ -1758,7 +1758,7 @@
     },
     "aircraft": {
       "name": "Airbus A320",
-      "abbreviation": "A320"
+      "icao": "A320"
     },
     "registration": "D-AISG",
     "seatNumber": "21D",
@@ -1792,7 +1792,7 @@
     },
     "aircraft": {
       "name": "Airbus A320-200",
-      "abbreviation": "A320"
+      "icao": "A320"
     },
     "registration": "oy-kay",
     "seatNumber": "16c",
@@ -1826,7 +1826,7 @@
     },
     "aircraft": {
       "name": "Bombardier CRJ-900",
-      "abbreviation": "CRJ9"
+      "icao": "CRJ9"
     },
     "registration": "oy-kfm",
     "seatNumber": "9c",
@@ -1860,7 +1860,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "TC-JGD",
     "seatNumber": "1A",
@@ -1894,7 +1894,7 @@
     },
     "aircraft": {
       "name": "Airbus A330-300",
-      "abbreviation": "A333"
+      "icao": "A333"
     },
     "registration": "TC-JOJ",
     "seatNumber": "07J",
@@ -1928,7 +1928,7 @@
     },
     "aircraft": {
       "name": "Boeing 777-300ER",
-      "abbreviation": "B77W"
+      "icao": "B77W"
     },
     "registration": "TC-JJH",
     "seatNumber": "27G",
@@ -1962,7 +1962,7 @@
     },
     "aircraft": {
       "name": "Airbus A319-100",
-      "abbreviation": "A319"
+      "icao": "A319"
     },
     "registration": "TC-JUD",
     "seatNumber": "6D",
@@ -1996,7 +1996,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-700",
-      "abbreviation": "B737"
+      "icao": "B737"
     },
     "registration": "PHBGP",
     "seatNumber": "10C",
@@ -2030,7 +2030,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "PHBXY",
     "seatNumber": "24D",
@@ -2064,7 +2064,7 @@
     },
     "aircraft": {
       "name": "Airbus A320",
-      "abbreviation": "A320"
+      "icao": "A320"
     },
     "registration": "EIEIC",
     "seatNumber": "5C",
@@ -2098,7 +2098,7 @@
     },
     "aircraft": {
       "name": "Airbus A321",
-      "abbreviation": "A321"
+      "icao": "A321"
     },
     "registration": "IBIXQ",
     "seatNumber": "16C",
@@ -2132,7 +2132,7 @@
     },
     "aircraft": {
       "name": "Airbus A320",
-      "abbreviation": "A320"
+      "icao": "A320"
     },
     "registration": "EIDSC",
     "seatNumber": "21C",
@@ -2166,7 +2166,7 @@
     },
     "aircraft": {
       "name": "Airbus A320",
-      "abbreviation": "A320"
+      "icao": "A320"
     },
     "registration": "EIDTL",
     "seatNumber": "14C",
@@ -2200,7 +2200,7 @@
     },
     "aircraft": {
       "name": "Airbus A320",
-      "abbreviation": "A320"
+      "icao": "A320"
     },
     "registration": "A7AHQ",
     "seatNumber": "28D",
@@ -2234,7 +2234,7 @@
     },
     "aircraft": {
       "name": "Boeing 777-300ER",
-      "abbreviation": "B77W"
+      "icao": "B77W"
     },
     "registration": "A7BAT",
     "seatNumber": "4B",
@@ -2268,7 +2268,7 @@
     },
     "aircraft": {
       "name": "Boeing 777-300ER",
-      "abbreviation": "B77W"
+      "icao": "B77W"
     },
     "registration": "A7BAS",
     "seatNumber": "18C",
@@ -2302,7 +2302,7 @@
     },
     "aircraft": {
       "name": "Airbus A320",
-      "abbreviation": "A320"
+      "icao": "A320"
     },
     "registration": "A7AHT",
     "seatNumber": "3F",
@@ -2336,7 +2336,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "PHBXA",
     "seatNumber": "19C",
@@ -2370,7 +2370,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "PHBXB",
     "seatNumber": "7D",
@@ -2404,7 +2404,7 @@
     },
     "aircraft": {
       "name": "Embraer ERJ-190",
-      "abbreviation": "E190"
+      "icao": "E190"
     },
     "registration": "OHLKI",
     "seatNumber": "19D",
@@ -2438,7 +2438,7 @@
     },
     "aircraft": {
       "name": "Airbus A340-300",
-      "abbreviation": "A343"
+      "icao": "A343"
     },
     "registration": "OHLQE",
     "seatNumber": "29D",
@@ -2472,7 +2472,7 @@
     },
     "aircraft": {
       "name": "Airbus A330-300",
-      "abbreviation": "A333"
+      "icao": "A333"
     },
     "registration": "OHLTR",
     "seatNumber": "30C",
@@ -2506,7 +2506,7 @@
     },
     "aircraft": {
       "name": "Airbus A319",
-      "abbreviation": "A319"
+      "icao": "A319"
     },
     "registration": "OHLVK",
     "seatNumber": "10A",
@@ -2540,7 +2540,7 @@
     },
     "aircraft": {
       "name": "Airbus A330-200",
-      "abbreviation": "A332"
+      "icao": "A332"
     },
     "registration": "B5933",
     "seatNumber": "49J",
@@ -2574,7 +2574,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "B6106",
     "seatNumber": "20C",
@@ -2608,7 +2608,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "B5328",
     "seatNumber": "23C",
@@ -2642,7 +2642,7 @@
     },
     "aircraft": {
       "name": "Airbus A330-200",
-      "abbreviation": "A332"
+      "icao": "A332"
     },
     "registration": "B5925",
     "seatNumber": "44C",
@@ -2676,7 +2676,7 @@
     },
     "aircraft": {
       "name": "Airbus A330-200",
-      "abbreviation": "A332"
+      "icao": "A332"
     },
     "registration": "B5925",
     "seatNumber": "44C",
@@ -2710,7 +2710,7 @@
     },
     "aircraft": {
       "name": "Airbus A319",
-      "abbreviation": "A319"
+      "icao": "A319"
     },
     "registration": "OH-LVB",
     "seatNumber": "16C",
@@ -2744,7 +2744,7 @@
     },
     "aircraft": {
       "name": "Airbus A350-900",
-      "abbreviation": "A359"
+      "icao": "A359"
     },
     "registration": "OH-LWL",
     "seatNumber": "27C",
@@ -2778,7 +2778,7 @@
     },
     "aircraft": {
       "name": "Boeing 767-300",
-      "abbreviation": "B763"
+      "icao": "B763"
     },
     "registration": "HL7248",
     "seatNumber": "22H",
@@ -2812,7 +2812,7 @@
     },
     "aircraft": {
       "name": "Airbus A330-300",
-      "abbreviation": "A333"
+      "icao": "A333"
     },
     "registration": "HL7792",
     "seatNumber": "16C",
@@ -2846,7 +2846,7 @@
     },
     "aircraft": {
       "name": "Airbus A350-900",
-      "abbreviation": "A359"
+      "icao": "A359"
     },
     "registration": "OH-LWF",
     "seatNumber": "32C",
@@ -2880,7 +2880,7 @@
     },
     "aircraft": {
       "name": "Airbus A319",
-      "abbreviation": "A319"
+      "icao": "A319"
     },
     "registration": "OH-LVK",
     "seatNumber": "11A",
@@ -2914,7 +2914,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "PH-BXU",
     "seatNumber": "19C",
@@ -2948,7 +2948,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "PH-BXD",
     "seatNumber": "12C",
@@ -2982,7 +2982,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "EI-FZN",
     "seatNumber": "6F",
@@ -3016,7 +3016,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "EI-ESV",
     "seatNumber": "26D",
@@ -3050,7 +3050,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "EI-ENG",
     "seatNumber": "24D",
@@ -3084,7 +3084,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "EI-ENG",
     "seatNumber": "24D",
@@ -3118,7 +3118,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "TC-JGP",
     "seatNumber": "7C",
@@ -3152,7 +3152,7 @@
     },
     "aircraft": {
       "name": "Boeing 777-300ER",
-      "abbreviation": "B77W"
+      "icao": "B77W"
     },
     "registration": "TC-JJE",
     "seatNumber": "24C",
@@ -3186,7 +3186,7 @@
     },
     "aircraft": {
       "name": "Airbus A330-300",
-      "abbreviation": "A333"
+      "icao": "A333"
     },
     "registration": "TC-JOA",
     "seatNumber": "22B",
@@ -3220,7 +3220,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-900",
-      "abbreviation": "B739"
+      "icao": "B739"
     },
     "registration": "TC-JYE",
     "seatNumber": "6D",
@@ -3254,7 +3254,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "EI-ENW",
     "seatNumber": "28D",
@@ -3288,7 +3288,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "EI-EKT",
     "seatNumber": "27D",
@@ -3322,7 +3322,7 @@
     },
     "aircraft": {
       "name": "Airbus A319",
-      "abbreviation": "A319"
+      "icao": "A319"
     },
     "registration": "OH-LVK",
     "seatNumber": "7D",
@@ -3356,7 +3356,7 @@
     },
     "aircraft": {
       "name": "Airbus A350-900",
-      "abbreviation": "A359"
+      "icao": "A359"
     },
     "registration": "OH-LWI",
     "seatNumber": "33C",
@@ -3390,7 +3390,7 @@
     },
     "aircraft": {
       "name": "Airbus A350-900",
-      "abbreviation": "A359"
+      "icao": "A359"
     },
     "registration": "OH-LWI",
     "seatNumber": "33C",
@@ -3424,7 +3424,7 @@
     },
     "aircraft": {
       "name": "Airbus A319",
-      "abbreviation": "A319"
+      "icao": "A319"
     },
     "registration": "OH-LVK",
     "seatNumber": "8C",
@@ -3458,7 +3458,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "EI-DHV",
     "seatNumber": "28C",
@@ -3492,7 +3492,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "EI-DHV",
     "seatNumber": "28C",
@@ -3526,7 +3526,7 @@
     },
     "aircraft": {
       "name": "Airbus A321",
-      "abbreviation": "A321"
+      "icao": "A321"
     },
     "registration": "OH-LZN",
     "seatNumber": "6D",
@@ -3560,7 +3560,7 @@
     },
     "aircraft": {
       "name": "Airbus A350-900",
-      "abbreviation": "A359"
+      "icao": "A359"
     },
     "registration": "OH-LWI",
     "seatNumber": "33C",
@@ -3594,7 +3594,7 @@
     },
     "aircraft": {
       "name": "Boeing 767-300",
-      "abbreviation": "B763"
+      "icao": "B763"
     },
     "registration": "HL7516",
     "seatNumber": "20C",
@@ -3628,7 +3628,7 @@
     },
     "aircraft": {
       "name": "Airbus A350-900",
-      "abbreviation": "A359"
+      "icao": "A359"
     },
     "registration": "OH-LWD",
     "seatNumber": "6A",
@@ -3662,7 +3662,7 @@
     },
     "aircraft": {
       "name": "Airbus A319",
-      "abbreviation": "A319"
+      "icao": "A319"
     },
     "registration": "OH-LVL",
     "seatNumber": "6D",
@@ -3696,7 +3696,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "EI-EVF",
     "seatNumber": "28D",
@@ -3730,7 +3730,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "EI-EVF",
     "seatNumber": "25D",
@@ -3764,7 +3764,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-700",
-      "abbreviation": "B737"
+      "icao": "B737"
     },
     "registration": "HA-LKG",
     "seatNumber": "1C",
@@ -3798,7 +3798,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "OK-TVJ",
     "seatNumber": "16D",
@@ -3832,7 +3832,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "EI-DLE",
     "seatNumber": "28D",
@@ -3866,7 +3866,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "EI-DPT",
     "seatNumber": "28D",
@@ -3900,7 +3900,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "EI-FIT",
     "seatNumber": "30D",
@@ -3934,7 +3934,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "EI-GDW",
     "seatNumber": "30C",
@@ -3968,7 +3968,7 @@
     },
     "aircraft": {
       "name": "Airbus A321neo",
-      "abbreviation": "A21N"
+      "icao": "A21N"
     },
     "registration": "HA-LVC",
     "seatNumber": "16C",
@@ -4002,7 +4002,7 @@
     },
     "aircraft": {
       "name": "Airbus A321neo",
-      "abbreviation": "A21N"
+      "icao": "A21N"
     },
     "registration": "HA-LVC",
     "seatNumber": "16C",
@@ -4036,7 +4036,7 @@
     },
     "aircraft": {
       "name": "Boeing 787-8",
-      "abbreviation": "B788"
+      "icao": "B788"
     },
     "registration": "SP-LRC",
     "seatNumber": "26G",
@@ -4070,7 +4070,7 @@
     },
     "aircraft": {
       "name": "Boeing 787-8",
-      "abbreviation": "B788"
+      "icao": "B788"
     },
     "registration": "SP-LRD",
     "seatNumber": "22G",
@@ -4104,7 +4104,7 @@
     },
     "aircraft": {
       "name": "Embraer ERJ-195",
-      "abbreviation": "E195"
+      "icao": "E195"
     },
     "registration": "SP-LNP",
     "seatNumber": "13C",
@@ -4138,7 +4138,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "SP-RSR",
     "seatNumber": "12D",
@@ -4172,7 +4172,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "SP-RKT",
     "seatNumber": "15D",
@@ -4206,7 +4206,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "OM-TSG",
     "seatNumber": "18C",
@@ -4240,7 +4240,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "OK-TVO",
     "seatNumber": "4D",
@@ -4274,7 +4274,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "OK-TVO",
     "seatNumber": "17C",
@@ -4308,7 +4308,7 @@
     },
     "aircraft": {
       "name": "Airbus A320",
-      "abbreviation": "A320"
+      "icao": "A320"
     },
     "registration": "LY-WSM",
     "seatNumber": "13D",
@@ -4342,7 +4342,7 @@
     },
     "aircraft": {
       "name": "Boeing 737-800",
-      "abbreviation": "B738"
+      "icao": "B738"
     },
     "registration": "SP-RSK",
     "seatNumber": "28C",
@@ -4376,7 +4376,7 @@
     },
     "aircraft": {
       "name": "Boeing 737 MAX 8",
-      "abbreviation": "B38M"
+      "icao": "B38M"
     },
     "registration": "9H-VUX",
     "seatNumber": "28C",
@@ -4410,7 +4410,7 @@
     },
     "aircraft": {
       "name": "Airbus A320",
-      "abbreviation": "A320"
+      "icao": "A320"
     },
     "registration": "SX-DVR",
     "seatNumber": "18D",
@@ -4444,7 +4444,7 @@
     },
     "aircraft": {
       "name": "Airbus A320",
-      "abbreviation": "A320"
+      "icao": "A320"
     },
     "registration": "SX-DVL",
     "seatNumber": "19D",
