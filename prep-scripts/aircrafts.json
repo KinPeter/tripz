@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Boeing 737-500",
+    "abbreviation": "B735"
+  },
+  {
+    "name": "Boeing 737",
+    "abbreviation": "B73X"
+  },
+  {
+    "name": "Boeing 737-700",
+    "abbreviation": "B737"
+  },
+  {
+    "name": "Fokker 70",
+    "abbreviation": "F70"
+  },
+  {
+    "name": "Airbus A320",
+    "abbreviation": "A320"
+  },
+  {
+    "name": "Boeing 737-800",
+    "abbreviation": "B738"
+  },
+  {
+    "name": "McDonnell Douglas MD-82",
+    "abbreviation": "MD82"
+  },
+  {
+    "name": "Airbus A319",
+    "abbreviation": "A319"
+  },
+  {
+    "name": "Boeing 777-300ER",
+    "abbreviation": "B77W"
+  },
+  {
+    "name": "Boeing 777-200LR",
+    "abbreviation": "B77L"
+  },
+  {
+    "name": "Embraer ERJ-170",
+    "abbreviation": "E170"
+  },
+  {
+    "name": "Airbus A321",
+    "abbreviation": "A321"
+  },
+  {
+    "name": "Airbus A330-200",
+    "abbreviation": "A332"
+  },
+  {
+    "name": "Boeing 747-8",
+    "abbreviation": "B748"
+  },
+  {
+    "name": "Boeing 777-200",
+    "abbreviation": "B772"
+  },
+  {
+    "name": "Boeing 777-300",
+    "abbreviation": "B773"
+  },
+  {
+    "name": "Boeing 787-8",
+    "abbreviation": "B788"
+  },
+  {
+    "name": "Bombardier CRJ-900",
+    "abbreviation": "CRJ9"
+  },
+  {
+    "name": "Airbus A330-300",
+    "abbreviation": "A333"
+  },
+  {
+    "name": "Embraer ERJ-190",
+    "abbreviation": "E190"
+  },
+  {
+    "name": "Airbus A340-300",
+    "abbreviation": "A343"
+  },
+  {
+    "name": "Airbus A350-900",
+    "abbreviation": "A359"
+  },
+  {
+    "name": "Boeing 767-300",
+    "abbreviation": "B763"
+  },
+  {
+    "name": "Boeing 737-900",
+    "abbreviation": "B739"
+  },
+  {
+    "name": "Airbus A321neo",
+    "abbreviation": "A21N"
+  },
+  {
+    "name": "Embraer ERJ-195",
+    "abbreviation": "E195"
+  },
+  {
+    "name": "Boeing 737 MAX 8",
+    "abbreviation": "B38M"
+  }
+]
