@@ -2,341 +2,375 @@
   {
     "city": "Budapest",
     "name": "Franz Liszt International",
+    "country": "Hungary",
     "iata": "BUD",
     "icao": "LHBP",
     "lat": 47.43693,
     "lng": 19.25559,
-    "id": "92cd5329-5f47-4dd7-90f4-014fcb3cd080",
-    "country": "Hungary"
+    "id": "ae576c29-3f92-464d-a24e-8be699b4a1d9",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Copenhagen",
     "name": "Kastrup",
+    "country": "Denmark",
     "iata": "CPH",
     "icao": "EKCH",
     "lat": 55.61792,
     "lng": 12.65597,
-    "id": "8b83756d-e483-4c54-a1ae-ef826ec64c83",
-    "country": "Denmark"
+    "id": "d549830a-90a9-42c9-91aa-8cfd43faddab",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Amsterdam",
     "name": "Schiphol",
+    "country": "The Netherlands",
     "iata": "AMS",
     "icao": "EHAM",
     "lat": 52.3103,
     "lng": 4.76028,
-    "id": "51f399b4-b5a8-4178-be66-5b116ad056db",
-    "country": "The Netherlands"
+    "id": "396b4148-bd30-4b98-963c-4229cb9d4318",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Burgas",
     "name": "Burgas",
+    "country": "Bulgaria",
     "iata": "BOJ",
     "icao": "LBBG",
     "lat": 42.56958,
     "lng": 27.51524,
-    "id": "51dc3502-16a4-4dd2-8715-48c29753ac87",
-    "country": "Bulgaria"
+    "id": "9c028d70-7067-47bd-af11-4b744d8b1a1a",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Rome",
     "name": "Leonardo da Vinci-Fiumicino",
+    "country": "Italy",
     "iata": "FCO",
     "icao": "LIRF",
     "lat": 41.79352,
     "lng": 12.25259,
-    "id": "88d6e5ca-ef6a-4398-9fc4-e88a0a2e771d",
-    "country": "Italy"
+    "id": "242e13d6-682d-4ca7-914f-6f579e3501fd",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Oslo",
     "name": "Gardermoen",
+    "country": "Norway",
     "iata": "OSL",
     "icao": "ENGM",
     "lat": 60.19392,
     "lng": 11.10036,
-    "id": "85de72ce-4732-4fe1-aaba-f1acfbba985a",
-    "country": "Norway"
+    "id": "eb905cd2-1b07-4598-b7a8-2db84164f568",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Stockholm",
     "name": "Skavsta",
+    "country": "Sweden",
     "iata": "NYO",
     "icao": "ESKN",
     "lat": 58.78864,
     "lng": 16.91219,
-    "id": "79d1d0a0-95cf-4efb-a0d9-eaa8992882c3",
-    "country": "Sweden"
+    "id": "9bba640f-8719-4428-afc6-55cb317f08bb",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Stockholm",
     "name": "Arlanda",
+    "country": "Sweden",
     "iata": "ARN",
     "icao": "ESSA",
     "lat": 59.652,
     "lng": 17.93132,
-    "id": "957182c3-49be-4a9b-8ecb-812f110ca936",
-    "country": "Sweden"
+    "id": "7cea0d62-76cb-453f-806e-555b9bee5da1",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Monastir",
     "name": "Habib Bourguiba",
+    "country": "Tunisia",
     "iata": "MIR",
     "icao": "DTMB",
     "lat": 35.75806,
     "lng": 10.75472,
-    "id": "74b56fa0-19a0-43c4-9e42-c9853394dc2e",
-    "country": "Tunisia"
+    "id": "df9c54b4-1251-4420-8de6-999644458770",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Enfidha",
     "name": "Enfidha",
+    "country": "Tunisia",
     "iata": "NBE",
     "icao": "DTNH",
     "lat": 36.07579,
     "lng": 10.43859,
-    "id": "7ebd0036-2ead-4a44-a79b-d9f46447164d",
-    "country": "Tunisia"
+    "id": "de2d3777-f07a-4455-bb0e-98c5a87a6447",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Kefallinia",
     "name": "Kefalinia",
+    "country": "Greece",
     "iata": "EFL",
     "icao": "LGKF",
     "lat": 38.12007,
     "lng": 20.50048,
-    "id": "2f286123-8399-4a68-a7db-b2a931fe78d6",
-    "country": "Greece"
+    "id": "3893d2d6-4baa-4a12-b3c8-b9ed93ad2eee",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Doha",
     "name": "Doha Airport",
+    "country": "Qatar",
     "iata": "DIA",
     "icao": "OTBD",
     "lat": 25.26486,
     "lng": 51.56356,
-    "id": "3c62a270-4f63-415e-8fd2-4375e6f4d4ea",
-    "country": "Qatar"
+    "id": "375cf365-a285-4bce-bf69-8a2ad7a2793d",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Tokyo",
     "name": "Narita",
+    "country": "Japan",
     "iata": "NRT",
     "icao": "RJAA",
     "lat": 35.76472,
     "lng": 140.38639,
-    "id": "66ae6143-b5b9-4b96-b127-daec9e6f60b0",
-    "country": "Japan"
+    "id": "107437c2-2b62-40c4-bf4a-3fa6cd14e643",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Warsaw",
     "name": "Chopin",
+    "country": "Poland",
     "iata": "WAW",
     "icao": "EPWA",
     "lat": 52.16575,
     "lng": 20.96712,
-    "id": "93240106-5992-4f39-97c5-91794b4776f1",
-    "country": "Poland"
+    "id": "bdaa5dfb-40e9-4986-bb40-97ce247fb766",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Istanbul",
     "name": "Ataturk",
+    "country": "Turkey",
     "iata": "ISL",
     "icao": "LTBA",
     "lat": 40.97692,
     "lng": 28.81461,
-    "id": "df947155-8c9c-4b97-a03a-99ce7a57b29f",
-    "country": "Turkey"
+    "id": "58068f24-2708-4cef-9166-d794e5d9de49",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Frankfurt am Main",
     "name": "Frankfurt",
+    "country": "Germany",
     "iata": "FRA",
     "icao": "EDDF",
     "lat": 50.0406,
     "lng": 8.55603,
-    "id": "c7b76600-55c9-4ac2-a121-8320569a53e1",
-    "country": "Germany"
+    "id": "3f6bd7e4-930f-443f-8849-6a783cf1aede",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Tokyo",
     "name": "Haneda",
+    "country": "Japan",
     "iata": "HND",
     "icao": "RJTT",
     "lat": 35.55226,
     "lng": 139.77969,
-    "id": "723dc593-adc4-4598-8b2e-59e0345eb856",
-    "country": "Japan"
+    "id": "1f0b9d71-94f9-4760-b72c-d37deb39d4a2",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Naha",
     "name": "Naha",
+    "country": "Japan",
     "iata": "OKA",
     "icao": "ROAH",
     "lat": 26.19581,
     "lng": 127.64587,
-    "id": "f6896642-9273-47c1-9725-55e6314cf124",
-    "country": "Japan"
+    "id": "3aaef833-cd7a-4b43-9bfb-ab8e4b9f362f",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Ishigaki I",
     "name": "Ishigaki",
+    "country": "Japan",
     "iata": "ISG",
     "icao": "ROIG",
     "lat": 24.39693,
     "lng": 124.24675,
-    "id": "d9946a39-bf8f-49fe-b345-c9ac0b63e9eb",
-    "country": "Japan"
+    "id": "08dc815f-85c4-40c8-9ffa-7526e51684ea",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Seoul",
     "name": "Incheon",
+    "country": "Korea",
     "iata": "ICN",
     "icao": "RKSI",
     "lat": 37.4492,
     "lng": 126.45095,
-    "id": "21a038db-b57a-458c-8534-23637f90edec",
-    "country": "Korea"
+    "id": "ee39fa6b-89f9-4a84-82b6-1aeefe74b053",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Tirana",
     "name": "Rinas",
+    "country": "Albania",
     "iata": "TIA",
     "icao": "LATI",
     "lat": 41.4219,
     "lng": 19.71296,
-    "id": "01610f96-9af6-456f-ac91-d58e84238420",
-    "country": "Albania"
+    "id": "65756284-85bf-4ea5-9a35-ef37b140715b",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Helsinki",
     "name": "Vantaa",
+    "country": "Finland",
     "iata": "HEL",
     "icao": "EFHK",
     "lat": 60.31722,
     "lng": 24.96333,
-    "id": "ab696095-f853-4f64-a678-c7323d02494b",
-    "country": "Finland"
+    "id": "15bd382d-c120-4385-94f6-95cfe61f1762",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Osaka",
     "name": "Kansai",
+    "country": "Japan",
     "iata": "KIX",
     "icao": "RJBB",
     "lat": 34.42731,
     "lng": 135.24407,
-    "id": "f5e985f7-fe84-4f38-adb2-126adb0e9d95",
-    "country": "Japan"
+    "id": "f3f309e0-a98b-40d4-875d-2ded3bf10073",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Beijing",
     "name": "Peking-Capital",
+    "country": "China",
     "iata": "PEK",
     "icao": "ZBAA",
     "lat": 40.08011,
     "lng": 116.58456,
-    "id": "dfe2737a-6c1c-4c94-9a54-598f4f08fdd6",
-    "country": "China"
+    "id": "4b94d7ca-f336-4fab-84f0-d27a668594e7",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Seoul",
     "name": "Gimpo",
+    "country": "Korea",
     "iata": "GMP",
     "icao": "RKSS",
     "lat": 37.566,
     "lng": 126.80077,
-    "id": "08ec70b1-fae5-4ccb-be77-ae12896c1fb2",
-    "country": "Korea"
+    "id": "4389126e-c34d-489e-bbcf-befcc6330765",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Minsk",
     "name": "Minsk International",
+    "country": "Belarus",
     "iata": "MSQ",
     "icao": "UMMS",
     "lat": 53.88247,
     "lng": 28.03073,
-    "id": "37c024e7-d5ac-412f-8e2d-89dda9a02d0d",
-    "country": "Belarus"
+    "id": "beef0dae-f1b9-4dc8-a435-043071783359",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Taipei",
     "name": "Taoyuan",
+    "country": "Taiwan",
     "iata": "TPE",
     "icao": "RCTP",
     "lat": 25.07773,
     "lng": 121.23282,
-    "id": "62f0a427-5098-4881-a815-df346cf1b81d",
-    "country": "Taiwan"
+    "id": "ecb55b28-8b72-4a21-9921-44245d363ab0",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Prague",
     "name": "Praha-Ruzyne",
+    "country": "Czechia",
     "iata": "PRG",
     "icao": "LKPR",
     "lat": 50.10083,
     "lng": 14.26,
-    "id": "398a2332-90ee-4961-b359-7fe1c08a5cfe",
-    "country": "Czechia"
+    "id": "e0657f1a-3453-4bee-ad9e-fa7e93a053cf",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Iraklion",
     "name": "Nikos Kazantzakis",
+    "country": "Greece",
     "iata": "HER",
     "icao": "LGIR",
     "lat": 35.33907,
     "lng": 25.17513,
-    "id": "963ac2ba-5400-4d5e-a3e6-cf0f7db62b14",
-    "country": "Greece"
+    "id": "b0a659c7-8469-44cb-a056-e278624ed73c",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Naples",
     "name": "Capodichino",
+    "country": "Italy",
     "iata": "NAP",
     "icao": "LIRN",
     "lat": 40.88603,
     "lng": 14.29078,
-    "id": "b09bd9ca-6cae-462f-ac4f-392e9fb00805",
-    "country": "Italy"
+    "id": "44fa8825-7af4-4980-b3d4-bc614f5a3088",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Barcelona",
     "name": "El Prat",
+    "country": "Spain",
     "iata": "BCN",
     "icao": "LEBL",
     "lat": 41.29708,
     "lng": 2.07846,
-    "id": "016d0cca-7d5b-4394-a7cb-c6761d0da475",
-    "country": "Spain"
+    "id": "5b600a7c-dcb7-4245-b39f-79a2be42253a",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Chania",
     "name": "Souda",
+    "country": "Greece",
     "iata": "CHQ",
     "icao": "LGSA",
     "lat": 35.53175,
     "lng": 24.14968,
-    "id": "31884fff-08fe-479f-a834-bde21db26908",
-    "country": "Greece"
+    "id": "7fb2982a-c3c0-4c20-889b-1ed0f31b78c3",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Malta",
     "name": "Luqa",
+    "country": "Malta",
     "iata": "MLA",
     "icao": "LMML",
     "lat": 35.8575,
     "lng": 14.47722,
-    "id": "476c0906-03ab-4353-acc8-a52b37667429",
-    "country": "Malta"
+    "id": "a05b9c0e-37e2-4876-9755-6d9e90f1fee4",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   },
   {
     "city": "Athens",
     "name": "Eleftherios Venizelos",
+    "country": "Greece",
     "iata": "ATH",
     "icao": "LGAV",
     "lat": 37.93636,
     "lng": 23.94447,
-    "id": "2dcc4e3e-790c-4f74-bd7e-746762f64a7d",
-    "country": "Greece"
+    "id": "0be74543-d8a1-4816-bcf8-c08bff310eee",
+    "userId": "b252a9a4-08ac-4aef-a9bc-37e6d00bd161"
   }
 ]

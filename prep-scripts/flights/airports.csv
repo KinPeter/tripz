@@ -1,0 +1,35 @@
+id,user_id,city,country,name,iata,icao,lat,lng
+ae576c29-3f92-464d-a24e-8be699b4a1d9,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Budapest,Hungary,Franz Liszt International,BUD,LHBP,47.43693,19.25559
+d549830a-90a9-42c9-91aa-8cfd43faddab,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Copenhagen,Denmark,Kastrup,CPH,EKCH,55.61792,12.65597
+396b4148-bd30-4b98-963c-4229cb9d4318,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Amsterdam,The Netherlands,Schiphol,AMS,EHAM,52.3103,4.76028
+9c028d70-7067-47bd-af11-4b744d8b1a1a,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Burgas,Bulgaria,Burgas,BOJ,LBBG,42.56958,27.51524
+242e13d6-682d-4ca7-914f-6f579e3501fd,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Rome,Italy,Leonardo da Vinci-Fiumicino,FCO,LIRF,41.79352,12.25259
+eb905cd2-1b07-4598-b7a8-2db84164f568,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Oslo,Norway,Gardermoen,OSL,ENGM,60.19392,11.10036
+9bba640f-8719-4428-afc6-55cb317f08bb,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Stockholm,Sweden,Skavsta,NYO,ESKN,58.78864,16.91219
+7cea0d62-76cb-453f-806e-555b9bee5da1,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Stockholm,Sweden,Arlanda,ARN,ESSA,59.652,17.93132
+df9c54b4-1251-4420-8de6-999644458770,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Monastir,Tunisia,Habib Bourguiba,MIR,DTMB,35.75806,10.75472
+de2d3777-f07a-4455-bb0e-98c5a87a6447,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Enfidha,Tunisia,Enfidha,NBE,DTNH,36.07579,10.43859
+3893d2d6-4baa-4a12-b3c8-b9ed93ad2eee,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Kefallinia,Greece,Kefalinia,EFL,LGKF,38.12007,20.50048
+375cf365-a285-4bce-bf69-8a2ad7a2793d,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Doha,Qatar,Doha Airport,DIA,OTBD,25.26486,51.56356
+107437c2-2b62-40c4-bf4a-3fa6cd14e643,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Tokyo,Japan,Narita,NRT,RJAA,35.76472,140.38639
+bdaa5dfb-40e9-4986-bb40-97ce247fb766,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Warsaw,Poland,Chopin,WAW,EPWA,52.16575,20.96712
+58068f24-2708-4cef-9166-d794e5d9de49,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Istanbul,Turkey,Ataturk,ISL,LTBA,40.97692,28.81461
+3f6bd7e4-930f-443f-8849-6a783cf1aede,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Frankfurt am Main,Germany,Frankfurt,FRA,EDDF,50.0406,8.55603
+1f0b9d71-94f9-4760-b72c-d37deb39d4a2,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Tokyo,Japan,Haneda,HND,RJTT,35.55226,139.77969
+3aaef833-cd7a-4b43-9bfb-ab8e4b9f362f,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Naha,Japan,Naha,OKA,ROAH,26.19581,127.64587
+08dc815f-85c4-40c8-9ffa-7526e51684ea,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Ishigaki I,Japan,Ishigaki,ISG,ROIG,24.39693,124.24675
+ee39fa6b-89f9-4a84-82b6-1aeefe74b053,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Seoul,Korea,Incheon,ICN,RKSI,37.4492,126.45095
+65756284-85bf-4ea5-9a35-ef37b140715b,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Tirana,Albania,Rinas,TIA,LATI,41.4219,19.71296
+15bd382d-c120-4385-94f6-95cfe61f1762,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Helsinki,Finland,Vantaa,HEL,EFHK,60.31722,24.96333
+f3f309e0-a98b-40d4-875d-2ded3bf10073,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Osaka,Japan,Kansai,KIX,RJBB,34.42731,135.24407
+4b94d7ca-f336-4fab-84f0-d27a668594e7,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Beijing,China,Peking-Capital,PEK,ZBAA,40.08011,116.58456
+4389126e-c34d-489e-bbcf-befcc6330765,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Seoul,Korea,Gimpo,GMP,RKSS,37.566,126.80077
+beef0dae-f1b9-4dc8-a435-043071783359,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Minsk,Belarus,Minsk International,MSQ,UMMS,53.88247,28.03073
+ecb55b28-8b72-4a21-9921-44245d363ab0,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Taipei,Taiwan,Taoyuan,TPE,RCTP,25.07773,121.23282
+e0657f1a-3453-4bee-ad9e-fa7e93a053cf,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Prague,Czechia,Praha-Ruzyne,PRG,LKPR,50.10083,14.26
+b0a659c7-8469-44cb-a056-e278624ed73c,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Iraklion,Greece,Nikos Kazantzakis,HER,LGIR,35.33907,25.17513
+44fa8825-7af4-4980-b3d4-bc614f5a3088,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Naples,Italy,Capodichino,NAP,LIRN,40.88603,14.29078
+5b600a7c-dcb7-4245-b39f-79a2be42253a,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Barcelona,Spain,El Prat,BCN,LEBL,41.29708,2.07846
+7fb2982a-c3c0-4c20-889b-1ed0f31b78c3,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Chania,Greece,Souda,CHQ,LGSA,35.53175,24.14968
+a05b9c0e-37e2-4876-9755-6d9e90f1fee4,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Malta,Malta,Luqa,MLA,LMML,35.8575,14.47722
+0be74543-d8a1-4816-bcf8-c08bff310eee,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Athens,Greece,Eleftherios Venizelos,ATH,LGAV,37.93636,23.94447

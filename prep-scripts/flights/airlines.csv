@@ -1,0 +1,23 @@
+id,user_id,name,iata,icao
+8dd3a4ae-259e-42ea-8052-87028dd94424,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Sky Europe Airlines,5P,HSK
+d8ee446b-d62f-4391-90fc-c08c4c40a48c,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,MALEV Hungarian Airlines,MA,MAH
+ae290bbc-85ad-435a-9b8a-bb0cd7597545,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,KLM Royal Dutch Airlines,KL,KLM
+5f2bb056-63d9-4ae0-9f48-324f389c86df,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Wizz Air,W6,WZZ
+d1f39f18-12b3-4171-b16c-6cb5f422162b,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Sterling,NB,SNB
+e157e076-28f8-4d8f-ae5e-f29d6604dd37,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Scandinavian Airlines,SK,SAS
+0869aacc-fd11-4fa8-9c34-09c5a3b71bbe,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Norwegian Air Shuttle,DY,NAX
+2fb73b7a-2e5b-481c-b984-1a2f748fb575,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Tunisair,TU,TAR
+f1e98621-1670-4ff0-b277-893e074d437d,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Travel Service,QS,TVS
+1b336f3f-f11a-4233-9dc8-e75853ca0962,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Qatar Airways,QR,QTR
+bd9b71df-057e-4b1f-8f3c-d082199d8529,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,LOT,LO,LOT
+0f074206-403e-4e4a-96d4-272d03666848,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Turkish Airlines,TK,THY
+674729d7-0e8f-45dd-bef1-5d25f8e867d8,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Lufthansa,LH,DLH
+c4a41ded-ac97-4362-8b51-c939a04a070f,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,All Nippon Airways,NH,ANA
+c0d56e80-dc33-4a25-8961-186ab50f53fc,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Alitalia,AZ,AZA
+cc41577b-3d8b-473e-a53e-8151d5a29bb0,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Finnair,AY,FIN
+e9a7198a-de5b-4c80-bf8a-83e0ce7d1870,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Air China,CA,CCA
+b7860221-5282-4f9e-8b88-c44c9488790e,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Nordic Regional Airlines / Norra,N7,FIN
+442e0b1e-922a-486f-aa96-ef4a303f5221,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Asiana Airlines,OZ,AAR
+dd906879-a36f-43c3-bfc1-94c6c183b7ab,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Ryanair,FR,RYR
+25c051d7-d14b-4577-87af-b51551fca808,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Travel Service,7O,TVL
+d917c89c-e2d5-4386-a9f2-7624d934f7df,b252a9a4-08ac-4aef-a9bc-37e6d00bd161,Aegean Airlines,A3,AEE
