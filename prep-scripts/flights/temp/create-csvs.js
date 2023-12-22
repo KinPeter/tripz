@@ -6,10 +6,10 @@ const __filename = fileURLToPath(import.meta.url); // get the resolved path to t
 const __dirname = path.dirname(__filename); // get the name of the directory
 
 // Resolve the absolute path to the CSV file using __dirname
-const airportPath = path.resolve(__dirname, 'airportsWithIds.json');
-const airlinesPath = path.resolve(__dirname, 'airlinesWithIds.json');
-const aircraftsPath = path.resolve(__dirname, 'aircraftsWithIds.json');
-const flightsPath = path.resolve(__dirname, 'flightsWithIds.json');
+const airportPath = path.resolve(__dirname, '../airports.json');
+const airlinesPath = path.resolve(__dirname, '../airlines.json');
+const aircraftsPath = path.resolve(__dirname, '../aircrafts.json');
+const flightsPath = path.resolve(__dirname, '../flights.json');
 const flightsOutputPath = path.resolve(__dirname, '../flights.csv');
 const aircraftsOutputPath = path.resolve(__dirname, '../aircrafts.csv');
 const airlinesOutputPath = path.resolve(__dirname, '../airlines.csv');
@@ -58,6 +58,7 @@ try {
       'departure_time',
       'arrival_time',
       'duration',
+      'distance',
       'airline',
       'aircraft',
       'registration',
@@ -78,6 +79,7 @@ try {
         departureTime,
         arrivalTime,
         duration,
+        distance,
         airline,
         aircraft,
         registration,
@@ -97,6 +99,7 @@ try {
           departureTime,
           arrivalTime,
           duration,
+          distance,
           airline,
           aircraft,
           registration ?? '',

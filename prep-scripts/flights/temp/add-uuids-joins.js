@@ -9,9 +9,9 @@ const __filename = fileURLToPath(import.meta.url); // get the resolved path to t
 const __dirname = path.dirname(__filename); // get the name of the directory
 
 // Resolve the absolute path to the CSV file using __dirname
-const airportPath = path.resolve(__dirname, 'airportsWithIds.json');
-const airlinesPath = path.resolve(__dirname, 'airlinesWithIds.json');
-const aircraftsPath = path.resolve(__dirname, 'aircraftsWithIds.json');
+const airportPath = path.resolve(__dirname, 'airports.json');
+const airlinesPath = path.resolve(__dirname, 'airlines.json');
+const aircraftsPath = path.resolve(__dirname, 'aircrafts.json');
 const flightsInputPath = path.resolve(__dirname, 'flights.json');
 const flightsOutputPath = path.resolve(__dirname, 'flightsWithIds.json');
 const flightsBundleOutputPath = path.resolve(__dirname, 'flightsBundleWithIds.json');

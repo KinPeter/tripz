@@ -10,11 +10,11 @@ const __dirname = path.dirname(__filename); // get the name of the directory
 
 // Resolve the absolute path to the CSV file using __dirname
 const airportInputPath = path.resolve(__dirname, 'airportsWithCoords.json');
-const airportOutputPath = path.resolve(__dirname, 'airportsWithIds.json');
+const airportOutputPath = path.resolve(__dirname, 'airports.json');
 const airlinesInputPath = path.resolve(__dirname, 'airlines.json');
-const airlinesOutputPath = path.resolve(__dirname, 'airlinesWithIds.json');
+const airlinesOutputPath = path.resolve(__dirname, 'airlines.json');
 const aircraftsInputPath = path.resolve(__dirname, 'aircrafts.json');
-const aircraftsOutputPath = path.resolve(__dirname, 'aircraftsWithIds.json');
+const aircraftsOutputPath = path.resolve(__dirname, 'aircrafts.json');
 
 const userId = process.env.SUPABASE_USER_ID;
 
