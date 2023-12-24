@@ -1,24 +1,36 @@
 import { StateCreator } from 'zustand';
 import { CombinedStore } from './index.ts';
-import { Session } from '@supabase/supabase-js';
-import { SESSION_KEY } from '../lib/constants.ts';
+import { USER_KEY } from '../lib/constants.ts';
+import { User } from '../types/users.ts';
 
 export interface AuthStore {
+  userId: string;
+  email: string;
   token: string | null;
+  tokenExpiresAt: Date | string;
   isAuthenticated: boolean;
-  handleLogin: (session: Session) => void;
+  handleLogin: (user: User) => void;
   handleLogout: () => void;
 }
 
 export const createAuthStoreSlice: StateCreator<CombinedStore, [], [], AuthStore> = setState => ({
+  userId: '',
+  email: '',
+  tokenExpiresAt: '',
   token: null,
   isAuthenticated: false,
-  handleLogin: (session: Session) => {
-    setState(() => ({ token: session.access_token, isAuthenticated: true }));
-    localStorage.setItem(SESSION_KEY, JSON.stringify(session));
+  handleLogin: (user: User) => {
+    setState(() => ({
+      token: user.token,
+      isAuthenticated: true,
+      userId: user.id,
+      email: user.email,
+      tokenExpiresAt: user.expiresAt,
+    }));
+    localStorage.setItem(USER_KEY, JSON.stringify(user));
   },
   handleLogout: () => {
     setState(() => ({ token: null, isAuthenticated: false }));
-    localStorage.removeItem(SESSION_KEY);
+    localStorage.removeItem(USER_KEY);
   },
 });

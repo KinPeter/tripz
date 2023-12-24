@@ -1,23 +1,22 @@
 import { ApiClient } from '../lib/apiClient.ts';
-import { SESSION_KEY } from '../lib/constants.ts';
-import { Session } from '@supabase/supabase-js';
+import { USER_KEY } from '../lib/constants.ts';
+import { User } from '../types/users.ts';
 
 export const useAuthApi = () => {
   const api = new ApiClient();
 
   async function login(email: string): Promise<{ message: string }> {
-    return await api.post('/auth/sign-in', { email }, false);
+    return await api.post('/auth/login', { email }, false);
   }
 
-  async function verify(token: string): Promise<Session> {
-    return await api.post<Session>('/auth/verify', { email: 'kinpeter85@gmail.com', token }, false);
+  async function verify(email: string, loginCode: string): Promise<User> {
+    return await api.post<User>('/auth/verify', { email, loginCode }, false);
   }
 
-  async function refresh(): Promise<Session> {
-    const stored = localStorage.getItem(SESSION_KEY);
-    const session = JSON.parse(stored as string);
-    const refreshToken = session.refresh_token;
-    return await api.post<Session>('/auth/refresh', { refreshToken }, false);
+  async function refresh(): Promise<User> {
+    const stored = localStorage.getItem(USER_KEY);
+    const { email, token } = JSON.parse(stored as string);
+    return await api.post<User>('/auth/token-refresh', { email, token }, true);
   }
 
   return {

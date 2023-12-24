@@ -1,4 +1,4 @@
-import { SESSION_KEY } from './constants.ts';
+import { USER_KEY } from './constants.ts';
 
 export class ApiClient {
   private readonly baseUrl = import.meta.env.VITE_BASE_URL;
@@ -34,10 +34,10 @@ export class ApiClient {
       requestInit.body = JSON.stringify(body);
     }
     if (authenticated) {
-      const sessionString = localStorage.getItem(SESSION_KEY);
+      const sessionString = localStorage.getItem(USER_KEY);
       if (!sessionString) throw new Error('No user session in local storage');
       const session = JSON.parse(sessionString);
-      requestInit.headers = { Authorization: `Bearer ${session.access_token}` };
+      requestInit.headers = { Authorization: `Bearer ${session.token}` };
     }
     const response = await fetch(this.baseUrl + path, requestInit);
     if (!response.ok) {

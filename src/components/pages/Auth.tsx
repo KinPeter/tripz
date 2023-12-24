@@ -2,7 +2,7 @@ import { useStore } from '../../store';
 import { useAuthApi } from '../../hooks/useAuthApi.ts';
 import { useEffect, useState } from 'react';
 import { useMutation } from '@tanstack/react-query';
-import { SESSION_KEY } from '../../lib/constants.ts';
+import { USER_KEY } from '../../lib/constants.ts';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { parseHash } from '../../lib/hashParser.ts';
 import { Button, Center, Flex, Loader, TextInput } from '@mantine/core';
@@ -11,7 +11,6 @@ import { theme } from '../../lib/mantine.ts';
 import styles from './Auth.module.scss';
 import { notifications } from '@mantine/notifications';
 import { hasLength, isEmail, useForm } from '@mantine/form';
-import { Session } from '@supabase/supabase-js';
 
 enum AuthProgressState {
   INITIAL,
@@ -59,7 +58,7 @@ const Auth = () => {
     error: verifyError,
     isPending: verifyLoading,
   } = useMutation({
-    mutationFn: () => verify(otpForm.values.otpToken),
+    mutationFn: () => verify(emailForm.values.email, otpForm.values.otpToken),
   });
 
   const {
@@ -75,7 +74,7 @@ const Auth = () => {
     if (hash) {
       const parsed = parseHash(hash);
       if (parsed.success) {
-        handleLogin(parsed.payload as Session);
+        // handleLogin(parsed.payload as User);
         navigate('/home');
       } else {
         notifications.show({
@@ -88,7 +87,7 @@ const Auth = () => {
         handleLogout();
       }
     } else {
-      const storedSessionData = localStorage.getItem(SESSION_KEY);
+      const storedSessionData = localStorage.getItem(USER_KEY);
       if (storedSessionData) {
         refreshSession();
       }

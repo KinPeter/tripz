@@ -1,4 +1,4 @@
-export const SESSION_KEY = 'tripz-session';
+export const USER_KEY = 'tripz-user';
 
 export type TileLayerData = { attribution: string; url: string };
 export enum TileLayerKey {

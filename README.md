@@ -2,7 +2,6 @@
 
 ## Technologies / tools:
 
-- [Supabase](https://supabase.com/)
 - [Mantine UI](https://mantine.dev/overview/)
 - [Tabler Icons](https://tabler.io/icons)
 - [React Query (Tanstack)](https://tanstack.com/query/latest/docs/react/overview)
