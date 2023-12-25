@@ -3,8 +3,7 @@ import { useAuthApi } from '../../hooks/useAuthApi.ts';
 import { useEffect, useState } from 'react';
 import { useMutation } from '@tanstack/react-query';
 import { USER_KEY } from '../../lib/constants.ts';
-import { useLocation, useNavigate } from 'react-router-dom';
-import { parseHash } from '../../lib/hashParser.ts';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Button, Center, Flex, Loader, TextInput } from '@mantine/core';
 import { Icon123, IconAt, IconPlaneDeparture } from '@tabler/icons-react';
 import { theme } from '../../lib/mantine.ts';
@@ -19,7 +18,7 @@ enum AuthProgressState {
 
 const Auth = () => {
   const navigate = useNavigate();
-  const { hash } = useLocation();
+  const [queryParams] = useSearchParams();
   const handleLogin = useStore(state => state.handleLogin);
   const handleLogout = useStore(state => state.handleLogout);
   const { login, verify, refresh } = useAuthApi();
@@ -71,28 +70,29 @@ const Auth = () => {
   });
 
   useEffect(() => {
-    if (hash) {
-      const parsed = parseHash(hash);
-      if (parsed.success) {
-        // handleLogin(parsed.payload as User);
-        navigate('/home');
-      } else {
+    if (queryParams.size) {
+      const token = queryParams.get('accessToken');
+      const expiresAt = queryParams.get('expiresAt');
+      const email = queryParams.get('email');
+      const id = queryParams.get('id');
+      if (!token || !expiresAt || !email || !id) {
         notifications.show({
           title: 'Oops!',
-          message:
-            'Could not log you in. ' +
-            (parsed.payload as Record<string, string>).error_description?.replace(/\+/g, ' '),
+          message: 'Could not log you in.',
           color: 'red',
         });
         handleLogout();
+        return;
       }
+      handleLogin({ id, email, token, expiresAt });
+      navigate('/home');
     } else {
       const storedSessionData = localStorage.getItem(USER_KEY);
       if (storedSessionData) {
         refreshSession();
       }
     }
-  }, [hash, refreshSession, handleLogin, handleLogout, navigate]);
+  }, [queryParams, refreshSession, handleLogin, handleLogout, navigate]);
 
   useEffect(() => {
     if (refreshData) {

@@ -10,7 +10,7 @@ export const useAuthApi = () => {
   }
 
   async function verify(email: string, loginCode: string): Promise<User> {
-    return await api.post<User>('/auth/verify', { email, loginCode }, false);
+    return await api.post<User>('/auth/verify-code', { email, loginCode }, false);
   }
 
   async function refresh(): Promise<User> {
