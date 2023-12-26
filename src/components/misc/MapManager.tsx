@@ -6,6 +6,7 @@ import { calculateCurve } from '../../lib/calculateCurve.ts';
 import { useComputedColorScheme } from '@mantine/core';
 import { TILE_LAYERS, TileLayerKey } from '../../lib/constants.ts';
 import MapMenu from './MapMenu.tsx';
+import { useStore } from '../../store';
 
 const MapManager = () => {
   const map = useMap();
@@ -14,6 +15,7 @@ const MapManager = () => {
   const [tileLayerByColorScheme, setTileLayerByColorScheme] = useState<TileLayerKey>(
     colorScheme as TileLayerKey
   );
+  const flights = useStore(s => s.flights);
 
   useEffect(() => {
     setTileLayerByColorScheme(colorScheme as TileLayerKey);
@@ -26,6 +28,10 @@ const MapManager = () => {
       weight: 2,
     }).addTo(map);
   }, [map]);
+
+  useEffect(() => {
+    // TODO
+  }, [flights]);
 
   const toggleDefaultTileLayer = () => {
     setTileLayer(
