@@ -1,6 +1,6 @@
 import { ApiClient } from '../lib/apiClient.ts';
 import { USER_KEY } from '../lib/constants.ts';
-import { User } from '../types/users.ts';
+import { AuthData as User } from '@kinpeter/pk-common';
 
 export const useAuthApi = () => {
   const api = new ApiClient();

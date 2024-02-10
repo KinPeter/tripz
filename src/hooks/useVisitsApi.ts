@@ -1,5 +1,5 @@
 import { ApiClient } from '../lib/apiClient.ts';
-import { Visit } from '../types/visits.ts';
+import { Visit } from '@kinpeter/pk-common';
 
 export const useVisitsApi = () => {
   const api = new ApiClient();

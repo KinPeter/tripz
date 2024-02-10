@@ -1,6 +1,6 @@
 import { StateCreator } from 'zustand';
 import { CombinedStore } from './index.ts';
-import { Visit } from '../types/visits.ts';
+import { Visit } from '@kinpeter/pk-common';
 
 export interface VisitsStore {
   visits: Visit[];
