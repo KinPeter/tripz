@@ -5,7 +5,7 @@ export const useVisitsApi = () => {
   const api = new ApiClient();
 
   async function getAllVisits(): Promise<Visit[]> {
-    return await api.get('/visits/all');
+    return await api.get('/visits');
   }
 
   return { getAllVisits };

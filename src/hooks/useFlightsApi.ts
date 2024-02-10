@@ -5,7 +5,7 @@ export const useFlightsApi = () => {
   const api = new ApiClient();
 
   async function getAllFlights(): Promise<Flight[]> {
-    return await api.get('/flights/all');
+    return await api.get('/flights');
   }
 
   return { getAllFlights };
