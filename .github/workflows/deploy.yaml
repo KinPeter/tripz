@@ -40,4 +40,4 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          server-dir: ${{ secrets.PROD_MAIN_URL }}
+          server-dir: ${{ secrets.FTP_FOLDER }}
