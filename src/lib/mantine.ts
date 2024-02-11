@@ -1,6 +1,6 @@
 import { createTheme, MantineColorsTuple } from '@mantine/core';
 
-const tomato: MantineColorsTuple = [
+export const tomato: MantineColorsTuple = [
   '#fff0e4',
   '#ffe0cf',
   '#fac0a1',

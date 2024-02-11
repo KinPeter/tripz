@@ -2,11 +2,13 @@ import { Marker, Popup, TileLayer, useMap } from 'react-leaflet';
 import { useEffect, useState } from 'react';
 import '@elfalem/leaflet-curve';
 import L from 'leaflet';
-import { calculateCurve } from '../../lib/calculateCurve.ts';
+import { calculateCurve, markerIcons } from '../../lib/mapUtils.ts';
 import { useComputedColorScheme } from '@mantine/core';
 import { TILE_LAYERS, TileLayerKey } from '../../lib/constants.ts';
 import MapMenu from './MapMenu.tsx';
 import { useStore } from '../../store';
+import { tomato } from '../../lib/mantine.ts';
+import { MapMarker } from '../../types/map.ts';
 
 const MapManager = () => {
   const map = useMap();
@@ -15,7 +17,13 @@ const MapManager = () => {
   const [tileLayerByColorScheme, setTileLayerByColorScheme] = useState<TileLayerKey>(
     colorScheme as TileLayerKey
   );
-  const flights = useStore(s => s.flights);
+  const [flightMarkers, setFlightMarkers] = useState<MapMarker[]>([]);
+  const [visitMarkers, setVisitMarkers] = useState<MapMarker[]>([]);
+  const [flightsVisible, setFlightsVisible] = useState<boolean>(true);
+  const [visitsVisible, setVisitsVisible] = useState<boolean>(true);
+  const [curvesLayer, setCurvesLayer] = useState<L.LayerGroup | null>(null);
+  const flights = useStore(s => s.mapFlightData);
+  const visits = useStore(s => s.mapVisitsData);
 
   useEffect(() => {
     setTileLayerByColorScheme(colorScheme as TileLayerKey);
@@ -23,20 +31,49 @@ const MapManager = () => {
   }, [colorScheme]);
 
   useEffect(() => {
-    L.curve(calculateCurve([51.505, -0.09], [12.921, 9.02]), {
-      color: 'rgba(255,255,255,0.5)',
-      weight: 2,
-    }).addTo(map);
-  }, [map]);
+    if (!visits) return;
+    setVisitMarkers(visits.markers);
+  }, [visits, map]);
 
   useEffect(() => {
-    // TODO
-  }, [flights]);
+    if (!flights) return;
+    if (curvesLayer) {
+      map.removeLayer(curvesLayer);
+    }
+    const curves = flights.routes.map(({ a, b, count }) => {
+      const color =
+        count > 9 ? tomato[9] : count > 5 ? tomato[7] : count > 2 ? tomato[4] : tomato[2];
+      return L.curve(calculateCurve(a, b), {
+        color,
+        weight: 2,
+      });
+    });
+    const newCurvesLayer = L.layerGroup(curves);
+    map.addLayer(newCurvesLayer);
+    setCurvesLayer(newCurvesLayer);
+    setFlightMarkers(flights.markers);
+    map.setView(flights.center, 4);
+  }, [flights, map]);
 
   const toggleDefaultTileLayer = () => {
     setTileLayer(
       tileLayer === TileLayerKey.DEFAULT ? tileLayerByColorScheme : TileLayerKey.DEFAULT
     );
+  };
+
+  const toggleVisits = () => {
+    setVisitsVisible(!visitsVisible);
+  };
+
+  const toggleFlights = () => {
+    const isVisible = !flightsVisible;
+    setFlightsVisible(isVisible);
+    if (!curvesLayer) return;
+    if (isVisible) {
+      map.addLayer(curvesLayer);
+    } else {
+      map.removeLayer(curvesLayer);
+    }
   };
 
   return (
@@ -45,12 +82,23 @@ const MapManager = () => {
         attribution={TILE_LAYERS[tileLayer].attribution}
         url={TILE_LAYERS[tileLayer].url}
       />
-      <Marker position={[51.505, -0.09]}>
-        <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
-        </Popup>
-      </Marker>
-      <MapMenu onToggleDefaultLayer={toggleDefaultTileLayer} />
+      {visitsVisible &&
+        visitMarkers.map(({ pos, popup }) => (
+          <Marker position={pos} icon={markerIcons.visit} key={`${pos[0]}-${pos[1]}`}>
+            <Popup>{popup}</Popup>
+          </Marker>
+        ))}
+      {flightsVisible &&
+        flightMarkers.map(({ pos, popup }) => (
+          <Marker position={pos} icon={markerIcons.flight} key={`${pos[0]}-${pos[1]}`}>
+            <Popup>{popup}</Popup>
+          </Marker>
+        ))}
+      <MapMenu
+        onToggleDefaultLayer={toggleDefaultTileLayer}
+        onToggleFlights={toggleFlights}
+        onToggleVisits={toggleVisits}
+      />
     </>
   );
 };
