@@ -1,13 +1,14 @@
 import { StateCreator } from 'zustand';
 import { CombinedStore } from './index.ts';
 import { Visit } from '@kinpeter/pk-common';
-import { MapVisitsData } from '../types/visits.ts';
-import { processVisitsForMap } from '../lib/visitUtils.ts';
+import { MapVisitsData, StatsVisitsData } from '../types/visits.ts';
+import { processVisitsForMap, processVisitsForStats } from '../lib/visitUtils.ts';
 
 export interface VisitsStore {
   visits: Visit[];
   setVisits: (visits: Visit[]) => void;
   mapVisitsData: MapVisitsData;
+  statsVisitsData: StatsVisitsData;
 }
 
 export const createVisitsStoreSlice: StateCreator<
@@ -18,7 +19,11 @@ export const createVisitsStoreSlice: StateCreator<
 > = setState => ({
   visits: [],
   mapVisitsData: { markers: [] },
+  statsVisitsData: { citiesCount: 0, countriesCount: 0 },
   setVisits: (visits: Visit[]) => {
-    setState(() => ({ visits, mapVisitsData: processVisitsForMap(visits) }));
+    const mapVisitsData = processVisitsForMap(visits);
+    const statsVisitsData = processVisitsForStats(visits);
+    console.log('statsVisitsData', statsVisitsData);
+    setState(() => ({ visits, mapVisitsData, statsVisitsData }));
   },
 });
