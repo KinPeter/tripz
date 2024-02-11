@@ -1,0 +1,9 @@
+html[data-mantine-color-scheme='dark'] {
+  .leaflet-control-zoom-in,
+  .leaflet-control-zoom-out,
+  .leaflet-control-attribution {
+    background-color: var(--mantine-color-dark-filled);
+    color: var(--mantine-color-default-color);
+    border-color: var(--mantine-color-dark-outline);
+  }
+}

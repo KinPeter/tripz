@@ -2,10 +2,6 @@ import { CurvePathData } from '@elfalem/leaflet-curve';
 import { LatLng } from '../types/map.ts';
 import L, { PointTuple } from 'leaflet';
 
-export function isSameCoords(a: LatLng, b: LatLng): boolean {
-  return a[0] === b[0] && a[1] === b[1];
-}
-
 /**
  * Creating consistently curved lines on Leaflet
  * From: https://ryancatalani.medium.com/creating-consistently-curved-lines-on-leaflet-b59bc03fa9dc
@@ -49,10 +45,10 @@ export function getDistanceInKm(lat1: number, lng1: number, lat2: number, lng2: 
 const iconBase = {
   shadowUrl: 'marker-shadow.png',
   iconSize: [28, 41] as PointTuple,
-  shadowSize: [44, 41] as PointTuple,
-  iconAnchor: [14, 41] as PointTuple,
-  shadowAnchor: [14, 40] as PointTuple,
-  popupAnchor: [0, -43] as PointTuple,
+  shadowSize: [43, 40] as PointTuple,
+  iconAnchor: [14, 39] as PointTuple,
+  shadowAnchor: [14, 39] as PointTuple,
+  popupAnchor: [0, -36] as PointTuple,
 };
 
 export const markerIcons = {
