@@ -1,9 +1,15 @@
 html[data-mantine-color-scheme='dark'] {
   .leaflet-control-zoom-in,
   .leaflet-control-zoom-out,
-  .leaflet-control-attribution {
+  .leaflet-control-attribution,
+  .leaflet-popup-content-wrapper,
+  .leaflet-popup-tip {
     background-color: var(--mantine-color-dark-filled);
     color: var(--mantine-color-default-color);
     border-color: var(--mantine-color-dark-outline);
   }
+}
+
+.leaflet-popup-content {
+  margin: 8px 16px;
 }

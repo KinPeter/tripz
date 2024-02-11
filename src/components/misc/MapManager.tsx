@@ -85,13 +85,13 @@ const MapManager = () => {
       {visitsVisible &&
         visitMarkers.map(({ pos, popup }) => (
           <Marker position={pos} icon={markerIcons.visit} key={`${pos[0]}-${pos[1]}`}>
-            <Popup>{popup}</Popup>
+            <Popup closeButton={false}>{popup}</Popup>
           </Marker>
         ))}
       {flightsVisible &&
         flightMarkers.map(({ pos, popup }) => (
           <Marker position={pos} icon={markerIcons.flight} key={`${pos[0]}-${pos[1]}`}>
-            <Popup>{popup}</Popup>
+            <Popup closeButton={false}>{popup}</Popup>
           </Marker>
         ))}
       <MapMenu
