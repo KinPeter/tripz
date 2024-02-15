@@ -247,14 +247,20 @@ export function processFlightsForStats(flights: Flight[]): StatsFlightData {
     }
   });
 
-  const countriesByCount = Object.entries(countriesCount).sort((a, b) => b[1] - a[1]);
-  const airportsByCount = Object.entries(airportsCount).sort((a, b) => b[1] - a[1]);
-  const airlinesByCount = Object.entries(airlinesCount).sort((a, b) => b[1] - a[1]);
-  const airlinesByDistance = Object.entries(airlinesDistance).sort((a, b) => b[1] - a[1]);
-  const aircraftByCount = Object.entries(aircraftCount).sort((a, b) => b[1] - a[1]);
-  const aircraftByDistance = Object.entries(aircraftDistance).sort((a, b) => b[1] - a[1]);
-  const routesByCount = Object.entries(routesCount).sort((a, b) => b[1] - a[1]);
-  const routesByDistance = Object.entries(routesDistance).sort((a, b) => b[1] - a[1]);
+  const compareFn = (a: [string, number], b: [string, number]) => b[1] - a[1];
+
+  const flightClassesByCount = Object.entries(flightClassesCount).sort(compareFn);
+  const reasonsByCount = Object.entries(reasonsCount).sort(compareFn);
+  const seatTypeByCount = Object.entries(seatTypeCount).sort(compareFn);
+  const continentsByCount = Object.entries(continentsCount).sort(compareFn);
+  const countriesByCount = Object.entries(countriesCount).sort(compareFn);
+  const airportsByCount = Object.entries(airportsCount).sort(compareFn);
+  const airlinesByCount = Object.entries(airlinesCount).sort(compareFn);
+  const airlinesByDistance = Object.entries(airlinesDistance).sort(compareFn);
+  const aircraftByCount = Object.entries(aircraftCount).sort(compareFn);
+  const aircraftByDistance = Object.entries(aircraftDistance).sort(compareFn);
+  const routesByCount = Object.entries(routesCount).sort(compareFn);
+  const routesByDistance = Object.entries(routesDistance).sort(compareFn);
 
   const startYear = Math.min(...Object.keys(flightsPerYear).map(Number));
   const currentYear = new Date().getFullYear();
@@ -282,10 +288,10 @@ export function processFlightsForStats(flights: Flight[]): StatsFlightData {
     intlCount,
     totalDistance,
     totalDurationMinutes,
-    flightClassesCount,
-    reasonsCount,
-    seatTypeCount,
-    continentsCount,
+    flightClassesByCount,
+    reasonsByCount,
+    seatTypeByCount,
+    continentsByCount,
     totalCountries: countriesSet.size,
     countriesByCount,
     totalAirports: Object.keys(airportsMap).length,

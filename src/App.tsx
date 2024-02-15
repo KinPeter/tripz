@@ -14,6 +14,8 @@ import '@mantine/notifications/styles.css';
 import { MantineProvider } from '@mantine/core';
 import { theme } from './lib/mantine.ts';
 import { Notifications } from '@mantine/notifications';
+import Flights from './components/pages/Flights.tsx';
+import Visits from './components/pages/Visits.tsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +23,8 @@ const router = createBrowserRouter(
       <Route index element={<Auth />} />
       <Route element={<ProtectedRoute />}>
         <Route path="/home" element={<Home />} />
+        <Route path="/flights" element={<Flights />} />
+        <Route path="/visits" element={<Visits />} />
       </Route>
     </Route>
   )

@@ -1,6 +1,7 @@
-import Map from '../misc/Map.tsx';
 import { Center, Loader } from '@mantine/core';
 import { useFetchOnHome } from '../../hooks/useFetchOnHome.ts';
+import Map from '../misc/Map.tsx';
+import Stats from '../misc/Stats.tsx';
 
 const Home = () => {
   const { flightsLoading, visitsLoading } = useFetchOnHome();
@@ -16,6 +17,7 @@ const Home = () => {
   return (
     <>
       <Map />
+      <Stats />
     </>
   );
 };

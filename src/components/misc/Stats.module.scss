@@ -1,0 +1,66 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1250px) {
+    width: 1200px;
+  }
+
+  h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 0.2rem 0 0.5rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    font-weight: 300;
+  }
+
+  .mainRow {
+    margin: 1.5rem 0 3rem;
+
+    div p:first-child {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+
+      b {
+        font-size: 2.2rem;
+      }
+
+      a {
+        color: var(--mantine-color-anchor);
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        text-transform: none;
+        font-size: 0.9rem;
+      }
+    }
+
+    div p:not(:first-child) {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .donutRow,
+  .mainRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .donutRow {
+    margin-bottom: 2rem;
+  }
+}

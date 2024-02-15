@@ -20,10 +20,10 @@ export interface StatsFlightData {
   intlCount: number;
   totalDistance: number;
   totalDurationMinutes: number;
-  flightClassesCount: Record<string, number>;
-  reasonsCount: Record<string, number>;
-  seatTypeCount: Record<string, number>;
-  continentsCount: Record<string, number>;
+  flightClassesByCount: Array<[string, number]>;
+  reasonsByCount: Array<[string, number]>;
+  seatTypeByCount: Array<[string, number]>;
+  continentsByCount: Array<[string, number]>;
   totalCountries: number;
   countriesByCount: Array<[string, number]>;
   totalAirports: number;

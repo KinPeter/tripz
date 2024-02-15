@@ -4,7 +4,7 @@ import MapManager from './MapManager.tsx';
 
 const Map = () => {
   return (
-    <MapContainer className={styles.map} center={[53, 0]} zoom={3} scrollWheelZoom={true}>
+    <MapContainer className={styles.map} center={[53, 0]} zoom={3} scrollWheelZoom={false}>
       <MapManager />
     </MapContainer>
   );
