@@ -2,6 +2,7 @@ import { Airport, Flight } from '@kinpeter/pk-common';
 import { MapFlightData, Route, StatsFlightData } from '../types/flights.ts';
 import { LatLng, MapMarker } from '../types/map.ts';
 import { continentsForCountries } from './continentsForCountries.ts';
+import { dayNames, monthNames } from './constants.ts';
 
 export function processFlightsForMap(flights: Flight[]): MapFlightData {
   const routeMap: Map<string, { a: LatLng; b: LatLng; count: number }> = new Map();
@@ -101,9 +102,9 @@ export function processFlightsForStats(flights: Flight[]): StatsFlightData {
   const routesSet = new Set<string>();
   const routesCount: Record<string, number> = {};
   const routesDistance: Record<string, number> = {};
-  const flightsPerYear: Record<number, number> = {};
-  const flightsPerMonth: Record<number, number> = {};
-  const flightsPerWeekday: Record<number, number> = {};
+  const flightsPerYearObj: Record<number, number> = {};
+  const flightsPerMonthObj: Record<number, number> = {};
+  const flightsPerWeekdayObj: Record<number, number> = {};
 
   flights.forEach(f => {
     if (f.to.country === f.from.country) {
@@ -226,61 +227,74 @@ export function processFlightsForStats(flights: Flight[]): StatsFlightData {
 
     const date = new Date(f.date);
     const year = date.getFullYear();
-    if (flightsPerYear[year] === undefined) {
-      flightsPerYear[year] = 1;
+    if (flightsPerYearObj[year] === undefined) {
+      flightsPerYearObj[year] = 1;
     } else {
-      flightsPerYear[year]++;
+      flightsPerYearObj[year]++;
     }
 
     const month = date.getMonth();
-    if (flightsPerMonth[month] === undefined) {
-      flightsPerMonth[month] = 1;
+    if (flightsPerMonthObj[month] === undefined) {
+      flightsPerMonthObj[month] = 1;
     } else {
-      flightsPerMonth[month]++;
+      flightsPerMonthObj[month]++;
     }
 
     const weekday = date.getDay();
-    if (flightsPerWeekday[weekday] === undefined) {
-      flightsPerWeekday[weekday] = 1;
+    if (flightsPerWeekdayObj[weekday] === undefined) {
+      flightsPerWeekdayObj[weekday] = 1;
     } else {
-      flightsPerWeekday[weekday]++;
+      flightsPerWeekdayObj[weekday]++;
     }
   });
 
-  const compareFn = (a: [string, number], b: [string, number]) => b[1] - a[1];
+  const valueCompareFn = (a: [string, number], b: [string, number]) => b[1] - a[1];
+  const keyCompareFn = (a: [string, number], b: [string, number]) => Number(a[0]) - Number(b[0]);
 
-  const flightClassesByCount = Object.entries(flightClassesCount).sort(compareFn);
-  const reasonsByCount = Object.entries(reasonsCount).sort(compareFn);
-  const seatTypeByCount = Object.entries(seatTypeCount).sort(compareFn);
-  const continentsByCount = Object.entries(continentsCount).sort(compareFn);
-  const countriesByCount = Object.entries(countriesCount).sort(compareFn);
-  const airportsByCount = Object.entries(airportsCount).sort(compareFn);
-  const airlinesByCount = Object.entries(airlinesCount).sort(compareFn);
-  const airlinesByDistance = Object.entries(airlinesDistance).sort(compareFn);
-  const aircraftByCount = Object.entries(aircraftCount).sort(compareFn);
-  const aircraftByDistance = Object.entries(aircraftDistance).sort(compareFn);
-  const routesByCount = Object.entries(routesCount).sort(compareFn);
-  const routesByDistance = Object.entries(routesDistance).sort(compareFn);
+  const flightClassesByCount = Object.entries(flightClassesCount).sort(valueCompareFn);
+  const reasonsByCount = Object.entries(reasonsCount).sort(valueCompareFn);
+  const seatTypeByCount = Object.entries(seatTypeCount).sort(valueCompareFn);
+  const continentsByCount = Object.entries(continentsCount).sort(valueCompareFn);
+  const countriesByCount = Object.entries(countriesCount).sort(valueCompareFn);
+  const airportsByCount = Object.entries(airportsCount).sort(valueCompareFn);
+  const airlinesByCount = Object.entries(airlinesCount).sort(valueCompareFn);
+  const airlinesByDistance = Object.entries(airlinesDistance).sort(valueCompareFn);
+  const aircraftByCount = Object.entries(aircraftCount).sort(valueCompareFn);
+  const aircraftByDistance = Object.entries(aircraftDistance).sort(valueCompareFn);
+  const routesByCount = Object.entries(routesCount).sort(valueCompareFn);
+  const routesByDistance = Object.entries(routesDistance).sort(valueCompareFn);
 
-  const startYear = Math.min(...Object.keys(flightsPerYear).map(Number));
+  const startYear = Math.min(...Object.keys(flightsPerYearObj).map(Number));
   const currentYear = new Date().getFullYear();
   for (let i = startYear; i <= currentYear; i++) {
-    if (flightsPerYear[i] === undefined) {
-      flightsPerYear[i] = 0;
+    if (flightsPerYearObj[i] === undefined) {
+      flightsPerYearObj[i] = 0;
     }
   }
+  const flightsPerYear = Object.entries(flightsPerYearObj).sort(keyCompareFn);
 
   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].forEach(i => {
-    if (flightsPerMonth[i] === undefined) {
-      flightsPerMonth[i] = 0;
+    if (flightsPerMonthObj[i] === undefined) {
+      flightsPerMonthObj[i] = 0;
     }
   });
+  const flightsPerMonth = Object.entries(flightsPerMonthObj)
+    .sort(keyCompareFn)
+    .map(([monthNumber, value]) => [monthNames[monthNumber.toString()], value]) as Array<
+    [string, number]
+  >;
 
   [0, 1, 2, 3, 4, 5, 6].forEach(i => {
-    if (flightsPerWeekday[i] === undefined) {
-      flightsPerWeekday[i] = 0;
+    if (flightsPerWeekdayObj[i] === undefined) {
+      flightsPerWeekdayObj[i] = 0;
     }
   });
+  const flightsPerWeekday = Object.entries(flightsPerWeekdayObj)
+    .sort(keyCompareFn)
+    .map(([dayNumber, value]) => [dayNames[dayNumber.toString()], value]) as Array<
+    [string, number]
+  >;
+  flightsPerWeekday.push(flightsPerWeekday.shift() as [string, number]);
 
   return {
     totalCount: flights.length,

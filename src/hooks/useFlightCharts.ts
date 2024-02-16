@@ -19,6 +19,9 @@ export const useFlightCharts = (flights: StatsFlightData | null) => {
   const [aircraftsByDistance, setAircraftsByDistance] = useState<Record<string, string | number>[]>(
     []
   );
+  const [flightsPerYear, setFlightsPerYear] = useState<Record<string, string | number>[]>([]);
+  const [flightsPerMonth, setFlightsPerMonth] = useState<Record<string, string | number>[]>([]);
+  const [flightsPerWeekday, setFlightsPerWeekday] = useState<Record<string, string | number>[]>([]);
 
   useEffect(() => {
     if (!flights) return;
@@ -51,14 +54,19 @@ export const useFlightCharts = (flights: StatsFlightData | null) => {
       })
     );
 
-    setAirports(flights.airportsByCount.map(([item, value]) => ({ item, value })));
-    setCountries(flights.countriesByCount.map(([item, value]) => ({ item, value })));
-    setRoutesByCount(flights.routesByCount.map(([item, value]) => ({ item, value })));
-    setRoutesByDistance(flights.routesByDistance.map(([item, value]) => ({ item, value })));
-    setAirlinesByCount(flights.airlinesByCount.map(([item, value]) => ({ item, value })));
-    setAirlinesByDistance(flights.airlinesByDistance.map(([item, value]) => ({ item, value })));
-    setAircraftsByCount(flights.aircraftByCount.map(([item, value]) => ({ item, value })));
-    setAircraftsByDistance(flights.aircraftByDistance.map(([item, value]) => ({ item, value })));
+    const mapperFn = ([item, value]: [string, number]) => ({ item, value });
+
+    setAirports(flights.airportsByCount.map(mapperFn));
+    setCountries(flights.countriesByCount.map(mapperFn));
+    setRoutesByCount(flights.routesByCount.map(mapperFn));
+    setRoutesByDistance(flights.routesByDistance.map(mapperFn));
+    setAirlinesByCount(flights.airlinesByCount.map(mapperFn));
+    setAirlinesByDistance(flights.airlinesByDistance.map(mapperFn));
+    setAircraftsByCount(flights.aircraftByCount.map(mapperFn));
+    setAircraftsByDistance(flights.aircraftByDistance.map(mapperFn));
+    setFlightsPerYear(flights.flightsPerYear.map(mapperFn));
+    setFlightsPerMonth(flights.flightsPerMonth.map(mapperFn));
+    setFlightsPerWeekday(flights.flightsPerWeekday.map(mapperFn));
   }, [flights]);
 
   return {
@@ -74,6 +82,9 @@ export const useFlightCharts = (flights: StatsFlightData | null) => {
     airlinesByDistance,
     aircraftsByCount,
     aircraftsByDistance,
+    flightsPerYear,
+    flightsPerMonth,
+    flightsPerWeekday,
   };
 };
 

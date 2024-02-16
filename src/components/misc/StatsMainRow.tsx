@@ -42,9 +42,14 @@ const StatsMainRow = ({ flights, visits }: Props) => {
       durationMinutes: flights.totalDurationMinutes % 60,
       durationWeeks: (flights.totalDurationMinutes / 60 / 24 / 7).toFixed(1),
       durationYears: (flights.totalDurationMinutes / 60 / 24 / 365).toFixed(2),
-      yearWithMostFlights: Object.entries(flights.flightsPerYear).sort((a, b) => b[1] - a[1])[0],
-      currentYear: flights.flightsPerYear[new Date().getFullYear()],
-      lastYear: flights.flightsPerYear[new Date().getFullYear() - 1] ?? 0,
+      yearWithMostFlights: [...flights.flightsPerYear].sort((a, b) => b[1] - a[1])[0],
+      currentYear:
+        flights.flightsPerYear.find(([year]) => Number(year) === new Date().getFullYear())?.[1] ??
+        0,
+      lastYear:
+        flights.flightsPerYear.find(
+          ([year]) => Number(year) === new Date().getFullYear() - 1
+        )?.[1] ?? 0,
     });
   }, [flights]);
 

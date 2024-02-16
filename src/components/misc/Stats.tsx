@@ -4,6 +4,7 @@ import { useFlightCharts } from '../../hooks/useFlightCharts.ts';
 import FlightDonutChart from './charts/FlightDonutChart.tsx';
 import StatsMainRow from './StatsMainRow.tsx';
 import FlightBarChart from './charts/FlightBarChart.tsx';
+import FlightAreaChart from './charts/FlightAreaChart.tsx';
 
 const Stats = () => {
   const flights = useStore(s => s.statsFlightData);
@@ -22,6 +23,9 @@ const Stats = () => {
     airlinesByDistance,
     aircraftsByCount,
     aircraftsByDistance,
+    flightsPerYear,
+    flightsPerMonth,
+    flightsPerWeekday,
   } = useFlightCharts(flights);
 
   return (
@@ -65,6 +69,19 @@ const Stats = () => {
         totalCount={flights?.totalRoutes}
         primaryData={routesByCount}
         secondaryData={routesByDistance}
+        xAxisHeight={50}
+        xAxisMargin={20}
+      />
+      <FlightAreaChart title="flights per year" data={flightsPerYear} />
+      <FlightAreaChart
+        title="flights per month"
+        data={flightsPerMonth}
+        xAxisHeight={50}
+        xAxisMargin={20}
+      />
+      <FlightAreaChart
+        title="flights per weekday"
+        data={flightsPerWeekday}
         xAxisHeight={50}
         xAxisMargin={20}
       />

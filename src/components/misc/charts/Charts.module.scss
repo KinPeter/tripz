@@ -5,7 +5,8 @@
   width: 280px;
 }
 
-.barChartContainer {
+.barChartContainer,
+.areaChartContainer {
   header {
     display: flex;
     justify-content: space-between;
@@ -21,6 +22,7 @@
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
+    padding-bottom: 0.5rem;
   }
 
   margin-bottom: 2rem;
