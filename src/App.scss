@@ -8,8 +8,17 @@ html[data-mantine-color-scheme='dark'] {
     color: var(--mantine-color-default-color);
     border-color: var(--mantine-color-dark-outline);
   }
+
+  .mantine-Tooltip-tooltip {
+    background-color: var(--mantine-color-dark-filled) !important;
+    color: var(--mantine-color-text) !important;
+  }
 }
 
 .leaflet-popup-content {
   margin: 8px 16px;
+}
+
+.mantine-Tooltip-tooltip {
+  z-index: 402 !important;
 }

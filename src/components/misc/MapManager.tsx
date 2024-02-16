@@ -76,6 +76,14 @@ const MapManager = () => {
     }
   };
 
+  const toggleZoom = () => {
+    if (map.scrollWheelZoom.enabled()) {
+      map.scrollWheelZoom.disable();
+    } else {
+      map.scrollWheelZoom.enable();
+    }
+  };
+
   return (
     <>
       <TileLayer
@@ -98,6 +106,7 @@ const MapManager = () => {
         onToggleDefaultLayer={toggleDefaultTileLayer}
         onToggleFlights={toggleFlights}
         onToggleVisits={toggleVisits}
+        onToggleZoom={toggleZoom}
       />
     </>
   );

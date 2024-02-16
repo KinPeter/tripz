@@ -1,4 +1,4 @@
-import { ActionIcon } from '@mantine/core';
+import { ActionIcon, Tooltip } from '@mantine/core';
 import { useStore } from '../../store';
 import ColorSchemeToggle from './ColorSchemeToggle.tsx';
 import { useState } from 'react';
@@ -12,33 +12,38 @@ const SystemMenu = () => {
 
   return (
     <div className={styles.systemMenu}>
-      <ActionIcon
-        onClick={() => setOpen(!open)}
-        variant={open ? 'light' : 'outline'}
-        size="lg"
-        radius="xl"
-        aria-label="System menu"
-      >
-        {open ? <IconX /> : <IconDots />}
-      </ActionIcon>
+      <Tooltip position="bottom" label="System menu">
+        <ActionIcon
+          onClick={() => setOpen(!open)}
+          variant={open ? 'light' : 'outline'}
+          size="lg"
+          radius="xl"
+          aria-label="System menu"
+        >
+          {open ? <IconX /> : <IconDots />}
+        </ActionIcon>
+      </Tooltip>
       {open && (
         <div className={styles.content}>
           {isAuthenticated ? (
             <>
-              <ColorSchemeToggle />
-              <ActionIcon
-                onClick={() => logOut()}
-                variant="default"
-                size="lg"
-                radius="xl"
-                aria-label="Log out"
-              >
-                <IconLogout className={styles.logoutIcon} size={20} />
-              </ActionIcon>
+              <ColorSchemeToggle closeMenu={() => setOpen(false)} />
+
+              <Tooltip position="bottom" label="Log out">
+                <ActionIcon
+                  onClick={() => logOut()}
+                  variant="default"
+                  size="lg"
+                  radius="xl"
+                  aria-label="Log out"
+                >
+                  <IconLogout className={styles.logoutIcon} size={20} />
+                </ActionIcon>
+              </Tooltip>
             </>
           ) : (
             <>
-              <ColorSchemeToggle />
+              <ColorSchemeToggle closeMenu={() => setOpen(false)} />
             </>
           )}
         </div>
