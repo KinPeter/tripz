@@ -41,7 +41,7 @@ const FlightBarChart = ({
   }, [selectedData, primaryData, secondaryData]);
 
   useEffect(() => {
-    setWidth(Math.floor(data.length / 10) * 600);
+    setWidth(data.length <= 20 ? 1200 : Math.ceil(data.length / 10) * 450);
   }, [data]);
 
   return (
