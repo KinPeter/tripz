@@ -19,8 +19,9 @@ interface ConvertedStats {
   durationDays: number | string;
   durationWeeks: number | string;
   durationYears: number | string;
-  yearWithMostFlights: number | string;
+  yearWithMostFlights: [string, number];
   currentYear: number;
+  lastYear: number;
 }
 
 const StatsMainRow = ({ flights, visits }: Props) => {
@@ -45,8 +46,9 @@ const StatsMainRow = ({ flights, visits }: Props) => {
       durationMinutes: flights.totalDurationMinutes % 60,
       durationWeeks: (flights.totalDurationMinutes / 60 / 24 / 7).toFixed(1),
       durationYears: (flights.totalDurationMinutes / 60 / 24 / 365).toFixed(2),
-      yearWithMostFlights: Object.entries(flights.flightsPerYear).sort((a, b) => b[1] - a[1])[0][0],
+      yearWithMostFlights: Object.entries(flights.flightsPerYear).sort((a, b) => b[1] - a[1])[0],
       currentYear: flights.flightsPerYear[new Date().getFullYear()],
+      lastYear: flights.flightsPerYear[new Date().getFullYear() - 1] ?? 0,
     });
   }, [flights]);
 
@@ -107,9 +109,14 @@ const StatsMainRow = ({ flights, visits }: Props) => {
       </div>
       <div>
         <p>
-          <b>{convertedStats.yearWithMostFlights}</b>
+          <b>{convertedStats.yearWithMostFlights[0]}</b>
         </p>
-        <p>is the year with most flights</p>
+        <p>
+          is the year with most flights: <b>{convertedStats.yearWithMostFlights[1]}</b>
+        </p>
+        <p>
+          last year: <b>{convertedStats.lastYear}</b>
+        </p>
         <p>
           current year: <b>{convertedStats.currentYear}</b>
         </p>
