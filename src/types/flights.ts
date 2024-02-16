@@ -1,5 +1,4 @@
 import { LatLng, MapMarker } from './map.ts';
-import { Aircraft, Airline, Airport } from '@kinpeter/pk-common';
 
 export interface Route {
   a: LatLng;
@@ -41,7 +40,7 @@ export interface StatsFlightData {
   flightsPerMonth: Record<string, number>;
   flightsPerWeekday: Record<string, number>;
   // helpers
-  airportsMap: Record<string, Airport>;
-  aircraftMap: Record<string, Aircraft>;
-  airlinesMap: Record<string, Airline>;
+  airportsMap: Record<string, string>;
+  aircraftMap: Record<string, string>;
+  airlinesMap: Record<string, string>;
 }

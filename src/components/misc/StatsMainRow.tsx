@@ -3,6 +3,7 @@ import { StatsVisitsData } from '../../types/visits.ts';
 import styles from './Stats.module.scss';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { numberFormatOptions } from '../../lib/constants.ts';
 
 interface Props {
   flights: StatsFlightData | null;
@@ -29,12 +30,7 @@ const StatsMainRow = ({ flights, visits }: Props) => {
 
   useEffect(() => {
     if (!flights) return;
-    const options = {
-      style: 'decimal',
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0,
-      useGrouping: true,
-    };
+    const options = numberFormatOptions;
 
     setConvertedStats({
       distanceKms: flights.totalDistance.toLocaleString('hu-HU', options),

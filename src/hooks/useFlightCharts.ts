@@ -7,6 +7,18 @@ export const useFlightCharts = (flights: StatsFlightData | null) => {
   const [classes, setClasses] = useState<DonutChartCell[]>([]);
   const [reasons, setReasons] = useState<DonutChartCell[]>([]);
   const [seatTypes, setSeatTypes] = useState<DonutChartCell[]>([]);
+  const [airports, setAirports] = useState<Record<string, string | number>[]>([]);
+  const [countries, setCountries] = useState<Record<string, string | number>[]>([]);
+  const [routesByCount, setRoutesByCount] = useState<Record<string, string | number>[]>([]);
+  const [routesByDistance, setRoutesByDistance] = useState<Record<string, string | number>[]>([]);
+  const [airlinesByCount, setAirlinesByCount] = useState<Record<string, string | number>[]>([]);
+  const [airlinesByDistance, setAirlinesByDistance] = useState<Record<string, string | number>[]>(
+    []
+  );
+  const [aircraftsByCount, setAircraftsByCount] = useState<Record<string, string | number>[]>([]);
+  const [aircraftsByDistance, setAircraftsByDistance] = useState<Record<string, string | number>[]>(
+    []
+  );
 
   useEffect(() => {
     if (!flights) return;
@@ -38,6 +50,15 @@ export const useFlightCharts = (flights: StatsFlightData | null) => {
         return { name, value, color: reasonColors[index] };
       })
     );
+
+    setAirports(flights.airportsByCount.map(([item, value]) => ({ item, value })));
+    setCountries(flights.countriesByCount.map(([item, value]) => ({ item, value })));
+    setRoutesByCount(flights.routesByCount.map(([item, value]) => ({ item, value })));
+    setRoutesByDistance(flights.routesByDistance.map(([item, value]) => ({ item, value })));
+    setAirlinesByCount(flights.airlinesByCount.map(([item, value]) => ({ item, value })));
+    setAirlinesByDistance(flights.airlinesByDistance.map(([item, value]) => ({ item, value })));
+    setAircraftsByCount(flights.aircraftByCount.map(([item, value]) => ({ item, value })));
+    setAircraftsByDistance(flights.aircraftByDistance.map(([item, value]) => ({ item, value })));
   }, [flights]);
 
   return {
@@ -45,6 +66,14 @@ export const useFlightCharts = (flights: StatsFlightData | null) => {
     continents,
     reasons,
     seatTypes,
+    airports,
+    countries,
+    routesByCount,
+    routesByDistance,
+    airlinesByCount,
+    airlinesByDistance,
+    aircraftsByCount,
+    aircraftsByDistance,
   };
 };
 

@@ -1,4 +1,4 @@
-import { Aircraft, Airline, Airport, Flight } from '@kinpeter/pk-common';
+import { Airport, Flight } from '@kinpeter/pk-common';
 import { MapFlightData, Route, StatsFlightData } from '../types/flights.ts';
 import { LatLng, MapMarker } from '../types/map.ts';
 import { continentsForCountries } from './continentsForCountries.ts';
@@ -90,12 +90,12 @@ export function processFlightsForStats(flights: Flight[]): StatsFlightData {
   const continentsCount: Record<string, number> = {};
   const countriesSet = new Set<string>();
   const countriesCount: Record<string, number> = {};
-  const airportsMap: Record<string, Airport> = {};
+  const airportsMap: Record<string, string> = {};
   const airportsCount: Record<string, number> = {};
-  const airlinesMap: Record<string, Airline> = {};
+  const airlinesMap: Record<string, string> = {};
   const airlinesCount: Record<string, number> = {};
   const airlinesDistance: Record<string, number> = {};
-  const aircraftMap: Record<string, Aircraft> = {};
+  const aircraftMap: Record<string, string> = {};
   const aircraftCount: Record<string, number> = {};
   const aircraftDistance: Record<string, number> = {};
   const routesSet = new Set<string>();
@@ -165,10 +165,10 @@ export function processFlightsForStats(flights: Flight[]): StatsFlightData {
     const fromAirport = f.from.iata;
     const toAirport = f.to.iata;
     if (!airportsMap[fromAirport]) {
-      airportsMap[fromAirport] = f.from;
+      airportsMap[fromAirport] = `${f.from.city}, ${f.from.name}`;
     }
     if (!airportsMap[toAirport]) {
-      airportsMap[toAirport] = f.to;
+      airportsMap[toAirport] = `${f.to.city}, ${f.to.name}`;
     }
     if (airportsCount[fromAirport] === undefined) {
       airportsCount[fromAirport] = 1;
@@ -183,7 +183,7 @@ export function processFlightsForStats(flights: Flight[]): StatsFlightData {
 
     const airline = f.airline.iata;
     if (!airlinesMap[airline]) {
-      airlinesMap[airline] = f.airline;
+      airlinesMap[airline] = f.airline.name;
     }
     if (airlinesCount[airline] === undefined) {
       airlinesCount[airline] = 1;
@@ -198,7 +198,7 @@ export function processFlightsForStats(flights: Flight[]): StatsFlightData {
 
     const aircraft = f.aircraft.icao;
     if (!aircraftMap[aircraft]) {
-      aircraftMap[aircraft] = f.aircraft;
+      aircraftMap[aircraft] = f.aircraft.name;
     }
     if (aircraftCount[aircraft] === undefined) {
       aircraftCount[aircraft] = 1;

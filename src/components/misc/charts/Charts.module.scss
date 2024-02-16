@@ -4,3 +4,24 @@
   gap: 0.75rem;
   width: 280px;
 }
+
+.barChartContainer {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    b {
+      font-size: 1.2rem;
+    }
+  }
+
+  main {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  margin-bottom: 2rem;
+}
