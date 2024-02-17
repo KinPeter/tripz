@@ -21,6 +21,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       <Route index element={<Auth />} />
+      <Route path="/user/:userId" element={<Home isPublic={true} />} />
       <Route element={<ProtectedRoute />}>
         <Route path="/home" element={<Home />} />
         <Route path="/flights" element={<Flights />} />

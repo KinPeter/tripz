@@ -5,8 +5,13 @@ import FlightDonutChart from './charts/FlightDonutChart.tsx';
 import StatsMainRow from './StatsMainRow.tsx';
 import FlightBarChart from './charts/FlightBarChart.tsx';
 import FlightAreaChart from './charts/FlightAreaChart.tsx';
+import { IconMoodLookDown } from '@tabler/icons-react';
 
-const Stats = () => {
+interface Props {
+  isPublic: boolean;
+}
+
+const Stats = ({ isPublic }: Props) => {
   const flights = useStore(s => s.statsFlightData);
   const visits = useStore(s => s.statsVisitsData);
 
@@ -28,9 +33,20 @@ const Stats = () => {
     flightsPerWeekday,
   } = useFlightCharts(flights);
 
+  if (!flights?.totalCount) {
+    return (
+      <div className={styles.noFlights}>
+        <h1>No flights added yet</h1>
+        <p>
+          <IconMoodLookDown size="100" />
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className={styles.container}>
-      <StatsMainRow flights={flights} visits={visits} />
+      <StatsMainRow flights={flights} visits={visits} isPublic={isPublic} />
       <div className={styles.donutRow}>
         <FlightDonutChart title={'Flight class'} data={classes} />
         <FlightDonutChart title={'Flight reason'} data={reasons} />

@@ -43,7 +43,7 @@ export function getDistanceInKm(lat1: number, lng1: number, lat2: number, lng2: 
 
 // https://leafletjs.com/examples/custom-icons/
 const iconBase = {
-  shadowUrl: 'marker-shadow.png',
+  shadowUrl: '/marker-shadow.png',
   iconSize: [28, 41] as PointTuple,
   shadowSize: [43, 40] as PointTuple,
   iconAnchor: [14, 39] as PointTuple,
@@ -52,6 +52,6 @@ const iconBase = {
 };
 
 export const markerIcons = {
-  flight: L.icon({ ...iconBase, iconUrl: 'marker-airplane.png' }),
-  visit: L.icon({ ...iconBase, iconUrl: 'marker-poi.png' }),
+  flight: L.icon({ ...iconBase, iconUrl: '/marker-airplane.png' }),
+  visit: L.icon({ ...iconBase, iconUrl: '/marker-poi.png' }),
 };

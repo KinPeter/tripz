@@ -4,10 +4,18 @@ import { useStore } from '../store';
 import { useQuery } from '@tanstack/react-query';
 import { useEffect } from 'react';
 import { notifications } from '@mantine/notifications';
+import { UUID } from '@kinpeter/pk-common';
+import { usePublicTripzApi } from './usePublicTripzApi.ts';
 
-export const useFetchOnHome = () => {
+interface Options {
+  isPublic: boolean;
+  userId?: UUID | null;
+}
+
+export const useFetchOnHome = ({ isPublic, userId }: Options) => {
   const { getAllFlights } = useFlightsApi();
   const { getAllVisits } = useVisitsApi();
+  const { getAllTrips } = usePublicTripzApi();
   const setFlights = useStore(s => s.setFlights);
   const setVisits = useStore(s => s.setVisits);
 
@@ -20,6 +28,7 @@ export const useFetchOnHome = () => {
     queryFn: getAllFlights,
     refetchOnWindowFocus: false,
     refetchOnMount: false,
+    enabled: !isPublic,
   });
 
   const {
@@ -31,6 +40,19 @@ export const useFetchOnHome = () => {
     queryFn: getAllVisits,
     refetchOnWindowFocus: false,
     refetchOnMount: false,
+    enabled: !isPublic,
+  });
+
+  const {
+    isPending: publicLoading,
+    data: publicData,
+    error: publicError,
+  } = useQuery({
+    queryKey: ['public', userId],
+    queryFn: () => getAllTrips(userId ?? ''),
+    refetchOnWindowFocus: false,
+    refetchOnMount: false,
+    enabled: isPublic && !!userId,
   });
 
   useEffect(() => {
@@ -59,5 +81,19 @@ export const useFetchOnHome = () => {
     }
   }, [visitsData, visitsError]);
 
-  return { flightsLoading, visitsLoading };
+  useEffect(() => {
+    if (publicData) {
+      setFlights(publicData.flights);
+      setVisits(publicData.visits);
+    } else if (publicError) {
+      console.log(publicError);
+      notifications.show({
+        title: 'Oops!',
+        message: 'Could not fetch trips.',
+        color: 'red',
+      });
+    }
+  }, [publicData, publicError]);
+
+  return { flightsLoading, visitsLoading, publicLoading };
 };

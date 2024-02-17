@@ -8,6 +8,7 @@ import { numberFormatOptions } from '../../lib/constants.ts';
 interface Props {
   flights: StatsFlightData | null;
   visits: StatsVisitsData | null;
+  isPublic: boolean;
 }
 
 interface ConvertedStats {
@@ -25,7 +26,7 @@ interface ConvertedStats {
   lastYear: number;
 }
 
-const StatsMainRow = ({ flights, visits }: Props) => {
+const StatsMainRow = ({ flights, visits, isPublic }: Props) => {
   const [convertedStats, setConvertedStats] = useState<ConvertedStats | undefined>();
 
   useEffect(() => {
@@ -59,7 +60,7 @@ const StatsMainRow = ({ flights, visits }: Props) => {
     <div className={styles.mainRow}>
       <div>
         <p>
-          <b>{flights.totalCount}</b> <Link to="/flights">flights</Link>
+          <b>{flights.totalCount}</b> {isPublic ? 'flights' : <Link to="/flights">flights</Link>}
         </p>
         <p>
           <b>{flights.intlCount}</b> international
@@ -70,7 +71,8 @@ const StatsMainRow = ({ flights, visits }: Props) => {
       </div>
       <div>
         <p>
-          <b>{visits.citiesCount}</b> <Link to="/visits">places visited</Link>
+          <b>{visits.citiesCount}</b>{' '}
+          {isPublic ? 'visits' : <Link to="/visits">places visited</Link>}
         </p>
         <p>
           in <b>{visits.countriesCount}</b> countries
