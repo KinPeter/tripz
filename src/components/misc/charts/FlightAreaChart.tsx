@@ -27,7 +27,7 @@ const FlightAreaChart = ({ title, data, xAxisHeight = 40, xAxisMargin = 10 }: Pr
           data={data}
           dataKey="item"
           series={[{ name: 'value', color: 'tomato.6' }]}
-          h={250}
+          h={200}
           w={width}
           xAxisProps={{ angle: 45, height: xAxisHeight, tickMargin: xAxisMargin }}
           tooltipProps={{
