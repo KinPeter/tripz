@@ -80,7 +80,10 @@ const FlightBarChart = ({
             content: ({ payload }) => {
               if (!payload?.length) return null;
               const { item, value } = payload[0].payload;
-              const formattedValue = Number(value).toLocaleString('hu-HU', numberFormatOptions);
+              let formattedValue = Number(value).toLocaleString('hu-HU', numberFormatOptions);
+              if (selectedData === 'distance') {
+                formattedValue += ' km';
+              }
               const text = helperMap
                 ? `${helperMap[item]}: ${formattedValue}`
                 : `${item}: ${formattedValue}`;
