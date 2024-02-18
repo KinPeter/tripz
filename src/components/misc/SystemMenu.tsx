@@ -3,12 +3,21 @@ import { useStore } from '../../store';
 import ColorSchemeToggle from './ColorSchemeToggle.tsx';
 import { useState } from 'react';
 import styles from './SystemMenu.module.scss';
-import { IconDots, IconLogout, IconX } from '@tabler/icons-react';
+import { IconDots, IconLogin, IconLogout, IconX } from '@tabler/icons-react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const SystemMenu = () => {
   const isAuthenticated = useStore(s => s.isAuthenticated);
   const logOut = useStore(s => s.handleLogout);
   const [open, setOpen] = useState<boolean>(false);
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const navigateToAuth = () => {
+    navigate('/');
+    setOpen(false);
+  };
 
   return (
     <div className={styles.systemMenu}>
@@ -44,6 +53,20 @@ const SystemMenu = () => {
           ) : (
             <>
               <ColorSchemeToggle closeMenu={() => setOpen(false)} />
+
+              {location.pathname !== '/' ? (
+                <Tooltip position="bottom" label="Log in">
+                  <ActionIcon
+                    onClick={navigateToAuth}
+                    variant="default"
+                    size="lg"
+                    radius="xl"
+                    aria-label="Log in"
+                  >
+                    <IconLogin className={styles.logoutIcon} size={20} />
+                  </ActionIcon>
+                </Tooltip>
+              ) : null}
             </>
           )}
         </div>
