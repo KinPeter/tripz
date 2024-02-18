@@ -53,7 +53,24 @@ const MapManager = () => {
     map.addLayer(newCurvesLayer);
     setCurvesLayer(newCurvesLayer);
     setFlightMarkers(flights.markers);
-    map.setView(flights.center, 4);
+
+    const width = window.innerWidth;
+    let zoomLevel;
+    switch (true) {
+      case width <= 600:
+        zoomLevel = 2;
+        break;
+      case width <= 1100:
+        zoomLevel = 3;
+        break;
+      case width <= 2800:
+        zoomLevel = 4;
+        break;
+      default:
+        zoomLevel = 5;
+    }
+
+    map.setView(flights.center, zoomLevel);
   }, [flights, map]);
 
   const toggleDefaultTileLayer = () => {
