@@ -9,6 +9,7 @@ import MapMenu from './MapMenu.tsx';
 import { useStore } from '../../store';
 import { tomato } from '../../lib/mantine.ts';
 import { MapMarker } from '../../types/map.ts';
+import ScrollDownButton from './ScrollDownButton.tsx';
 
 const MapManager = () => {
   const map = useMap();
@@ -108,6 +109,7 @@ const MapManager = () => {
         onToggleVisits={toggleVisits}
         onToggleZoom={toggleZoom}
       />
+      <ScrollDownButton />
     </>
   );
 };

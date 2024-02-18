@@ -17,3 +17,10 @@
     gap: 8px;
   }
 }
+
+.scrollDownButton {
+  position: fixed;
+  top: 96px;
+  right: 12px;
+  z-index: 401; // Leaflet map by default 400
+}
