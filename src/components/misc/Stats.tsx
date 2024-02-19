@@ -29,6 +29,7 @@ const Stats = ({ isPublic }: Props) => {
     aircraftsByCount,
     aircraftsByDistance,
     flightsPerYear,
+    distancePerYear,
     flightsPerMonth,
     flightsPerWeekday,
   } = useFlightCharts(flights);
@@ -88,16 +89,20 @@ const Stats = ({ isPublic }: Props) => {
         xAxisHeight={50}
         xAxisMargin={20}
       />
-      <FlightAreaChart title="flights per year" data={flightsPerYear} />
+      <FlightAreaChart
+        title="flights per year"
+        primaryData={flightsPerYear}
+        secondaryData={distancePerYear}
+      />
       <FlightAreaChart
         title="flights per month"
-        data={flightsPerMonth}
+        primaryData={flightsPerMonth}
         xAxisHeight={50}
         xAxisMargin={20}
       />
       <FlightAreaChart
         title="flights per weekday"
-        data={flightsPerWeekday}
+        primaryData={flightsPerWeekday}
         xAxisHeight={50}
         xAxisMargin={20}
       />

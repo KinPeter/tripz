@@ -103,6 +103,7 @@ export function processFlightsForStats(flights: Flight[]): StatsFlightData {
   const routesCount: Record<string, number> = {};
   const routesDistance: Record<string, number> = {};
   const flightsPerYearObj: Record<number, number> = {};
+  const distancePerYearObj: Record<number, number> = {};
   const flightsPerMonthObj: Record<number, number> = {};
   const flightsPerWeekdayObj: Record<number, number> = {};
 
@@ -232,6 +233,11 @@ export function processFlightsForStats(flights: Flight[]): StatsFlightData {
     } else {
       flightsPerYearObj[year]++;
     }
+    if (distancePerYearObj[year] === undefined) {
+      distancePerYearObj[year] = f.distance;
+    } else {
+      distancePerYearObj[year] += f.distance;
+    }
 
     const month = date.getMonth();
     if (flightsPerMonthObj[month] === undefined) {
@@ -270,8 +276,12 @@ export function processFlightsForStats(flights: Flight[]): StatsFlightData {
     if (flightsPerYearObj[i] === undefined) {
       flightsPerYearObj[i] = 0;
     }
+    if (distancePerYearObj[i] === undefined) {
+      distancePerYearObj[i] = 0;
+    }
   }
   const flightsPerYear = Object.entries(flightsPerYearObj).sort(keyCompareFn);
+  const distancePerYear = Object.entries(distancePerYearObj).sort(keyCompareFn);
 
   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].forEach(i => {
     if (flightsPerMonthObj[i] === undefined) {
@@ -320,6 +330,7 @@ export function processFlightsForStats(flights: Flight[]): StatsFlightData {
     routesByCount,
     routesByDistance,
     flightsPerYear,
+    distancePerYear,
     flightsPerMonth,
     flightsPerWeekday,
 

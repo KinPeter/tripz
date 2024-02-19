@@ -37,6 +37,7 @@ export interface StatsFlightData {
   routesByCount: Array<[string, number]>;
   routesByDistance: Array<[string, number]>;
   flightsPerYear: Array<[string, number]>;
+  distancePerYear: Array<[string, number]>;
   flightsPerMonth: Array<[string, number]>;
   flightsPerWeekday: Array<[string, number]>;
   // helpers

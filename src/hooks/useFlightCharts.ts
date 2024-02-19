@@ -20,6 +20,7 @@ export const useFlightCharts = (flights: StatsFlightData | null) => {
     []
   );
   const [flightsPerYear, setFlightsPerYear] = useState<Record<string, string | number>[]>([]);
+  const [distancePerYear, setDistancePerYear] = useState<Record<string, string | number>[]>([]);
   const [flightsPerMonth, setFlightsPerMonth] = useState<Record<string, string | number>[]>([]);
   const [flightsPerWeekday, setFlightsPerWeekday] = useState<Record<string, string | number>[]>([]);
 
@@ -65,6 +66,7 @@ export const useFlightCharts = (flights: StatsFlightData | null) => {
     setAircraftsByCount(flights.aircraftByCount.map(mapperFn));
     setAircraftsByDistance(flights.aircraftByDistance.map(mapperFn));
     setFlightsPerYear(flights.flightsPerYear.map(mapperFn));
+    setDistancePerYear(flights.distancePerYear.map(mapperFn));
     setFlightsPerMonth(flights.flightsPerMonth.map(mapperFn));
     setFlightsPerWeekday(flights.flightsPerWeekday.map(mapperFn));
   }, [flights]);
@@ -83,6 +85,7 @@ export const useFlightCharts = (flights: StatsFlightData | null) => {
     aircraftsByCount,
     aircraftsByDistance,
     flightsPerYear,
+    distancePerYear,
     flightsPerMonth,
     flightsPerWeekday,
   };
