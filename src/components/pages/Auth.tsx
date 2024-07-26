@@ -221,6 +221,7 @@ const Auth = () => {
                   mb={12}
                   leftSection={<IconPassword size={16} />}
                   placeholder="Your password"
+                  type="password"
                   {...emailForm.getInputProps('password')}
                 />
               )}
