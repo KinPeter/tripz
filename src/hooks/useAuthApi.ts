@@ -9,6 +9,10 @@ export const useAuthApi = () => {
     return await api.post('/auth/login', { email }, false);
   }
 
+  async function passwordLogin(email: string, password: string): Promise<User> {
+    return await api.post('/auth/password-login', { email, password }, false);
+  }
+
   async function verify(email: string, loginCode: string): Promise<User> {
     return await api.post<User>('/auth/verify-code', { email, loginCode }, false);
   }
@@ -21,6 +25,7 @@ export const useAuthApi = () => {
 
   return {
     login,
+    passwordLogin,
     verify,
     refresh,
   };

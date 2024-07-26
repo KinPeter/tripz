@@ -5,7 +5,7 @@ import { useMutation } from '@tanstack/react-query';
 import { USER_KEY } from '../../lib/constants.ts';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Button, Center, Flex, Loader, TextInput } from '@mantine/core';
-import { Icon123, IconAt, IconPlaneDeparture } from '@tabler/icons-react';
+import { Icon123, IconAt, IconPassword, IconPlaneDeparture } from '@tabler/icons-react';
 import { theme } from '../../lib/mantine.ts';
 import styles from './Auth.module.scss';
 import { notifications } from '@mantine/notifications';
@@ -16,20 +16,27 @@ enum AuthProgressState {
   VERIFYING,
 }
 
+enum AuthMode {
+  LOGIN_CODE,
+  PASSWORD,
+}
+
 const Auth = () => {
   const navigate = useNavigate();
   const [queryParams] = useSearchParams();
   const handleLogin = useStore(state => state.handleLogin);
   const handleLogout = useStore(state => state.handleLogout);
-  const { login, verify, refresh } = useAuthApi();
+  const { login, passwordLogin, verify, refresh } = useAuthApi();
   const [authProgressState, setAuthProgressState] = useState<AuthProgressState>(
     AuthProgressState.INITIAL
   );
+  const [authMode, setAuthMode] = useState<AuthMode>(AuthMode.LOGIN_CODE);
 
   const emailForm = useForm({
-    initialValues: { email: '' },
+    initialValues: { email: '', password: '' },
     validate: {
       email: isEmail(),
+      password: authMode === AuthMode.PASSWORD ? hasLength({ min: 5 }) : undefined,
     },
     validateInputOnChange: true,
   });
@@ -49,6 +56,15 @@ const Auth = () => {
     isPending: loginLoading,
   } = useMutation({
     mutationFn: () => login(emailForm.values.email),
+  });
+
+  const {
+    mutate: startPasswordLogin,
+    data: passwordLoginData,
+    error: passwordLoginError,
+    isPending: passwordLoginLoading,
+  } = useMutation({
+    mutationFn: () => passwordLogin(emailForm.values.email, emailForm.values.password),
   });
 
   const {
@@ -144,6 +160,24 @@ const Auth = () => {
     }
   }, [verifyData, verifyError, handleLogin, navigate]);
 
+  useEffect(() => {
+    if (passwordLoginData) {
+      handleLogin(passwordLoginData);
+      navigate('/home');
+      notifications.show({
+        title: 'Welcome!',
+        message: 'Redirecting you to the home page.',
+        color: 'green',
+      });
+    } else if (passwordLoginError) {
+      notifications.show({
+        title: 'Oops!',
+        message: passwordLoginError.message,
+        color: 'red',
+      });
+    }
+  }, [passwordLoginData, passwordLoginError, handleLogin, navigate]);
+
   if (refreshLoading) {
     return (
       <Center h={'100vh'}>
@@ -162,7 +196,16 @@ const Auth = () => {
             color={theme.colors!.tomato![6]}
           />
           {authProgressState === AuthProgressState.INITIAL ? (
-            <form className={styles.form} onSubmit={emailForm.onSubmit(() => startLogin())}>
+            <form
+              className={styles.form}
+              onSubmit={emailForm.onSubmit(() => {
+                if (authMode === AuthMode.LOGIN_CODE) {
+                  startLogin();
+                } else if (authMode === AuthMode.PASSWORD) {
+                  startPasswordLogin();
+                }
+              })}
+            >
               <TextInput
                 size="md"
                 w={300}
@@ -171,8 +214,37 @@ const Auth = () => {
                 placeholder="Your email"
                 {...emailForm.getInputProps('email')}
               />
-              <Button type="submit" disabled={!emailForm.isValid() || loginLoading}>
-                {loginLoading ? <Loader color="white" size="sm" type="dots" /> : 'Authenticate'}
+              {authMode === AuthMode.PASSWORD && (
+                <TextInput
+                  size="md"
+                  w={300}
+                  mb={12}
+                  leftSection={<IconPassword size={16} />}
+                  placeholder="Your password"
+                  {...emailForm.getInputProps('password')}
+                />
+              )}
+              <Button
+                type="submit"
+                disabled={!emailForm.isValid() || loginLoading || passwordLoginLoading}
+              >
+                {loginLoading || passwordLoginLoading ? (
+                  <Loader color="white" size="sm" type="dots" />
+                ) : (
+                  'Authenticate'
+                )}
+              </Button>
+              <Button
+                variant="transparent"
+                color={theme.colors!.tomato![6]}
+                className={styles.authModeButton}
+                onClick={() =>
+                  setAuthMode(prevState =>
+                    prevState === AuthMode.LOGIN_CODE ? AuthMode.PASSWORD : AuthMode.LOGIN_CODE
+                  )
+                }
+              >
+                {authMode === AuthMode.LOGIN_CODE ? 'Use password' : 'Use login code'}
               </Button>
             </form>
           ) : (
