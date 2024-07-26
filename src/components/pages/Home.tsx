@@ -1,7 +1,7 @@
 import { Center, Loader } from '@mantine/core';
 import { useFetchOnHome } from '../../hooks/useFetchOnHome.ts';
-import Map from '../misc/Map.tsx';
-import Stats from '../misc/Stats.tsx';
+import Map from '../home/Map.tsx';
+import Stats from '../home/Stats.tsx';
 import { useParams } from 'react-router-dom';
 
 interface Props {
