@@ -1,0 +1,9 @@
+.container {
+  composes: pageContainer from global;
+}
+
+.menuBar {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}

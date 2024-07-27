@@ -17,6 +17,7 @@ import { Notifications } from '@mantine/notifications';
 import Flights from './components/pages/Flights.tsx';
 import Visits from './components/pages/Visits.tsx';
 import FlightForm from './components/pages/FlightForm.tsx';
+import VisitForm from './components/pages/VisitForm.tsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,6 +30,8 @@ const router = createBrowserRouter(
         <Route path="/flights/new" element={<FlightForm isNew={true} />} />
         <Route path="/flights/edit/:flightId" element={<FlightForm isNew={false} />} />
         <Route path="/visits" element={<Visits />} />
+        <Route path="/visits/new" element={<VisitForm isNew={true} />} />
+        <Route path="/visits/edit/:visitId" element={<VisitForm isNew={false} />} />
       </Route>
     </Route>
   )

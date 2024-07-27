@@ -1,4 +1,4 @@
-import { ActionIcon, Flex, TextInput } from '@mantine/core';
+import { ActionIcon, Flex, NumberInput, TextInput } from '@mantine/core';
 import {
   findAircraftFromFlights,
   findAirlineFromFlights,
@@ -68,18 +68,18 @@ export const AirportFields = ({ field }: { field: 'from' | 'to' }) => {
           />
         </div>
         <div>
-          <TextInput
+          <NumberInput
             withAsterisk
+            hideControls
             label="Latitude"
-            type="number"
             placeholder=""
             key={form.key(field + '.lat')}
             {...form.getInputProps(field + '.lat')}
           />
-          <TextInput
+          <NumberInput
             withAsterisk
+            hideControls
             label="Longitude"
-            type="number"
             placeholder=""
             key={form.key(field + '.lng')}
             {...form.getInputProps(field + '.lng')}
