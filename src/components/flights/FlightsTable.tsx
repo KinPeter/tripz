@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { IconEdit, IconTrash } from '@tabler/icons-react';
 import { useFlightTableData } from '../../hooks/useFlightTableData.ts';
 import { FlightWithPosition } from '../../types/flights.ts';
+import { useNavigate } from 'react-router-dom';
 
 function getClass(value: FlightClass): 'C' | 'Y' | 'F' | 'W' {
   switch (value) {
@@ -22,6 +23,7 @@ function getClass(value: FlightClass): 'C' | 'Y' | 'F' | 'W' {
 
 const FlightsTable = ({ filterExpression }: { filterExpression: string }) => {
   const { tableData, filter } = useFlightTableData();
+  const navigate = useNavigate();
 
   useEffect(() => {
     filter(filterExpression);
@@ -71,7 +73,11 @@ const FlightsTable = ({ filterExpression }: { filterExpression: string }) => {
       </Table.Td>
       <Table.Td>
         <Tooltip label="Edit">
-          <ActionIcon variant="transparent" mr="md">
+          <ActionIcon
+            variant="transparent"
+            mr="md"
+            onClick={() => navigate('/flights/edit/' + f.id)}
+          >
             <IconEdit></IconEdit>
           </ActionIcon>
         </Tooltip>

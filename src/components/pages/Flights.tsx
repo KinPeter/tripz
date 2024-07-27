@@ -6,9 +6,11 @@ import FlightSearchHelp from '../flights/FlightSearchHelp.tsx';
 import { ActionIcon, Button, TextInput } from '@mantine/core';
 import { useDebouncedValue, useMediaQuery } from '@mantine/hooks';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Flights = () => {
   const isWide = useMediaQuery('(min-width: 650px)');
+  const navigate = useNavigate();
   const [inputValue, setInputValue] = useState<string>('');
   const [searchTerm] = useDebouncedValue(inputValue, 500);
 
@@ -17,7 +19,12 @@ const Flights = () => {
       <PageHeader>My Flights</PageHeader>
       <div className={styles.menuBar}>
         {isWide ? (
-          <Button leftSection={<IconPlus size={16} />} size="md" variant="filled">
+          <Button
+            leftSection={<IconPlus size={16} />}
+            size="md"
+            variant="filled"
+            onClick={() => navigate('/flights/new')}
+          >
             New flight
           </Button>
         ) : (
