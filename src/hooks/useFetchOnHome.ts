@@ -27,7 +27,7 @@ export const useFetchOnHome = ({ isPublic, userId }: Options) => {
     queryKey: ['flights'],
     queryFn: getAllFlights,
     refetchOnWindowFocus: false,
-    refetchOnMount: false,
+    refetchOnMount: true,
     enabled: !isPublic,
   });
 
@@ -39,7 +39,7 @@ export const useFetchOnHome = ({ isPublic, userId }: Options) => {
     queryKey: ['visits'],
     queryFn: getAllVisits,
     refetchOnWindowFocus: false,
-    refetchOnMount: false,
+    refetchOnMount: true,
     enabled: !isPublic,
   });
 

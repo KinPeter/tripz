@@ -23,8 +23,6 @@ export const createFlightsStoreSlice: StateCreator<
   setFlights: (flights: Flight[]) => {
     const mapFlightData = processFlightsForMap(flights);
     const statsFlightData = processFlightsForStats(flights);
-    console.log('mapFlightData', mapFlightData);
-    console.log('statsFlightData', statsFlightData);
     setState(() => ({ flights, mapFlightData, statsFlightData }));
   },
 });

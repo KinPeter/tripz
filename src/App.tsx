@@ -16,7 +16,7 @@ import { theme } from './lib/mantine.ts';
 import { Notifications } from '@mantine/notifications';
 import Flights from './components/pages/Flights.tsx';
 import Visits from './components/pages/Visits.tsx';
-import FlightForm from './components/flights/FlightForm.tsx';
+import FlightForm from './components/pages/FlightForm.tsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(

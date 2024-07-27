@@ -23,7 +23,6 @@ export const createVisitsStoreSlice: StateCreator<
   setVisits: (visits: Visit[]) => {
     const mapVisitsData = processVisitsForMap(visits);
     const statsVisitsData = processVisitsForStats(visits);
-    console.log('statsVisitsData', statsVisitsData);
     setState(() => ({ visits, mapVisitsData, statsVisitsData }));
   },
 });
