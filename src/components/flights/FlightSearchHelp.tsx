@@ -28,15 +28,15 @@ const FlightSearchHelp = () => {
           onMouseLeave={close}
           onBlur={close}
         >
-          <IconInfoCircle size="md"></IconInfoCircle>
+          <IconInfoCircle size={24}></IconInfoCircle>
         </ActionIcon>
       </Popover.Target>
       <Popover.Dropdown style={{ pointerEvents: 'none' }}>
         <p>Search by airport or year, or try the following filters:</p>
         <Table>
           <Table.Tbody>
-            {rows.map(([code, info]) => (
-              <Table.Tr>
+            {rows.map(([code, info], index) => (
+              <Table.Tr key={index}>
                 <Table.Td>
                   <Code>{code}</Code>
                 </Table.Td>

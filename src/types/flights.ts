@@ -1,4 +1,5 @@
 import { LatLng, MapMarker } from './map.ts';
+import { Flight } from '@kinpeter/pk-common';
 
 export interface Route {
   a: LatLng;
@@ -45,3 +46,5 @@ export interface StatsFlightData {
   aircraftMap: Record<string, string>;
   airlinesMap: Record<string, string>;
 }
+
+export type FlightWithPosition = Flight & { position: number };

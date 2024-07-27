@@ -4,10 +4,13 @@ import PageHeader from '../misc/PageHeader.tsx';
 import { IconPlus, IconSearch } from '@tabler/icons-react';
 import FlightSearchHelp from '../flights/FlightSearchHelp.tsx';
 import { ActionIcon, Button, TextInput } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
+import { useDebouncedValue, useMediaQuery } from '@mantine/hooks';
+import { useState } from 'react';
 
 const Flights = () => {
   const isWide = useMediaQuery('(min-width: 650px)');
+  const [inputValue, setInputValue] = useState<string>('');
+  const [searchTerm] = useDebouncedValue(inputValue, 500);
 
   return (
     <div className={styles.container}>
@@ -28,10 +31,12 @@ const Flights = () => {
           mx={12}
           leftSection={<IconSearch size={16} />}
           placeholder="Search or filter"
+          value={inputValue}
+          onChange={event => setInputValue(event.target.value)}
         />
         <FlightSearchHelp></FlightSearchHelp>
       </div>
-      <FlightsTable></FlightsTable>
+      <FlightsTable filterExpression={searchTerm}></FlightsTable>
     </div>
   );
 };

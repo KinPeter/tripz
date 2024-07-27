@@ -1,12 +1,11 @@
 import { ActionIcon, Table, Tooltip } from '@mantine/core';
-import { useStore } from '../../store';
-import { Flight, FlightClass } from '@kinpeter/pk-common';
+import { FlightClass } from '@kinpeter/pk-common';
 import styles from './FlightsTable.module.scss';
 import { numberFormatOptions } from '../../lib/constants.ts';
-import { useState } from 'react';
+import { useEffect } from 'react';
 import { IconEdit, IconTrash } from '@tabler/icons-react';
-
-type FlightWithPosition = Flight & { position: number };
+import { useFlightTableData } from '../../hooks/useFlightTableData.ts';
+import { FlightWithPosition } from '../../types/flights.ts';
 
 function getClass(value: FlightClass): 'C' | 'Y' | 'F' | 'W' {
   switch (value) {
@@ -21,17 +20,12 @@ function getClass(value: FlightClass): 'C' | 'Y' | 'F' | 'W' {
   }
 }
 
-const FlightsTable = () => {
-  const flights = useStore(s => s.flights);
-  const [tableData] = useState(
-    [...flights]
-      .sort((a: Flight, b: Flight) => {
-        if (a.date < b.date) return 1;
-        else if (a.date > b.date) return -1;
-        else return 0;
-      })
-      .map((f, index) => ({ ...f, position: flights.length - index }))
-  );
+const FlightsTable = ({ filterExpression }: { filterExpression: string }) => {
+  const { tableData, filter } = useFlightTableData();
+
+  useEffect(() => {
+    filter(filterExpression);
+  }, [filterExpression]);
 
   const rows = tableData.map((f: FlightWithPosition) => (
     <Table.Tr key={f.id}>
