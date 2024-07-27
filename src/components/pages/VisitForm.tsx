@@ -16,6 +16,9 @@ import { useVisitsApi } from '../../hooks/useVisitsApi.ts';
 import { useStore } from '../../store';
 import { Button, Divider, Flex, Loader, NumberInput, TextInput } from '@mantine/core';
 import { formFlexProps } from '../../lib/flightFormTools.ts';
+import { MapContainer } from 'react-leaflet';
+import VisitFormMap from '../visits/VisitFormMap.tsx';
+import { LatLng } from 'leaflet';
 
 const VisitForm = ({ isNew }: { isNew: boolean }) => {
   const { visitId } = useParams();
@@ -61,6 +64,13 @@ const VisitForm = ({ isNew }: { isNew: boolean }) => {
       startUpdateVisit();
     }
     form.onSubmit(() => {});
+  };
+
+  const handleNewPosition = (pos: LatLng) => {
+    if (pos) {
+      form.setFieldValue('lat', Number(pos.lat.toFixed(6)));
+      form.setFieldValue('lng', Number(pos.lng.toFixed(6)));
+    }
   };
 
   useEffect(() => {
@@ -146,7 +156,17 @@ const VisitForm = ({ isNew }: { isNew: boolean }) => {
               />
             </Flex>
             <Divider my="lg" />
-            <Flex {...formFlexProps} justify="flex-end" mb="xl" pb="xl">
+            <MapContainer className={styles.map} center={[53, 0]} zoom={3} scrollWheelZoom={true}>
+              <VisitFormMap
+                onSetPosition={handleNewPosition}
+                position={
+                  isNew
+                    ? undefined
+                    : ({ lat: form.getValues().lat, lng: form.getValues().lng } as LatLng)
+                }
+              />
+            </MapContainer>
+            <Flex {...formFlexProps} justify="flex-end" my="xl" pb="xl">
               <Button type="submit">
                 {createLoading || updateLoading ? (
                   <Loader color="white" size="sm" type="dots" />
