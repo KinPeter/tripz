@@ -9,24 +9,57 @@ import {
 import { IconCalculator, IconSearch } from '@tabler/icons-react';
 import { getDistanceInKm } from '../../lib/mapUtils.ts';
 import { useStore } from '../../store';
+import { useProxyApi } from '../../hooks/useProxyApi.ts';
+import { useMutation } from '@tanstack/react-query';
+import { useEffect } from 'react';
+import { notifications } from '@mantine/notifications';
+import { Airport, Airline } from '@kinpeter/pk-common';
 
 export const AirportFields = ({ field }: { field: 'from' | 'to' }) => {
   const flights = useStore(s => s.flights);
   const form = useFlightFormContext();
+  const { getAirport } = useProxyApi();
 
-  const fetchAirportData = () => {
-    const iata = form.getValues()[field].iata;
-    const airportFromLocal = findAirportFromFlights(iata, flights);
-    if (!airportFromLocal) return;
-    const { icao, name, city, country, lat, lng } = airportFromLocal;
+  const {
+    mutate: startAirportQuery,
+    data: airportData,
+    error: airportError,
+    isPending: airportLoading,
+  } = useMutation({
+    mutationFn: () => getAirport(form.getValues()[field].iata),
+  });
+
+  const setFormValues = (airport: Airport) => {
+    const { icao, name, city, country, lat, lng } = airport;
     form.setFieldValue(field + '.icao', icao);
     form.setFieldValue(field + '.name', name);
     form.setFieldValue(field + '.city', city);
     form.setFieldValue(field + '.country', country);
     form.setFieldValue(field + '.lat', lat);
     form.setFieldValue(field + '.lng', lng);
-    console.log('fetch data for ', iata);
   };
+
+  const fetchAirportData = () => {
+    const iata = form.getValues()[field].iata;
+    const airportFromLocal = findAirportFromFlights(iata, flights);
+    if (!airportFromLocal) {
+      startAirportQuery();
+      return;
+    }
+    setFormValues(airportFromLocal);
+  };
+
+  useEffect(() => {
+    if (airportData) {
+      setFormValues(airportData);
+    } else if (airportError) {
+      notifications.show({
+        title: 'Oops!',
+        message: airportError.message,
+        color: 'red',
+      });
+    }
+  }, [airportData, airportError]);
 
   return (
     <div>
@@ -38,7 +71,7 @@ export const AirportFields = ({ field }: { field: 'from' | 'to' }) => {
           key={form.key(field + '.iata')}
           {...form.getInputProps(field + '.iata')}
         />
-        <ActionIcon variant="light" size="lg" onClick={fetchAirportData}>
+        <ActionIcon variant="light" size="lg" onClick={fetchAirportData} loading={airportLoading}>
           <IconSearch></IconSearch>
         </ActionIcon>
       </Flex>
@@ -126,15 +159,44 @@ export const DistanceField = () => {
 export const AirlineFields = () => {
   const flights = useStore(s => s.flights);
   const form = useFlightFormContext();
+  const { getAirline } = useProxyApi();
+
+  const {
+    mutate: startAirlineQuery,
+    data: airlineData,
+    error: airlineError,
+    isPending: airlineLoading,
+  } = useMutation({
+    mutationFn: () => getAirline(form.getValues().airline.iata),
+  });
+
+  const setFormValues = (airline: Airline) => {
+    const { icao, name } = airline;
+    form.setFieldValue('airline.icao', icao);
+    form.setFieldValue('airline.name', name);
+  };
 
   const fetchAirlineData = () => {
     const iata = form.getValues().airline.iata;
     const airlineFromLocal = findAirlineFromFlights(iata, flights);
-    if (!airlineFromLocal) return;
-    const { icao, name } = airlineFromLocal;
-    form.setFieldValue('airline.icao', icao);
-    form.setFieldValue('airline.name', name);
+    if (!airlineFromLocal) {
+      startAirlineQuery();
+      return;
+    }
+    setFormValues(airlineFromLocal);
   };
+
+  useEffect(() => {
+    if (airlineData) {
+      setFormValues(airlineData);
+    } else if (airlineError) {
+      notifications.show({
+        title: 'Oops!',
+        message: airlineError.message,
+        color: 'red',
+      });
+    }
+  }, [airlineData, airlineError]);
 
   return (
     <Flex {...formFlexProps} align="end">
@@ -145,7 +207,7 @@ export const AirlineFields = () => {
         key={form.key('airline.iata')}
         {...form.getInputProps('airline.iata')}
       />
-      <ActionIcon variant="light" size="lg" onClick={fetchAirlineData}>
+      <ActionIcon variant="light" size="lg" onClick={fetchAirlineData} loading={airlineLoading}>
         <IconSearch></IconSearch>
       </ActionIcon>
       <TextInput
