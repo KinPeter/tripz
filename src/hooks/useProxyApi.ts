@@ -1,5 +1,5 @@
 import { ApiClient } from '../lib/apiClient.ts';
-import { Airport, Airline } from '@kinpeter/pk-common';
+import { Airport, Airline, VisitRequest } from '@kinpeter/pk-common';
 
 export const useProxyApi = () => {
   const api = new ApiClient();
@@ -12,5 +12,9 @@ export const useProxyApi = () => {
     return await api.get('/proxy/airline/' + iata);
   }
 
-  return { getAirport, getAirline };
+  async function getCity(coords: string): Promise<VisitRequest> {
+    return await api.get('/proxy/city/' + coords);
+  }
+
+  return { getAirport, getAirline, getCity };
 };

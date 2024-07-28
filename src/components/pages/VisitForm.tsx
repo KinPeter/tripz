@@ -19,11 +19,13 @@ import { formFlexProps } from '../../lib/flightFormTools.ts';
 import { MapContainer } from 'react-leaflet';
 import VisitFormMap from '../visits/VisitFormMap.tsx';
 import { LatLng } from 'leaflet';
+import { useProxyApi } from '../../hooks/useProxyApi.ts';
 
 const VisitForm = ({ isNew }: { isNew: boolean }) => {
   const { visitId } = useParams();
   const navigate = useNavigate();
   const { createVisit, updateVisit } = useVisitsApi();
+  const { getCity } = useProxyApi();
   const visits = useStore(s => s.visits);
 
   const form = useVisitForm({
@@ -52,6 +54,18 @@ const VisitForm = ({ isNew }: { isNew: boolean }) => {
     mutationFn: () => updateVisit(form.getTransformedValues(), visitId!),
   });
 
+  const {
+    mutate: fetchLocation,
+    data: locationData,
+    error: locationError,
+    isPending: locationLoading,
+  } = useMutation({
+    mutationFn: () => {
+      const { lat, lng } = form.getTransformedValues();
+      return getCity(`${lat},${lng}`);
+    },
+  });
+
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     form.validate();
@@ -70,6 +84,7 @@ const VisitForm = ({ isNew }: { isNew: boolean }) => {
     if (pos) {
       form.setFieldValue('lat', Number(pos.lat.toFixed(6)));
       form.setFieldValue('lng', Number(pos.lng.toFixed(6)));
+      fetchLocation();
     }
   };
 
@@ -97,6 +112,19 @@ const VisitForm = ({ isNew }: { isNew: boolean }) => {
       });
     }
   }, [createData, createError, navigate]);
+
+  useEffect(() => {
+    if (locationData) {
+      form.setFieldValue('city', locationData.city);
+      form.setFieldValue('country', locationData.country);
+    } else if (locationError) {
+      notifications.show({
+        title: 'Oops!',
+        message: locationError.message,
+        color: 'red',
+      });
+    }
+  }, [locationData, locationError]);
 
   useEffect(() => {
     if (updateData) {
@@ -168,7 +196,7 @@ const VisitForm = ({ isNew }: { isNew: boolean }) => {
             </MapContainer>
             <Flex {...formFlexProps} justify="flex-end" my="xl" pb="xl">
               <Button type="submit">
-                {createLoading || updateLoading ? (
+                {createLoading || updateLoading || locationLoading ? (
                   <Loader color="white" size="sm" type="dots" />
                 ) : (
                   'Save visit'
