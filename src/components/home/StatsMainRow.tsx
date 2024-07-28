@@ -4,6 +4,7 @@ import styles from './Stats.module.scss';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { numberFormatOptions } from '../../lib/constants.ts';
+import { useStore } from '../../store';
 
 interface Props {
   flights: StatsFlightData | null;
@@ -28,6 +29,7 @@ interface ConvertedStats {
 
 const StatsMainRow = ({ flights, visits, isPublic }: Props) => {
   const [convertedStats, setConvertedStats] = useState<ConvertedStats | undefined>();
+  const isFiltered = useStore(s => s.isFiltered);
 
   useEffect(() => {
     if (!flights) return;
@@ -69,18 +71,20 @@ const StatsMainRow = ({ flights, visits, isPublic }: Props) => {
           <b>{flights.domesticCount}</b> domestic
         </p>
       </div>
-      <div>
-        <p>
-          <b>{visits.citiesCount}</b>{' '}
-          {isPublic ? 'visits' : <Link to="/visits">places visited</Link>}
-        </p>
-        <p>
-          in <b>{visits.countriesCount}</b> countries
-        </p>
-        <p>
-          on <b>{flights.continentsByCount.length}</b> continents
-        </p>
-      </div>
+      {isFiltered ? null : (
+        <div>
+          <p>
+            <b>{visits.citiesCount}</b>{' '}
+            {isPublic ? 'visits' : <Link to="/visits">places visited</Link>}
+          </p>
+          <p>
+            in <b>{visits.countriesCount}</b> countries
+          </p>
+          <p>
+            on <b>{flights.continentsByCount.length}</b> continents
+          </p>
+        </div>
+      )}
       <div>
         <p>
           <b>{convertedStats.distanceKms}</b> km <span>flown</span>
@@ -110,20 +114,22 @@ const StatsMainRow = ({ flights, visits, isPublic }: Props) => {
           <b>{convertedStats.durationYears}</b> years
         </p>
       </div>
-      <div>
-        <p>
-          <b>{convertedStats.yearWithMostFlights[0]}</b>
-        </p>
-        <p>
-          is the year with most flights: <b>{convertedStats.yearWithMostFlights[1]}</b>
-        </p>
-        <p>
-          last year: <b>{convertedStats.lastYear}</b>
-        </p>
-        <p>
-          current year: <b>{convertedStats.currentYear}</b>
-        </p>
-      </div>
+      {isFiltered ? null : (
+        <div>
+          <p>
+            <b>{convertedStats.yearWithMostFlights[0]}</b>
+          </p>
+          <p>
+            is the year with most flights: <b>{convertedStats.yearWithMostFlights[1]}</b>
+          </p>
+          <p>
+            last year: <b>{convertedStats.lastYear}</b>
+          </p>
+          <p>
+            current year: <b>{convertedStats.currentYear}</b>
+          </p>
+        </div>
+      )}
     </div>
   );
 };

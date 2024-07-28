@@ -338,5 +338,6 @@ export function processFlightsForStats(flights: Flight[]): StatsFlightData {
     airportsMap,
     airlinesMap,
     aircraftMap,
+    years: Object.keys(flightsPerYearObj),
   };
 }

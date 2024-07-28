@@ -9,6 +9,7 @@ import {
   IconMapPin,
   IconZoomPan,
 } from '@tabler/icons-react';
+import { useStore } from '../../store';
 
 interface Props {
   onToggleDefaultLayer: () => void;
@@ -24,6 +25,7 @@ const MapMenu = ({
   onToggleZoom,
 }: Props) => {
   const [open, setOpen] = useState<boolean>(false);
+  const isFiltered = useStore(s => s.isFiltered);
 
   const handleToggleDefaultLayer = () => {
     setOpen(false);
@@ -96,6 +98,7 @@ const MapMenu = ({
           <Tooltip position="bottom" label="Toggle visits">
             <ActionIcon
               onClick={() => handleToggleVisits()}
+              disabled={isFiltered}
               variant="default"
               size="lg"
               radius="xl"

@@ -108,7 +108,7 @@ function filterByReason(flights: Flight[], query: string): Flight[] {
 }
 
 export const useFlightTableData = () => {
-  const flights = useStore(s => s.flights);
+  const flights = useStore(s => s.filteredFlights);
   const [tableData, setTableData] = useState([...flights].sort(sortByDate).map(addPosition));
 
   const filter = (expression: string) => {

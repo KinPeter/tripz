@@ -45,6 +45,7 @@ export interface StatsFlightData {
   airportsMap: Record<string, string>;
   aircraftMap: Record<string, string>;
   airlinesMap: Record<string, string>;
+  years: string[];
 }
 
 export type FlightWithPosition = Flight & { position: number };
