@@ -14,6 +14,7 @@ interface Props {
 const Stats = ({ isPublic }: Props) => {
   const flights = useStore(s => s.statsFlightData);
   const visits = useStore(s => s.statsVisitsData);
+  const isFiltered = useStore(s => s.isFiltered);
 
   const {
     continents,
@@ -89,11 +90,13 @@ const Stats = ({ isPublic }: Props) => {
         xAxisHeight={50}
         xAxisMargin={20}
       />
-      <FlightAreaChart
-        title="flights per year"
-        primaryData={flightsPerYear}
-        secondaryData={distancePerYear}
-      />
+      {isFiltered ? null : (
+        <FlightAreaChart
+          title="flights per year"
+          primaryData={flightsPerYear}
+          secondaryData={distancePerYear}
+        />
+      )}
       <FlightAreaChart
         title="flights per month"
         primaryData={flightsPerMonth}
