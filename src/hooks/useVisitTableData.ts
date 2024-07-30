@@ -14,7 +14,7 @@ function addPosition(v: Visit, index: number, visits: Visit[]): VisitWithPositio
 }
 
 export const useVisitTableData = () => {
-  const visits = useStore(s => s.visits);
+  const visits = useStore(s => s.filteredVisits);
   const [tableData, setTableData] = useState([...visits].sort(sortByDate).map(addPosition));
 
   const search = (rawQuery: string) => {

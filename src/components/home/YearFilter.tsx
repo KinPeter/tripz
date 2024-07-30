@@ -6,6 +6,7 @@ import { IconCalendar, IconX } from '@tabler/icons-react';
 
 const YearFilter = () => {
   const filterFlights = useStore(s => s.filterFlights);
+  const filterVisits = useStore(s => s.filterVisits);
   const years = useStore(s => s.years);
   const selectOptions = ['All years', ...years];
   const [selectValue, setSelectValue] = useState<string>('All years');
@@ -14,6 +15,7 @@ const YearFilter = () => {
   const onSelectYear = (e: ChangeEvent<HTMLSelectElement>) => {
     const value = e.target.value;
     filterFlights(value);
+    filterVisits(value);
     setSelectValue(value);
   };
 

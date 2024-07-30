@@ -19,6 +19,7 @@ const VisitsTable = ({ searchQuery }: { searchQuery: string }) => {
       <Table.Td>{v.position}</Table.Td>
       <Table.Td>{v.city}</Table.Td>
       <Table.Td>{v.country}</Table.Td>
+      <Table.Td>{v.year}</Table.Td>
       <Table.Td>{v.lat}</Table.Td>
       <Table.Td>{v.lng}</Table.Td>
       <Table.Td>
@@ -49,6 +50,7 @@ const VisitsTable = ({ searchQuery }: { searchQuery: string }) => {
               <Table.Th>#</Table.Th>
               <Table.Th>City</Table.Th>
               <Table.Th>Country</Table.Th>
+              <Table.Th>Year</Table.Th>
               <Table.Th>Latitude</Table.Th>
               <Table.Th>Longitude</Table.Th>
               <Table.Th></Table.Th>

@@ -71,20 +71,18 @@ const StatsMainRow = ({ flights, visits, isPublic }: Props) => {
           <b>{flights.domesticCount}</b> domestic
         </p>
       </div>
-      {isFiltered ? null : (
-        <div>
-          <p>
-            <b>{visits.citiesCount}</b>{' '}
-            {isPublic ? 'visits' : <Link to="/visits">places visited</Link>}
-          </p>
-          <p>
-            in <b>{visits.countriesCount}</b> countries
-          </p>
-          <p>
-            on <b>{flights.continentsByCount.length}</b> continents
-          </p>
-        </div>
-      )}
+      <div>
+        <p>
+          <b>{visits.citiesCount}</b>{' '}
+          {isPublic ? 'visits' : <Link to="/visits">{isFiltered ? 'new' : ''} places visited</Link>}
+        </p>
+        <p>
+          in <b>{visits.countriesCount}</b> countries
+        </p>
+        <p>
+          on <b>{flights.continentsByCount.length}</b> continents
+        </p>
+      </div>
       <div>
         <p>
           <b>{convertedStats.distanceKms}</b> km <span>flown</span>

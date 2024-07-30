@@ -164,6 +164,12 @@ const VisitForm = ({ isNew }: { isNew: boolean }) => {
                 key={form.key('country')}
                 {...form.getInputProps('country')}
               />
+              <TextInput
+                label="Year"
+                placeholder=""
+                key={form.key('year')}
+                {...form.getInputProps('year')}
+              />
             </Flex>
             <Flex {...formFlexProps}>
               <NumberInput

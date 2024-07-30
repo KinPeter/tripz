@@ -26,7 +26,6 @@ const MapManager = () => {
   const [curvesLayer, setCurvesLayer] = useState<L.LayerGroup | null>(null);
   const flights = useStore(s => s.mapFlightData);
   const visits = useStore(s => s.mapVisitsData);
-  const isFiltered = useStore(s => s.isFiltered);
 
   useEffect(() => {
     setTileLayerByColorScheme(colorScheme as TileLayerKey);
@@ -111,7 +110,6 @@ const MapManager = () => {
         url={TILE_LAYERS[tileLayer].url}
       />
       {visitsVisible &&
-        !isFiltered &&
         visitMarkers.map(({ pos, popup }) => (
           <Marker position={pos} icon={markerIcons.visit} key={`${pos[0]}-${pos[1]}`}>
             <Popup closeButton={false}>{popup}</Popup>

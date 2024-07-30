@@ -18,6 +18,7 @@ export function transformVisitValues(values: FormVisit): FormVisit {
 export const visitInitialValues = {
   city: '',
   country: '',
+  year: new Date().getFullYear().toString(),
   lat: 0,
   lng: 0,
 };
