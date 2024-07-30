@@ -74,7 +74,15 @@ const StatsMainRow = ({ flights, visits, isPublic }: Props) => {
       <div>
         <p>
           <b>{visits.citiesCount}</b>{' '}
-          {isPublic ? 'visits' : <Link to="/visits">{isFiltered ? 'new' : ''} places visited</Link>}
+          {isPublic ? (
+            isFiltered ? (
+              'new places visited'
+            ) : (
+              'places visited'
+            )
+          ) : (
+            <Link to="/visits">{isFiltered ? 'new' : ''} places visited</Link>
+          )}
         </p>
         <p>
           in <b>{visits.countriesCount}</b> countries
