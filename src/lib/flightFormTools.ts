@@ -17,9 +17,32 @@ export type FormFlight = Omit<Flight, 'id' | 'createdAt'>;
 export const [FlightFormProvider, useFlightFormContext, useFlightForm] =
   createFormContext<FormFlight>();
 
+function transformTime(input: string): string {
+  const value = input.trim();
+  if (value.length === 5) {
+    return `${value}:00`;
+  } else if (value.length === 4) {
+    return `${value.substring(0, 2)}:${value.substring(2, 4)}:00`;
+  } else if (value.length === 6) {
+    return `${value.substring(0, 2)}:${value.substring(2, 4)}:${value.substring(4, 6)}`;
+  } else {
+    return value;
+  }
+}
+
+function transformDate(input: string): string {
+  const value = input.trim();
+  if (value.length === 8) {
+    return `${value.substring(0, 4)}-${value.substring(4, 6)}-${value.substring(6, 8)}`;
+  } else {
+    return value;
+  }
+}
+
 export function transformFlightValues(values: FormFlight): FormFlight {
   return {
     ...values,
+    date: transformDate(values.date),
     flightNumber: values.flightNumber.toUpperCase(),
     distance: Number(values.distance),
     from: {
@@ -36,10 +59,9 @@ export function transformFlightValues(values: FormFlight): FormFlight {
       iata: values.to.iata.toUpperCase(),
       icao: values.to.icao.toUpperCase(),
     },
-    departureTime:
-      values.departureTime.length === 5 ? `${values.departureTime}:00` : values.departureTime,
-    arrivalTime: values.arrivalTime.length === 5 ? `${values.arrivalTime}:00` : values.arrivalTime,
-    duration: values.duration.length === 5 ? `${values.duration}:00` : values.duration,
+    departureTime: transformTime(values.departureTime),
+    arrivalTime: transformTime(values.arrivalTime),
+    duration: transformTime(values.duration),
     aircraft: {
       ...values.aircraft,
       icao: values.aircraft.icao.toUpperCase(),
@@ -77,8 +99,15 @@ export function findAircraftFromFlights(icao: string, flights: Flight[]): Aircra
   else return flight.aircraft;
 }
 
-export const HH_MM_REGEX = new RegExp(/^(?:[01]\d|2[0-3]):[0-5]\d(?::[0-5]\d)?$/);
+export const HH_MM_REGEX = new RegExp(/^(?:[01]\d|2[0-3]):?[0-5]\d(?::?[0-5]\d)?$/);
+export const YYYY_MM_DD_REGEX = new RegExp(
+  /^([2-9]\d{3}|19\d{2})-?(0[1-9]|1[0-2])-?(0[1-9]|[12]\d|3[01])$/
+);
 export const flightFormSchema = flightSchema.shape({
+  date: yup
+    .string()
+    .matches(YYYY_MM_DD_REGEX, ValidationError.INVALID_DATE)
+    .required(ValidationError.STRING_REQUIRED),
   from: airportSchema.shape({
     lat: yup.number().required(ValidationError.NUMBER_REQUIRED),
     lng: yup.number().required(ValidationError.NUMBER_REQUIRED),
@@ -99,6 +128,10 @@ export const flightFormSchema = flightSchema.shape({
     .string()
     .matches(HH_MM_REGEX, ValidationError.INVALID_TIME)
     .required(ValidationError.STRING_REQUIRED),
+  distance: yup
+    .number()
+    .min(1, ValidationError.MIN_VALUE)
+    .required(ValidationError.NUMBER_REQUIRED),
 });
 
 export const flightInitialValues = {
