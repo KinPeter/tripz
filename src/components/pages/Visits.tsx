@@ -27,7 +27,7 @@ const Visits = () => {
             New visit
           </Button>
         ) : (
-          <ActionIcon size="lg" variant="filled">
+          <ActionIcon size="lg" variant="filled" onClick={() => navigate('/visits/new')}>
             <IconPlus size={20} />
           </ActionIcon>
         )}

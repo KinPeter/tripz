@@ -28,7 +28,7 @@ const Flights = () => {
             New flight
           </Button>
         ) : (
-          <ActionIcon size="lg" variant="filled">
+          <ActionIcon size="lg" variant="filled" onClick={() => navigate('/flights/new')}>
             <IconPlus size={20} />
           </ActionIcon>
         )}
