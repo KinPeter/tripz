@@ -131,7 +131,7 @@ const FlightsTable = ({
             {rows}
             {hasMore ? (
               <Table.Tr>
-                <Table.Td colSpan={14} style={{ textAlign: 'center' }}>
+                <Table.Td colSpan={14} className={styles.loadMoreContainer}>
                   <Button variant="subtle" onClick={loadMore}>
                     Load more...
                   </Button>

@@ -2,3 +2,11 @@
   max-height: calc(100vh - 180px);
   overflow-y: auto;
 }
+
+.loadMoreContainer {
+  text-align: left;
+
+  @media screen and (min-width: 895px) {
+    text-align: center;
+  }
+}

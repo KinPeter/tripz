@@ -1,6 +1,18 @@
 .tableContainer {
-  max-height: calc(100vh - 180px);
+  max-height: calc(100vh - 240px);
   overflow-y: auto;
+
+  @media screen and (min-width: 895px) {
+    max-height: calc(100vh - 180px);
+  }
+}
+
+.loadMoreContainer {
+  text-align: left;
+
+  @media screen and (min-width: 895px) {
+    text-align: center;
+  }
 }
 
 .toRight {

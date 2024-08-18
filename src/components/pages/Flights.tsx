@@ -21,31 +21,33 @@ const Flights = () => {
     <div className={styles.container}>
       <PageHeader>My Flights</PageHeader>
       <div className={styles.menuBar}>
-        {isWide ? (
-          <Button
-            leftSection={<IconPlus size={16} />}
+        <div className={styles.searchContainer}>
+          {isWide ? (
+            <Button
+              leftSection={<IconPlus size={16} />}
+              size="md"
+              variant="filled"
+              onClick={() => navigate('/flights/new')}
+            >
+              New flight
+            </Button>
+          ) : (
+            <ActionIcon size="lg" variant="filled" onClick={() => navigate('/flights/new')}>
+              <IconPlus size={20} />
+            </ActionIcon>
+          )}
+          <TextInput
             size="md"
-            variant="filled"
-            onClick={() => navigate('/flights/new')}
-          >
-            New flight
-          </Button>
-        ) : (
-          <ActionIcon size="lg" variant="filled" onClick={() => navigate('/flights/new')}>
-            <IconPlus size={20} />
-          </ActionIcon>
-        )}
-        <TextInput
-          size="md"
-          w={400}
-          mx={12}
-          leftSection={<IconSearch size={16} />}
-          placeholder="Search or filter"
-          value={inputValue}
-          onChange={event => setInputValue(event.target.value)}
-          disabled={showPlanned}
-        />
-        <FlightSearchHelp></FlightSearchHelp>
+            w={400}
+            mx={12}
+            leftSection={<IconSearch size={16} />}
+            placeholder="Search or filter"
+            value={inputValue}
+            onChange={event => setInputValue(event.target.value)}
+            disabled={showPlanned}
+          />
+          <FlightSearchHelp></FlightSearchHelp>
+        </div>
         {isFiltered ? null : (
           <div className={styles.checkboxContainer}>
             <Checkbox

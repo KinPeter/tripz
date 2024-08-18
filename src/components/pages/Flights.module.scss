@@ -9,7 +9,20 @@
   flex-wrap: wrap;
 }
 
+.searchContainer {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 530px) {
+    width: 100%;
+  }
+}
+
 .checkboxContainer {
   min-width: 200px;
   padding: 12px 20px;
+
+  @media screen and (max-width: 895px) {
+    padding: 20px 0 10px;
+  }
 }
