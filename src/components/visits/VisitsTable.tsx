@@ -1,40 +1,20 @@
 import { useNavigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useVisitTableData } from '../../hooks/useVisitTableData.ts';
 import { ActionIcon, Button, Table, Tooltip } from '@mantine/core';
 import { VisitWithPosition } from '../../types/visits.ts';
 import styles from './VisitsTable.module.scss';
 import { IconEdit, IconTrash } from '@tabler/icons-react';
+import { useReducedTableData } from '../../hooks/useReducedTableData.ts';
 
 const VisitsTable = ({ searchQuery }: { searchQuery: string }) => {
   const { tableData, search } = useVisitTableData();
   const navigate = useNavigate();
-  const [reducedTableData, setReducedTableData] = useState<VisitWithPosition[]>([]);
-  const [hasMore, setHasMore] = useState<boolean>(tableData.length > 15);
-  const [currentEndIndex, setCurrentEndIndex] = useState<number>(15);
-
-  useEffect(() => {
-    if (tableData.length > 15) {
-      setReducedTableData(tableData.slice(0, 15));
-      setHasMore(true);
-    } else {
-      setReducedTableData(tableData);
-      setHasMore(false);
-    }
-    setCurrentEndIndex(15);
-  }, [tableData]);
+  const { reducedTableData, hasMore, loadMore } = useReducedTableData<VisitWithPosition>(tableData);
 
   useEffect(() => {
     search(searchQuery);
   }, [searchQuery]);
-
-  const loadMore = () => {
-    const total = tableData.length;
-    const newEndIndex = currentEndIndex + 15 < total ? currentEndIndex + 15 : total;
-    setReducedTableData(tableData.slice(0, newEndIndex));
-    setCurrentEndIndex(newEndIndex);
-    setHasMore(newEndIndex < total);
-  };
 
   const rows = reducedTableData.map((v: VisitWithPosition) => (
     <Table.Tr key={v.id}>

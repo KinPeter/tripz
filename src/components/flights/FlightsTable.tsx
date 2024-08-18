@@ -2,11 +2,12 @@ import { ActionIcon, Button, Table, Tooltip } from '@mantine/core';
 import { FlightClass } from '@kinpeter/pk-common';
 import styles from './FlightsTable.module.scss';
 import { numberFormatOptions } from '../../lib/constants.ts';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { IconEdit, IconTrash } from '@tabler/icons-react';
 import { useFlightTableData } from '../../hooks/useFlightTableData.ts';
 import { FlightWithPosition } from '../../types/flights.ts';
 import { useNavigate } from 'react-router-dom';
+import { useReducedTableData } from '../../hooks/useReducedTableData.ts';
 
 function getClass(value: FlightClass): 'C' | 'Y' | 'F' | 'W' {
   switch (value) {
@@ -30,20 +31,8 @@ const FlightsTable = ({
 }) => {
   const { tableData, filter, togglePlannedFlights } = useFlightTableData();
   const navigate = useNavigate();
-  const [reducedTableData, setReducedTableData] = useState<FlightWithPosition[]>([]);
-  const [hasMore, setHasMore] = useState<boolean>(tableData.length > 15);
-  const [currentEndIndex, setCurrentEndIndex] = useState<number>(15);
-
-  useEffect(() => {
-    if (tableData.length > 15) {
-      setReducedTableData(tableData.slice(0, 15));
-      setHasMore(true);
-    } else {
-      setReducedTableData(tableData);
-      setHasMore(false);
-    }
-    setCurrentEndIndex(15);
-  }, [tableData]);
+  const { reducedTableData, hasMore, loadMore } =
+    useReducedTableData<FlightWithPosition>(tableData);
 
   useEffect(() => {
     filter(filterExpression);
@@ -52,14 +41,6 @@ const FlightsTable = ({
   useEffect(() => {
     togglePlannedFlights(showPlanned);
   }, [showPlanned]);
-
-  const loadMore = () => {
-    const total = tableData.length;
-    const newEndIndex = currentEndIndex + 15 < total ? currentEndIndex + 15 : total;
-    setReducedTableData(tableData.slice(0, newEndIndex));
-    setCurrentEndIndex(newEndIndex);
-    setHasMore(newEndIndex < total);
-  };
 
   const rows = reducedTableData.map((f: FlightWithPosition) => (
     <Table.Tr key={f.id}>
