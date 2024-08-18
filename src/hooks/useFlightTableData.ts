@@ -108,12 +108,13 @@ function filterByReason(flights: Flight[], query: string): Flight[] {
 }
 
 export const useFlightTableData = () => {
-  const flights = useStore(s => s.filteredFlights);
-  const [tableData, setTableData] = useState([...flights].sort(sortByDate).map(addPosition));
+  const allFlights = useStore(s => s.filteredFlights);
+  const flownFlights = allFlights.filter(({ isPlanned }) => isPlanned !== true);
+  const [tableData, setTableData] = useState([...flownFlights].sort(sortByDate).map(addPosition));
 
   const filter = (expression: string) => {
     if (!expression) {
-      setTableData([...flights].sort(sortByDate).map(addPosition));
+      setTableData([...flownFlights].sort(sortByDate).map(addPosition));
     } else if (expression.startsWith('*')) {
       const [filter, rawQuery] = getFilterTerms(expression);
       if (!filter || !rawQuery) return;
@@ -121,32 +122,32 @@ export const useFlightTableData = () => {
       let data: Flight[] = [];
       switch (filter) {
         case 'from':
-          data = filterByFrom([...flights], query);
+          data = filterByFrom([...flownFlights], query);
           break;
         case 'to':
-          data = filterByTo([...flights], query);
+          data = filterByTo([...flownFlights], query);
           break;
         case 'airline':
-          data = filterByAirline([...flights], query);
+          data = filterByAirline([...flownFlights], query);
           break;
         case 'aircraft':
-          data = filterByAircraft([...flights], query);
+          data = filterByAircraft([...flownFlights], query);
           break;
         case 'seat':
-          data = filterBySeat([...flights], query);
+          data = filterBySeat([...flownFlights], query);
           break;
         case 'class':
-          data = filterByClass([...flights], query);
+          data = filterByClass([...flownFlights], query);
           break;
         case 'reason':
-          data = filterByReason([...flights], query);
+          data = filterByReason([...flownFlights], query);
           break;
       }
       setTableData(data.sort(sortByDate).map(addPosition));
       return;
     } else {
       setTableData(
-        [...flights]
+        [...flownFlights]
           .filter(f => filterDefault(f, expression))
           .sort(sortByDate)
           .map(addPosition)
@@ -154,8 +155,24 @@ export const useFlightTableData = () => {
     }
   };
 
+  const togglePlannedFlights = (showPlanned: boolean) => {
+    setTableData(
+      allFlights
+        .filter(({ isPlanned }) => {
+          if (showPlanned) {
+            return isPlanned === true;
+          } else {
+            return !isPlanned;
+          }
+        })
+        .sort(sortByDate)
+        .map(addPosition)
+    );
+  };
+
   return {
     tableData,
     filter,
+    togglePlannedFlights,
   };
 };

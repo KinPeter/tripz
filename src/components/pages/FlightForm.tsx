@@ -1,7 +1,7 @@
 import styles from './FlightForm.module.scss';
 import PageHeader from '../misc/PageHeader.tsx';
 import { yupResolver } from 'mantine-form-yup-resolver';
-import { Button, Divider, Flex, Loader, Select, TextInput } from '@mantine/core';
+import { Button, Checkbox, Divider, Flex, Loader, Select, TextInput } from '@mantine/core';
 import {
   AircraftFields,
   AirlineFields,
@@ -133,6 +133,13 @@ const FlightForm = ({ isNew }: { isNew: boolean }) => {
                 key={form.key('flightNumber')}
                 {...form.getInputProps('flightNumber')}
               />
+              <div className={styles.checkboxContainer}>
+                <Checkbox
+                  label="Planned flight"
+                  key={form.key('isPlanned')}
+                  {...form.getInputProps('isPlanned', { type: 'checkbox' })}
+                />
+              </div>
             </Flex>
             <Flex {...formFlexProps}>
               <TextInput

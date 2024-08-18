@@ -3,15 +3,18 @@ import FlightsTable from '../flights/FlightsTable.tsx';
 import PageHeader from '../misc/PageHeader.tsx';
 import { IconPlus, IconSearch } from '@tabler/icons-react';
 import FlightSearchHelp from '../flights/FlightSearchHelp.tsx';
-import { ActionIcon, Button, TextInput } from '@mantine/core';
+import { ActionIcon, Button, Checkbox, TextInput } from '@mantine/core';
 import { useDebouncedValue, useMediaQuery } from '@mantine/hooks';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useStore } from '../../store';
 
 const Flights = () => {
   const isWide = useMediaQuery('(min-width: 650px)');
   const navigate = useNavigate();
+  const isFiltered = useStore(s => s.isFiltered);
   const [inputValue, setInputValue] = useState<string>('');
+  const [showPlanned, setShowPlanned] = useState<boolean>(false);
   const [searchTerm] = useDebouncedValue(inputValue, 500);
 
   return (
@@ -40,10 +43,20 @@ const Flights = () => {
           placeholder="Search or filter"
           value={inputValue}
           onChange={event => setInputValue(event.target.value)}
+          disabled={showPlanned}
         />
         <FlightSearchHelp></FlightSearchHelp>
+        {isFiltered ? null : (
+          <div className={styles.checkboxContainer}>
+            <Checkbox
+              label="Show planned flights"
+              checked={showPlanned}
+              onChange={event => setShowPlanned(event.currentTarget.checked)}
+            />
+          </div>
+        )}
       </div>
-      <FlightsTable filterExpression={searchTerm}></FlightsTable>
+      <FlightsTable filterExpression={searchTerm} showPlanned={showPlanned} />
     </div>
   );
 };

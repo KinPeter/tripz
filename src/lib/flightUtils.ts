@@ -4,7 +4,7 @@ import { LatLng, MapMarker } from '../types/map.ts';
 import { continentsForCountries } from './continentsForCountries.ts';
 import { dayNames, monthNames } from './constants.ts';
 
-export function processFlightsForMap(flights: Flight[]): MapFlightData {
+export function processFlightsForMap(allFlights: Flight[]): MapFlightData {
   const routeMap: Map<string, { a: LatLng; b: LatLng; count: number }> = new Map();
   const airportSet: Set<string> = new Set();
 
@@ -15,6 +15,8 @@ export function processFlightsForMap(flights: Flight[]): MapFlightData {
   };
 
   const parseCoords = (key: string): LatLng => key.split('-').map(parseFloat) as LatLng;
+
+  const flights = allFlights.filter(({ isPlanned }) => isPlanned !== true);
 
   flights.forEach(flight => {
     const key = createKey(flight.from, flight.to);
@@ -80,7 +82,7 @@ function calculateCenter(coordinates: LatLng[]): LatLng {
   return [centerLatitude, centerLongitude];
 }
 
-export function processFlightsForStats(flights: Flight[]): StatsFlightData {
+export function processFlightsForStats(allFlights: Flight[]): StatsFlightData {
   let domesticCount = 0;
   let intlCount = 0;
   let totalDistance = 0;
@@ -106,6 +108,8 @@ export function processFlightsForStats(flights: Flight[]): StatsFlightData {
   const distancePerYearObj: Record<number, number> = {};
   const flightsPerMonthObj: Record<number, number> = {};
   const flightsPerWeekdayObj: Record<number, number> = {};
+
+  const flights = allFlights.filter(({ isPlanned }) => isPlanned !== true);
 
   flights.forEach(f => {
     if (f.to.country === f.from.country) {

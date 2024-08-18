@@ -21,13 +21,23 @@ function getClass(value: FlightClass): 'C' | 'Y' | 'F' | 'W' {
   }
 }
 
-const FlightsTable = ({ filterExpression }: { filterExpression: string }) => {
-  const { tableData, filter } = useFlightTableData();
+const FlightsTable = ({
+  filterExpression,
+  showPlanned,
+}: {
+  filterExpression: string;
+  showPlanned: boolean;
+}) => {
+  const { tableData, filter, togglePlannedFlights } = useFlightTableData();
   const navigate = useNavigate();
 
   useEffect(() => {
     filter(filterExpression);
   }, [filterExpression]);
+
+  useEffect(() => {
+    togglePlannedFlights(showPlanned);
+  }, [showPlanned]);
 
   const rows = tableData.map((f: FlightWithPosition) => (
     <Table.Tr key={f.id}>

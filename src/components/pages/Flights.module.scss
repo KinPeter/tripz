@@ -6,4 +6,10 @@
   display: flex;
   align-items: center;
   margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.checkboxContainer {
+  min-width: 200px;
+  padding: 12px 20px;
 }

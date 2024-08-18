@@ -73,6 +73,7 @@ export function transformFlightValues(values: FormFlight): FormFlight {
     },
     seatNumber: values.seatNumber.toUpperCase(),
     registration: values.registration.toUpperCase(),
+    isPlanned: values.isPlanned ?? false,
   };
 }
 
@@ -147,6 +148,7 @@ export const flightInitialValues = {
   flightReason: FlightReason.LEISURE,
   distance: 0,
   note: '',
+  isPlanned: false,
   from: {
     iata: '',
     icao: '',
