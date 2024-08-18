@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useVisitTableData } from '../../hooks/useVisitTableData.ts';
-import { ActionIcon, Table, Tooltip } from '@mantine/core';
+import { ActionIcon, Button, Table, Tooltip } from '@mantine/core';
 import { VisitWithPosition } from '../../types/visits.ts';
 import styles from './VisitsTable.module.scss';
 import { IconEdit, IconTrash } from '@tabler/icons-react';
@@ -9,12 +9,34 @@ import { IconEdit, IconTrash } from '@tabler/icons-react';
 const VisitsTable = ({ searchQuery }: { searchQuery: string }) => {
   const { tableData, search } = useVisitTableData();
   const navigate = useNavigate();
+  const [reducedTableData, setReducedTableData] = useState<VisitWithPosition[]>([]);
+  const [hasMore, setHasMore] = useState<boolean>(tableData.length > 15);
+  const [currentEndIndex, setCurrentEndIndex] = useState<number>(15);
+
+  useEffect(() => {
+    if (tableData.length > 15) {
+      setReducedTableData(tableData.slice(0, 15));
+      setHasMore(true);
+    } else {
+      setReducedTableData(tableData);
+      setHasMore(false);
+    }
+    setCurrentEndIndex(15);
+  }, [tableData]);
 
   useEffect(() => {
     search(searchQuery);
   }, [searchQuery]);
 
-  const rows = tableData.map((v: VisitWithPosition) => (
+  const loadMore = () => {
+    const total = tableData.length;
+    const newEndIndex = currentEndIndex + 15 < total ? currentEndIndex + 15 : total;
+    setReducedTableData(tableData.slice(0, newEndIndex));
+    setCurrentEndIndex(newEndIndex);
+    setHasMore(newEndIndex < total);
+  };
+
+  const rows = reducedTableData.map((v: VisitWithPosition) => (
     <Table.Tr key={v.id}>
       <Table.Td>{v.position}</Table.Td>
       <Table.Td>{v.city}</Table.Td>
@@ -56,7 +78,18 @@ const VisitsTable = ({ searchQuery }: { searchQuery: string }) => {
               <Table.Th></Table.Th>
             </Table.Tr>
           </Table.Thead>
-          <Table.Tbody>{rows}</Table.Tbody>
+          <Table.Tbody>
+            {rows}
+            {hasMore ? (
+              <Table.Tr>
+                <Table.Td colSpan={14} style={{ textAlign: 'center' }}>
+                  <Button variant="subtle" onClick={loadMore}>
+                    Load more...
+                  </Button>
+                </Table.Td>
+              </Table.Tr>
+            ) : null}
+          </Table.Tbody>
         </Table>
       </Table.ScrollContainer>
     </div>
