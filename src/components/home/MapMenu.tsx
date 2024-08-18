@@ -8,6 +8,7 @@ import {
   IconPlaneTilt,
   IconMapPin,
   IconZoomPan,
+  IconMaximize,
 } from '@tabler/icons-react';
 
 interface Props {
@@ -15,6 +16,7 @@ interface Props {
   onToggleFlights: () => void;
   onToggleVisits: () => void;
   onToggleZoom: () => void;
+  onToggleFullscreen: () => void;
 }
 
 const MapMenu = ({
@@ -22,6 +24,7 @@ const MapMenu = ({
   onToggleFlights,
   onToggleVisits,
   onToggleZoom,
+  onToggleFullscreen,
 }: Props) => {
   const [open, setOpen] = useState<boolean>(false);
 
@@ -45,6 +48,11 @@ const MapMenu = ({
     onToggleZoom();
   };
 
+  const handleToggleFullscreen = () => {
+    setOpen(false);
+    onToggleFullscreen();
+  };
+
   return (
     <div className={styles.mapMenu}>
       <Tooltip position="bottom" label="Map menu">
@@ -60,6 +68,17 @@ const MapMenu = ({
       </Tooltip>
       {open && (
         <div className={styles.content}>
+          <Tooltip position="bottom" label="Toggle fullscreen">
+            <ActionIcon
+              onClick={() => handleToggleFullscreen()}
+              variant="default"
+              size="lg"
+              radius="xl"
+              aria-label="Toggle fullscreen"
+            >
+              <IconMaximize />
+            </ActionIcon>
+          </Tooltip>
           <Tooltip position="bottom" label="Toggle mouse zoom">
             <ActionIcon
               onClick={() => handleToggleZoom()}

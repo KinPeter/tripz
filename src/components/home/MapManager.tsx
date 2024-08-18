@@ -12,7 +12,7 @@ import { MapMarker } from '../../types/map.ts';
 import ScrollDownButton from './ScrollDownButton.tsx';
 import YearFilter from './YearFilter.tsx';
 
-const MapManager = () => {
+const MapManager = ({ onToggleFullscreen }: { onToggleFullscreen: () => void }) => {
   const map = useMap();
   const colorScheme = useComputedColorScheme('light', { getInitialValueInEffect: true });
   const [tileLayer, setTileLayer] = useState<TileLayerKey>(TileLayerKey.DEFAULT);
@@ -126,6 +126,7 @@ const MapManager = () => {
         onToggleFlights={toggleFlights}
         onToggleVisits={toggleVisits}
         onToggleZoom={toggleZoom}
+        onToggleFullscreen={onToggleFullscreen}
       />
       <YearFilter />
       <ScrollDownButton />
