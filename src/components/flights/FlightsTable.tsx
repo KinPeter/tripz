@@ -1,13 +1,12 @@
-import { ActionIcon, Button, Table, Tooltip } from '@mantine/core';
+import { Button, Table, Tooltip } from '@mantine/core';
 import { FlightClass } from '@kinpeter/pk-common';
 import styles from './FlightsTable.module.scss';
 import { numberFormatOptions } from '../../lib/constants.ts';
 import { useEffect } from 'react';
-import { IconEdit, IconTrash } from '@tabler/icons-react';
 import { useFlightTableData } from '../../hooks/useFlightTableData.ts';
 import { FlightWithPosition } from '../../types/flights.ts';
-import { useNavigate } from 'react-router-dom';
 import { useReducedTableData } from '../../hooks/useReducedTableData.ts';
+import TableActions from '../misc/TableActions.tsx';
 
 function getClass(value: FlightClass): 'C' | 'Y' | 'F' | 'W' {
   switch (value) {
@@ -30,7 +29,6 @@ const FlightsTable = ({
   showPlanned: boolean;
 }) => {
   const { tableData, filter, togglePlannedFlights } = useFlightTableData();
-  const navigate = useNavigate();
   const { reducedTableData, hasMore, loadMore } =
     useReducedTableData<FlightWithPosition>(tableData);
 
@@ -85,20 +83,7 @@ const FlightsTable = ({
         </Tooltip>
       </Table.Td>
       <Table.Td>
-        <Tooltip label="Edit">
-          <ActionIcon
-            variant="transparent"
-            mr="md"
-            onClick={() => navigate('/flights/edit/' + f.id)}
-          >
-            <IconEdit></IconEdit>
-          </ActionIcon>
-        </Tooltip>
-        <Tooltip label="Delete">
-          <ActionIcon variant="transparent" disabled>
-            <IconTrash></IconTrash>
-          </ActionIcon>
-        </Tooltip>
+        <TableActions dataType="flights" item={f} />
       </Table.Td>
     </Table.Tr>
   ));

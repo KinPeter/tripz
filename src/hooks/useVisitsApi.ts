@@ -1,5 +1,5 @@
 import { ApiClient } from '../lib/apiClient.ts';
-import { VisitRequest, Visit } from '@kinpeter/pk-common';
+import { VisitRequest, Visit, Flight } from '@kinpeter/pk-common';
 
 export const useVisitsApi = () => {
   const api = new ApiClient();
@@ -16,5 +16,9 @@ export const useVisitsApi = () => {
     return await api.put('/visits/' + id, data);
   }
 
-  return { getAllVisits, createVisit, updateVisit };
+  async function deleteVisit(id: string): Promise<Flight> {
+    return await api.delete('/visits/' + id, undefined);
+  }
+
+  return { getAllVisits, createVisit, updateVisit, deleteVisit };
 };

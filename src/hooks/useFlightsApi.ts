@@ -16,5 +16,9 @@ export const useFlightsApi = () => {
     return await api.put('/flights/' + id, data);
   }
 
-  return { getAllFlights, createFlight, updateFlight };
+  async function deleteFlight(id: string): Promise<Flight> {
+    return await api.delete('/flights/' + id, undefined);
+  }
+
+  return { getAllFlights, createFlight, updateFlight, deleteFlight };
 };

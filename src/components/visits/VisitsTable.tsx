@@ -1,15 +1,13 @@
-import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useVisitTableData } from '../../hooks/useVisitTableData.ts';
-import { ActionIcon, Button, Table, Tooltip } from '@mantine/core';
+import { Button, Table } from '@mantine/core';
 import { VisitWithPosition } from '../../types/visits.ts';
 import styles from './VisitsTable.module.scss';
-import { IconEdit, IconTrash } from '@tabler/icons-react';
 import { useReducedTableData } from '../../hooks/useReducedTableData.ts';
+import TableActions from '../misc/TableActions.tsx';
 
 const VisitsTable = ({ searchQuery }: { searchQuery: string }) => {
   const { tableData, search } = useVisitTableData();
-  const navigate = useNavigate();
   const { reducedTableData, hasMore, loadMore } = useReducedTableData<VisitWithPosition>(tableData);
 
   useEffect(() => {
@@ -25,20 +23,7 @@ const VisitsTable = ({ searchQuery }: { searchQuery: string }) => {
       <Table.Td>{v.lat}</Table.Td>
       <Table.Td>{v.lng}</Table.Td>
       <Table.Td>
-        <Tooltip label="Edit">
-          <ActionIcon
-            variant="transparent"
-            mr="md"
-            onClick={() => navigate('/visits/edit/' + v.id)}
-          >
-            <IconEdit></IconEdit>
-          </ActionIcon>
-        </Tooltip>
-        <Tooltip label="Delete">
-          <ActionIcon variant="transparent" disabled>
-            <IconTrash></IconTrash>
-          </ActionIcon>
-        </Tooltip>
+        <TableActions item={v} dataType="visits" />
       </Table.Td>
     </Table.Tr>
   ));
