@@ -9,12 +9,12 @@ export function processFlightsForMap(allFlights: Flight[]): MapFlightData {
   const airportSet: Set<string> = new Set();
 
   const createKey = (from: Airport, to: Airport): string => {
-    const key1 = `${from.iata}-${to.iata}`;
-    const key2 = `${to.iata}-${from.iata}`;
+    const key1 = `${from.iata}%${to.iata}`;
+    const key2 = `${to.iata}%${from.iata}`;
     return key1 < key2 ? key1 : key2;
   };
 
-  const parseCoords = (key: string): LatLng => key.split('-').map(parseFloat) as LatLng;
+  const parseCoords = (key: string): LatLng => key.split('%').map(parseFloat) as LatLng;
 
   const flights = allFlights.filter(({ isPlanned }) => isPlanned !== true);
 
@@ -31,8 +31,8 @@ export function processFlightsForMap(allFlights: Flight[]): MapFlightData {
       });
     }
 
-    airportSet.add(`${flight.from.lat}-${flight.from.lng}`);
-    airportSet.add(`${flight.to.lat}-${flight.to.lng}`);
+    airportSet.add(`${flight.from.lat}%${flight.from.lng}`);
+    airportSet.add(`${flight.to.lat}%${flight.to.lng}`);
   });
 
   const routes: Route[] = Array.from(routeMap.values());
