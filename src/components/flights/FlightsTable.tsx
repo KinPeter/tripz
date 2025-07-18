@@ -1,10 +1,9 @@
 import { Button, Table, Tooltip } from '@mantine/core';
-import { FlightClass } from '@kinpeter/pk-common';
 import styles from './FlightsTable.module.scss';
 import { numberFormatOptions } from '../../lib/constants.ts';
 import { useEffect } from 'react';
 import { useFlightTableData } from '../../hooks/useFlightTableData.ts';
-import { FlightWithPosition } from '../../types/flights.ts';
+import { FlightWithPosition, FlightClass } from '../../types';
 import { useReducedTableData } from '../../hooks/useReducedTableData.ts';
 import TableActions from '../misc/TableActions.tsx';
 
@@ -46,13 +45,13 @@ const FlightsTable = ({
       <Table.Td>{f.date}</Table.Td>
       <Table.Td>{f.flightNumber}</Table.Td>
       <Table.Td>
-        <Tooltip label={`${f.from.city} ${f.from.name}`}>
-          <span>{f.from.iata}</span>
+        <Tooltip label={`${f.departureAirport.city} ${f.departureAirport.name}`}>
+          <span>{f.departureAirport.iata}</span>
         </Tooltip>
       </Table.Td>
       <Table.Td>
-        <Tooltip label={`${f.to.city} ${f.to.name}`}>
-          <span>{f.to.iata}</span>
+        <Tooltip label={`${f.arrivalAirport.city} ${f.arrivalAirport.name}`}>
+          <span>{f.arrivalAirport.iata}</span>
         </Tooltip>
       </Table.Td>
       <Table.Td>{f.departureTime.substring(0, 5)}</Table.Td>

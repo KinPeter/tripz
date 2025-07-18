@@ -1,7 +1,7 @@
 import { StateCreator } from 'zustand';
 import { CombinedStore } from './index.ts';
 import { USER_KEY } from '../lib/constants.ts';
-import { AuthData as User } from '@kinpeter/pk-common';
+import { AuthData as User } from '../types';
 
 export interface AuthStore {
   userId: string;

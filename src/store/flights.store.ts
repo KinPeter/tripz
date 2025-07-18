@@ -1,7 +1,6 @@
 import { StateCreator } from 'zustand';
 import { CombinedStore } from './index.ts';
-import { Flight } from '@kinpeter/pk-common';
-import { MapFlightData, StatsFlightData } from '../types/flights.ts';
+import { MapFlightData, StatsFlightData, Flight } from '../types/flights.ts';
 import { processFlightsForMap, processFlightsForStats } from '../lib/flightUtils.ts';
 
 export interface FlightsStore {

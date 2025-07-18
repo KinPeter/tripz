@@ -1,7 +1,7 @@
 import { ActionIcon, Popover, Tooltip } from '@mantine/core';
 import { IconCheck, IconEdit, IconTrash, IconX } from '@tabler/icons-react';
 import { useNavigate } from 'react-router-dom';
-import { Flight, Visit } from '@kinpeter/pk-common';
+import { Flight, Visit } from '../../types';
 import { useCallback, useEffect, useState } from 'react';
 import { useFlightsApi } from '../../hooks/useFlightsApi.ts';
 import { useVisitsApi } from '../../hooks/useVisitsApi.ts';

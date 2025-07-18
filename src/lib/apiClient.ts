@@ -29,7 +29,7 @@ export class ApiClient {
     body: unknown,
     authenticated = true
   ): Promise<T> {
-    const requestInit: RequestInit = { method };
+    const requestInit: RequestInit = { method, headers: { 'Content-Type': 'application/json' } };
     if (body) {
       requestInit.body = JSON.stringify(body);
     }
@@ -37,7 +37,7 @@ export class ApiClient {
       const sessionString = localStorage.getItem(USER_KEY);
       if (!sessionString) throw new Error('No user session in local storage');
       const session = JSON.parse(sessionString);
-      requestInit.headers = { Authorization: `Bearer ${session.token}` };
+      requestInit.headers = { ...requestInit.headers, Authorization: `Bearer ${session.token}` };
     }
     const response = await fetch(this.baseUrl + path, requestInit);
     if (!response.ok) {

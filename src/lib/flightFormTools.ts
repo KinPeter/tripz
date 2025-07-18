@@ -1,16 +1,9 @@
-import { Aircraft, Airline, Flight } from '@kinpeter/pk-common/types/flights.ts';
-import {
-  Airport,
-  airportSchema,
-  FlightClass,
-  FlightReason,
-  flightSchema,
-  SeatType,
-  ValidationError,
-} from '@kinpeter/pk-common';
+import * as yup from 'yup';
+import { Airport, FlightClass, FlightReason, SeatType, Aircraft, Airline, Flight } from '../types';
+import { airportSchema, flightSchema } from './flightValidators.ts';
 import { createFormContext } from '@mantine/form';
 import { FlexProps } from '@mantine/core';
-import * as yup from 'yup';
+import { ValidationError } from './constants.ts';
 
 export type FormFlight = Omit<Flight, 'id' | 'createdAt'>;
 
@@ -20,13 +13,11 @@ export const [FlightFormProvider, useFlightFormContext, useFlightForm] =
 function transformTime(input: string): string {
   const value = input.trim();
   if (value.length === 5) {
-    return `${value}:00`;
-  } else if (value.length === 4) {
-    return `${value.substring(0, 2)}:${value.substring(2, 4)}:00`;
-  } else if (value.length === 6) {
-    return `${value.substring(0, 2)}:${value.substring(2, 4)}:${value.substring(4, 6)}`;
-  } else {
     return value;
+  } else if (value.length === 4 || value.length === 6) {
+    return `${value.substring(0, 2)}:${value.substring(2, 4)}`;
+  } else {
+    throw new Error(ValidationError.INVALID_TIME + ': ' + input);
   }
 }
 
@@ -45,19 +36,19 @@ export function transformFlightValues(values: FormFlight): FormFlight {
     date: transformDate(values.date),
     flightNumber: values.flightNumber.toUpperCase(),
     distance: Number(values.distance),
-    from: {
-      ...values.from,
-      lat: Number(values.from.lat),
-      lng: Number(values.from.lng),
-      iata: values.from.iata.toUpperCase(),
-      icao: values.from.icao.toUpperCase(),
+    departureAirport: {
+      ...values.departureAirport,
+      lat: Number(values.departureAirport.lat),
+      lng: Number(values.departureAirport.lng),
+      iata: values.departureAirport.iata.toUpperCase(),
+      icao: values.departureAirport.icao.toUpperCase(),
     },
-    to: {
-      ...values.to,
-      lat: Number(values.to.lat),
-      lng: Number(values.to.lng),
-      iata: values.to.iata.toUpperCase(),
-      icao: values.to.icao.toUpperCase(),
+    arrivalAirport: {
+      ...values.arrivalAirport,
+      lat: Number(values.arrivalAirport.lat),
+      lng: Number(values.arrivalAirport.lng),
+      iata: values.arrivalAirport.iata.toUpperCase(),
+      icao: values.arrivalAirport.icao.toUpperCase(),
     },
     departureTime: transformTime(values.departureTime),
     arrivalTime: transformTime(values.arrivalTime),
@@ -71,21 +62,24 @@ export function transformFlightValues(values: FormFlight): FormFlight {
       icao: values.airline.icao.toUpperCase(),
       iata: values.airline.iata.toUpperCase(),
     },
-    seatNumber: values.seatNumber.toUpperCase(),
-    registration: values.registration.toUpperCase(),
+    seatNumber: values.seatNumber ? values.seatNumber.toUpperCase() : null,
+    registration: values.registration ? values.registration.toUpperCase() : null,
+    note: values.note ? values.note.trim() : null,
     isPlanned: values.isPlanned ?? false,
   };
 }
 
 export function findAirportFromFlights(iata: string, flights: Flight[]): Airport | null {
   const flightIndex = flights.findIndex(
-    ({ to, from }) =>
-      to.iata.toLowerCase() === iata.toLowerCase() || from.iata.toLowerCase() === iata.toLowerCase()
+    ({ arrivalAirport, departureAirport }) =>
+      arrivalAirport.iata.toLowerCase() === iata.toLowerCase() ||
+      departureAirport.iata.toLowerCase() === iata.toLowerCase()
   );
   if (flightIndex === -1) return null;
   const flight = flights[flightIndex];
-  if (flight.from.iata.toLowerCase() === iata.toLowerCase()) return flight.from;
-  else return flight.to;
+  if (flight.departureAirport.iata.toLowerCase() === iata.toLowerCase())
+    return flight.departureAirport;
+  else return flight.arrivalAirport;
 }
 
 export function findAirlineFromFlights(iata: string, flights: Flight[]): Airline | null {
@@ -109,11 +103,11 @@ export const flightFormSchema = flightSchema.shape({
     .string()
     .matches(YYYY_MM_DD_REGEX, ValidationError.INVALID_DATE)
     .required(ValidationError.STRING_REQUIRED),
-  from: airportSchema.shape({
+  departureAirport: airportSchema.shape({
     lat: yup.number().required(ValidationError.NUMBER_REQUIRED),
     lng: yup.number().required(ValidationError.NUMBER_REQUIRED),
   }),
-  to: airportSchema.shape({
+  arrivalAirport: airportSchema.shape({
     lat: yup.number().required(ValidationError.NUMBER_REQUIRED),
     lng: yup.number().required(ValidationError.NUMBER_REQUIRED),
   }),
@@ -149,7 +143,7 @@ export const flightInitialValues = {
   distance: 0,
   note: '',
   isPlanned: false,
-  from: {
+  departureAirport: {
     iata: '',
     icao: '',
     country: '',
@@ -158,7 +152,7 @@ export const flightInitialValues = {
     lat: 0,
     lng: 0,
   },
-  to: {
+  arrivalAirport: {
     iata: '',
     icao: '',
     country: '',

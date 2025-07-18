@@ -1,7 +1,6 @@
 import { StateCreator } from 'zustand';
 import { CombinedStore } from './index.ts';
-import { Visit } from '@kinpeter/pk-common';
-import { MapVisitsData, StatsVisitsData } from '../types/visits.ts';
+import { MapVisitsData, StatsVisitsData, Visit } from '../types/visits.ts';
 import { processVisitsForMap, processVisitsForStats } from '../lib/visitUtils.ts';
 
 export interface VisitsStore {

@@ -1,6 +1,5 @@
-import { Airport, Flight } from '@kinpeter/pk-common';
 import { MapFlightData, Route, StatsFlightData } from '../types/flights.ts';
-import { LatLng, MapMarker } from '../types/map.ts';
+import { LatLng, MapMarker, Airport, Flight } from '../types';
 import { continentsForCountries } from './continentsForCountries.ts';
 import { dayNames, monthNames } from './constants.ts';
 
@@ -19,20 +18,20 @@ export function processFlightsForMap(allFlights: Flight[]): MapFlightData {
   const flights = allFlights.filter(({ isPlanned }) => isPlanned !== true);
 
   flights.forEach(flight => {
-    const key = createKey(flight.from, flight.to);
+    const key = createKey(flight.departureAirport, flight.arrivalAirport);
 
     if (routeMap.has(key)) {
       routeMap.get(key)!.count++;
     } else {
       routeMap.set(key, {
-        a: [flight.from.lat, flight.from.lng],
-        b: [flight.to.lat, flight.to.lng],
+        a: [flight.departureAirport.lat, flight.departureAirport.lng],
+        b: [flight.arrivalAirport.lat, flight.arrivalAirport.lng],
         count: 1,
       });
     }
 
-    airportSet.add(`${flight.from.lat}%${flight.from.lng}`);
-    airportSet.add(`${flight.to.lat}%${flight.to.lng}`);
+    airportSet.add(`${flight.departureAirport.lat}%${flight.departureAirport.lng}`);
+    airportSet.add(`${flight.arrivalAirport.lat}%${flight.arrivalAirport.lng}`);
   });
 
   const routes: Route[] = Array.from(routeMap.values());
@@ -40,8 +39,11 @@ export function processFlightsForMap(allFlights: Flight[]): MapFlightData {
   const markers: MapMarker[] = Array.from(airportSet).map(key => {
     const [lat, lng] = parseCoords(key);
     const airport =
-      flights.find(flight => flight.from.lat === lat && flight.from.lng === lng)?.from ??
-      flights.find(flight => flight.to.lat === lat && flight.to.lng === lng)?.to;
+      flights.find(
+        flight => flight.departureAirport.lat === lat && flight.departureAirport.lng === lng
+      )?.departureAirport ??
+      flights.find(flight => flight.arrivalAirport.lat === lat && flight.arrivalAirport.lng === lng)
+        ?.arrivalAirport;
 
     return {
       pos: [lat, lng],
@@ -112,7 +114,7 @@ export function processFlightsForStats(allFlights: Flight[]): StatsFlightData {
   const flights = allFlights.filter(({ isPlanned }) => isPlanned !== true);
 
   flights.forEach(f => {
-    if (f.to.country === f.from.country) {
+    if (f.arrivalAirport.country === f.departureAirport.country) {
       domesticCount++;
     } else {
       intlCount++;
@@ -140,8 +142,8 @@ export function processFlightsForStats(allFlights: Flight[]): StatsFlightData {
       seatTypeCount[f.seatType]++;
     }
 
-    const fromContinent = continentsForCountries[f.from.country];
-    const toContinent = continentsForCountries[f.to.country];
+    const fromContinent = continentsForCountries[f.departureAirport.country];
+    const toContinent = continentsForCountries[f.arrivalAirport.country];
     if (continentsCount[fromContinent] === undefined) {
       continentsCount[fromContinent] = 1;
     } else {
@@ -153,8 +155,8 @@ export function processFlightsForStats(allFlights: Flight[]): StatsFlightData {
       continentsCount[toContinent]++;
     }
 
-    const fromCountry = f.from.country;
-    const toCountry = f.to.country;
+    const fromCountry = f.departureAirport.country;
+    const toCountry = f.arrivalAirport.country;
     countriesSet.add(fromCountry);
     countriesSet.add(toCountry);
     if (countriesCount[fromCountry] === undefined) {
@@ -168,13 +170,13 @@ export function processFlightsForStats(allFlights: Flight[]): StatsFlightData {
       countriesCount[toCountry]++;
     }
 
-    const fromAirport = f.from.iata;
-    const toAirport = f.to.iata;
+    const fromAirport = f.departureAirport.iata;
+    const toAirport = f.arrivalAirport.iata;
     if (!airportsMap[fromAirport]) {
-      airportsMap[fromAirport] = `${f.from.city}, ${f.from.name}`;
+      airportsMap[fromAirport] = `${f.departureAirport.city}, ${f.departureAirport.name}`;
     }
     if (!airportsMap[toAirport]) {
-      airportsMap[toAirport] = `${f.to.city}, ${f.to.name}`;
+      airportsMap[toAirport] = `${f.arrivalAirport.city}, ${f.arrivalAirport.name}`;
     }
     if (airportsCount[fromAirport] === undefined) {
       airportsCount[fromAirport] = 1;
@@ -217,7 +219,7 @@ export function processFlightsForStats(allFlights: Flight[]): StatsFlightData {
       aircraftDistance[aircraft] += f.distance;
     }
 
-    const route = `${f.from.iata}-${f.to.iata}`;
+    const route = `${f.departureAirport.iata}-${f.arrivalAirport.iata}`;
     routesSet.add(route);
     if (routesCount[route] === undefined) {
       routesCount[route] = 1;

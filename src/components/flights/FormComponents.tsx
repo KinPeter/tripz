@@ -13,9 +13,9 @@ import { useProxyApi } from '../../hooks/useProxyApi.ts';
 import { useMutation } from '@tanstack/react-query';
 import { useEffect } from 'react';
 import { notifications } from '@mantine/notifications';
-import { Airport, Airline } from '@kinpeter/pk-common';
+import { Airport, Airline } from '../../types';
 
-export const AirportFields = ({ field }: { field: 'from' | 'to' }) => {
+export const AirportFields = ({ field }: { field: 'departureAirport' | 'arrivalAirport' }) => {
   const flights = useStore(s => s.flights);
   const form = useFlightFormContext();
   const { getAirport } = useProxyApi();
@@ -66,7 +66,7 @@ export const AirportFields = ({ field }: { field: 'from' | 'to' }) => {
       <Flex {...formFlexProps} align="end">
         <TextInput
           withAsterisk
-          label={field === 'from' ? 'From' : 'To'}
+          label={field === 'departureAirport' ? 'From' : 'To'}
           placeholder="IATA code, e.g. BUD"
           key={form.key(field + '.iata')}
           {...form.getInputProps(field + '.iata')}
@@ -134,9 +134,20 @@ export const DistanceField = () => {
   const form = useFlightFormContext();
 
   const calculateDistance = () => {
-    const { from, to } = form.getTransformedValues();
-    if (!from.lat || !from.lng || !to.lat || !to.lng) return;
-    const distance = getDistanceInKm(from.lat, from.lng, to.lat, to.lng);
+    const { departureAirport, arrivalAirport } = form.getTransformedValues();
+    if (
+      !departureAirport.lat ||
+      !departureAirport.lng ||
+      !arrivalAirport.lat ||
+      !arrivalAirport.lng
+    )
+      return;
+    const distance = getDistanceInKm(
+      departureAirport.lat,
+      departureAirport.lng,
+      arrivalAirport.lat,
+      arrivalAirport.lng
+    );
     form.setFieldValue('distance', distance);
   };
 

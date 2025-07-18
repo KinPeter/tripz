@@ -1,5 +1,4 @@
-import { Visit } from '@kinpeter/pk-common';
-import { MapVisitsData, StatsVisitsData } from '../types/visits.ts';
+import { MapVisitsData, StatsVisitsData, Visit } from '../types/visits.ts';
 
 export function processVisitsForMap(visits: Visit[]): MapVisitsData {
   return {

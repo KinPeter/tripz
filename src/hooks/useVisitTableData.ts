@@ -1,11 +1,10 @@
 import { useStore } from '../store';
 import { useState } from 'react';
-import { Visit } from '@kinpeter/pk-common';
-import { VisitWithPosition } from '../types/visits.ts';
+import { VisitWithPosition, Visit } from '../types/visits.ts';
 
 function sortByDate(a: Visit, b: Visit): number {
-  const timestampA = Date.parse(a.createdAt as unknown as string);
-  const timestampB = Date.parse(b.createdAt as unknown as string);
+  const timestampA = new Date(a.year ? Number(a.year) : 1980, 0, 1).getTime();
+  const timestampB = new Date(b.year ? Number(b.year) : 1980, 0, 1).getTime();
   return timestampB - timestampA;
 }
 

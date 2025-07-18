@@ -1,5 +1,5 @@
 import { ApiClient } from '../lib/apiClient.ts';
-import { Trips, UUID } from '@kinpeter/pk-common';
+import { Trips, UUID } from '../types';
 
 export const usePublicTripzApi = () => {
   const api = new ApiClient();

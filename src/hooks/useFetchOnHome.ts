@@ -4,7 +4,7 @@ import { useStore } from '../store';
 import { useQuery } from '@tanstack/react-query';
 import { useEffect } from 'react';
 import { notifications } from '@mantine/notifications';
-import { UUID } from '@kinpeter/pk-common';
+import { UUID } from '../types';
 import { usePublicTripzApi } from './usePublicTripzApi.ts';
 
 interface Options {
@@ -57,7 +57,7 @@ export const useFetchOnHome = ({ isPublic, userId }: Options) => {
 
   useEffect(() => {
     if (flightsData) {
-      setFlights(flightsData);
+      setFlights(flightsData.entities);
     } else if (flightsError) {
       console.log(flightsError);
       notifications.show({
@@ -70,7 +70,7 @@ export const useFetchOnHome = ({ isPublic, userId }: Options) => {
 
   useEffect(() => {
     if (visitsData) {
-      setVisits(visitsData);
+      setVisits(visitsData.entities);
     } else if (visitsError) {
       console.log(visitsError);
       notifications.show({

@@ -22,7 +22,7 @@ export const TILE_LAYERS = {
   },
 };
 
-export const numberFormatOptions = {
+export const numberFormatOptions: Intl.NumberFormatOptions = {
   style: 'decimal',
   minimumFractionDigits: 0,
   maximumFractionDigits: 0,
@@ -53,3 +53,30 @@ export const dayNames: Record<string, string> = {
   '5': 'Friday',
   '6': 'Saturday',
 };
+
+export const ValidationError = {
+  INVALID_EMAIL: 'INVALID_EMAIL',
+  INVALID_LOGIN_CODE: 'INVALID_LOGIN_CODE',
+  STRING_REQUIRED: 'STRING_REQUIRED',
+  NUMBER_REQUIRED: 'NUMBER_REQUIRED',
+  ARRAY_REQUIRED: 'ARRAY_REQUIRED',
+  OBJECT_REQUIRED: 'OBJECT_REQUIRED',
+  BOOLEAN_REQUIRED: 'BOOLEAN_REQUIRED',
+  NULLABLE_FIELD_REQUIRED: 'NULLABLE_FIELD_REQUIRED',
+  TEXT_OR_LINK_REQUIRED: 'TEXT_OR_LINK_REQUIRED',
+  MIN_LENGTH: 'MIN_LENGTH',
+  MAX_LENGTH: 'MAX_LENGTH',
+  EXACT_LENGTH: 'EXACT_LENGTH',
+  MIN_VALUE: 'MIN_VALUE',
+  MAX_VALUE: 'MAX_VALUE',
+  INVALID_FORMAT: 'INVALID_FORMAT',
+  INVALID_DATE: 'INVALID_DATE',
+  INVALID_TIME: 'INVALID_TIME',
+  INVALID_URL: 'INVALID_URL',
+  INVALID_CATEGORY: 'INVALID_CATEGORY',
+  INVALID_UUID: 'INVALID_UUID',
+  INVALID_LINK: 'INVALID_LINK',
+  NOT_SUPPORTED_VALUE: 'NOT_SUPPORTED_VALUE',
+} as const;
+
+export type ValidationError = (typeof ValidationError)[keyof typeof ValidationError];

@@ -1,7 +1,6 @@
 import { useStore } from '../store';
 import { useState } from 'react';
-import { Flight, FlightClass } from '@kinpeter/pk-common';
-import { FlightWithPosition } from '../types/flights.ts';
+import { FlightWithPosition, Flight, FlightClass } from '../types/flights.ts';
 
 function sortByDate(a: Flight, b: Flight): number {
   const timestampA = Date.parse(`${a.date}T${a.departureTime}`);
@@ -29,19 +28,19 @@ function getFilterTerms(expresison: string): [string, string] {
 
 function checkFrom(f: Flight, query: string): boolean {
   return (
-    f.from.country.toLowerCase().includes(query) ||
-    f.from.city.toLowerCase().includes(query) ||
-    f.from.name.toLowerCase().includes(query) ||
-    f.from.iata.toLowerCase().includes(query)
+    f.departureAirport.country.toLowerCase().includes(query) ||
+    f.departureAirport.city.toLowerCase().includes(query) ||
+    f.departureAirport.name.toLowerCase().includes(query) ||
+    f.departureAirport.iata.toLowerCase().includes(query)
   );
 }
 
 function checkTo(f: Flight, query: string): boolean {
   return (
-    f.to.country.toLowerCase().includes(query) ||
-    f.to.city.toLowerCase().includes(query) ||
-    f.to.name.toLowerCase().includes(query) ||
-    f.to.iata.toLowerCase().includes(query)
+    f.arrivalAirport.country.toLowerCase().includes(query) ||
+    f.arrivalAirport.city.toLowerCase().includes(query) ||
+    f.arrivalAirport.name.toLowerCase().includes(query) ||
+    f.arrivalAirport.iata.toLowerCase().includes(query)
   );
 }
 

@@ -62,7 +62,7 @@ const VisitForm = ({ isNew }: { isNew: boolean }) => {
   } = useMutation({
     mutationFn: () => {
       const { lat, lng } = form.getTransformedValues();
-      return getCity(`${lat},${lng}`);
+      return getCity(lat, lng);
     },
   });
 

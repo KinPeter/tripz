@@ -19,7 +19,7 @@ import {
 import { useNavigate, useParams } from 'react-router-dom';
 import { FormEvent, useEffect } from 'react';
 import { useStore } from '../../store';
-import { FlightClass, FlightReason, SeatType } from '@kinpeter/pk-common';
+import { FlightClass, FlightReason, SeatType } from '../../types';
 import { useMutation } from '@tanstack/react-query';
 import { useFlightsApi } from '../../hooks/useFlightsApi.ts';
 import { notifications } from '@mantine/notifications';
@@ -166,8 +166,8 @@ const FlightForm = ({ isNew }: { isNew: boolean }) => {
             </Flex>
             <Divider my="lg" />
             <Flex {...formFlexProps}>
-              <AirportFields field="from" />
-              <AirportFields field="to" />
+              <AirportFields field="departureAirport" />
+              <AirportFields field="arrivalAirport" />
             </Flex>
             <Divider my="lg" />
             <DistanceField />

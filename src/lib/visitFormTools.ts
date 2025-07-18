@@ -1,6 +1,8 @@
-import { ValidationError, Visit, visitSchema } from '@kinpeter/pk-common';
 import { createFormContext } from '@mantine/form';
 import * as yup from 'yup';
+import { Visit } from '../types';
+import { visitSchema } from './visitValidators';
+import { ValidationError } from './constants';
 
 export type FormVisit = Omit<Visit, 'id' | 'createdAt'>;
 

@@ -1,15 +1,15 @@
 import { ApiClient } from '../lib/apiClient.ts';
-import { Flight, FlightRequest } from '@kinpeter/pk-common';
+import { Flight, FlightRequest, ListResponse } from '../types';
 
 export const useFlightsApi = () => {
   const api = new ApiClient();
 
-  async function getAllFlights(): Promise<Flight[]> {
-    return await api.get('/flights');
+  async function getAllFlights(): Promise<ListResponse<Flight>> {
+    return await api.get('/flights/');
   }
 
   async function createFlight(data: FlightRequest): Promise<Flight> {
-    return await api.post('/flights', data);
+    return await api.post('/flights/', data);
   }
 
   async function updateFlight(data: FlightRequest, id: string): Promise<Flight> {

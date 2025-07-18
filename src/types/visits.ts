@@ -1,5 +1,15 @@
 import { MapMarker } from './map.ts';
-import { Visit } from '@kinpeter/pk-common';
+import { BaseEntity } from './misc';
+
+export interface Visit extends BaseEntity {
+  city: string;
+  country: string;
+  year?: string;
+  lat: number;
+  lng: number;
+}
+
+export type VisitRequest = Omit<Visit, 'id' | 'userId' | 'createdAt'>;
 
 export interface MapVisitsData {
   markers: MapMarker[];
