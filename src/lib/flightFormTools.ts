@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { Airport, FlightClass, FlightReason, SeatType, Aircraft, Airline, Flight } from '../types';
+import { FlightClass, FlightReason, SeatType, Flight } from '../types';
 import { airportSchema, flightSchema } from './flightValidators.ts';
 import { createFormContext } from '@mantine/form';
 import { FlexProps } from '@mantine/core';
@@ -67,31 +67,6 @@ export function transformFlightValues(values: FormFlight): FormFlight {
     note: values.note ? values.note.trim() : null,
     isPlanned: values.isPlanned ?? false,
   };
-}
-
-export function findAirportFromFlights(iata: string, flights: Flight[]): Airport | null {
-  const flightIndex = flights.findIndex(
-    ({ arrivalAirport, departureAirport }) =>
-      arrivalAirport.iata.toLowerCase() === iata.toLowerCase() ||
-      departureAirport.iata.toLowerCase() === iata.toLowerCase()
-  );
-  if (flightIndex === -1) return null;
-  const flight = flights[flightIndex];
-  if (flight.departureAirport.iata.toLowerCase() === iata.toLowerCase())
-    return flight.departureAirport;
-  else return flight.arrivalAirport;
-}
-
-export function findAirlineFromFlights(iata: string, flights: Flight[]): Airline | null {
-  const flight = flights.find(({ airline }) => airline.iata.toLowerCase() === iata.toLowerCase());
-  if (!flight) return null;
-  else return flight.airline;
-}
-
-export function findAircraftFromFlights(icao: string, flights: Flight[]): Aircraft | null {
-  const flight = flights.find(({ aircraft }) => aircraft.icao.toLowerCase() === icao.toLowerCase());
-  if (!flight) return null;
-  else return flight.aircraft;
 }
 
 export const HH_MM_REGEX = new RegExp(/^(?:[01]\d|2[0-3]):?[0-5]\d(?::?[0-5]\d)?$/);
