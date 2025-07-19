@@ -5,7 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 import { useEffect } from 'react';
 import { notifications } from '@mantine/notifications';
 import { UUID } from '../types';
-import { usePublicTripzApi } from './usePublicTripzApi.ts';
+import { useTripsApi } from './useTripsApi.ts';
 
 interface Options {
   isPublic: boolean;
@@ -15,7 +15,7 @@ interface Options {
 export const useFetchOnHome = ({ isPublic, userId }: Options) => {
   const { getAllFlights } = useFlightsApi();
   const { getAllVisits } = useVisitsApi();
-  const { getAllTrips } = usePublicTripzApi();
+  const { getTrips } = useTripsApi();
   const setFlights = useStore(s => s.setFlights);
   const setVisits = useStore(s => s.setVisits);
 
@@ -49,7 +49,7 @@ export const useFetchOnHome = ({ isPublic, userId }: Options) => {
     error: publicError,
   } = useQuery({
     queryKey: ['public', userId],
-    queryFn: () => getAllTrips(userId ?? ''),
+    queryFn: () => getTrips(userId ?? ''),
     refetchOnWindowFocus: false,
     refetchOnMount: false,
     enabled: isPublic && !!userId,

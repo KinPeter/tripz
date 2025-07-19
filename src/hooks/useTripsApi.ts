@@ -1,8 +1,12 @@
 import { ApiClient } from '../lib/apiClient.ts';
-import { Airport, Airline, Aircraft, ListResponse } from '../types';
+import { Airport, Airline, Aircraft, ListResponse, UUID, Trips } from '../types';
 
 export const useTripsApi = () => {
   const api = new ApiClient();
+
+  async function getTrips(userId: UUID): Promise<Trips> {
+    return await api.get('/trips/' + userId, false);
+  }
 
   async function getAirport(iata: string): Promise<Airport> {
     return await api.get('/trips/airports?iata=' + encodeURIComponent(iata));
@@ -26,5 +30,5 @@ export const useTripsApi = () => {
     return res.entities;
   }
 
-  return { getAirport, searchAirlines, searchAircrafts };
+  return { getTrips, getAirport, searchAirlines, searchAircrafts };
 };
