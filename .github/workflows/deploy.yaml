@@ -32,6 +32,7 @@ jobs:
         run: npm run build
         env:
           VITE_BASE_URL: ${{ secrets.PROD_API_URL }}
+          VITE_SSO_URL: ${{ secrets.PROD_SSO_URL }}
 
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4

@@ -5,7 +5,13 @@ import { useMutation } from '@tanstack/react-query';
 import { USER_KEY } from '../../lib/constants.ts';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Button, Center, Flex, Loader, TextInput } from '@mantine/core';
-import { Icon123, IconAt, IconPassword, IconPlaneDeparture } from '@tabler/icons-react';
+import {
+  Icon123,
+  IconAt,
+  IconPassword,
+  IconPlaneDeparture,
+  IconBrandGoogle,
+} from '@tabler/icons-react';
 import { theme } from '../../lib/mantine.ts';
 import styles from './Auth.module.scss';
 import { notifications } from '@mantine/notifications';
@@ -87,11 +93,8 @@ const Auth = () => {
 
   useEffect(() => {
     if (queryParams.size) {
-      const token = queryParams.get('accessToken');
-      const expiresAt = queryParams.get('expiresAt');
-      const email = queryParams.get('email');
-      const id = queryParams.get('id');
-      if (!token || !expiresAt || !email || !id) {
+      const token = queryParams.get('token');
+      if (!token) {
         notifications.show({
           title: 'Oops!',
           message: 'Could not log you in.',
@@ -100,8 +103,8 @@ const Auth = () => {
         handleLogout();
         return;
       }
-      handleLogin({ id, email, token, expiresAt });
-      navigate('/home');
+      localStorage.setItem(USER_KEY, JSON.stringify({ token }));
+      refreshSession();
     } else {
       const storedSessionData = localStorage.getItem(USER_KEY);
       if (storedSessionData) {
@@ -114,6 +117,11 @@ const Auth = () => {
     if (refreshData) {
       handleLogin(refreshData);
       navigate('/home');
+      notifications.show({
+        title: 'Welcome!',
+        message: 'Redirecting you to the home page.',
+        color: 'green',
+      });
     } else if (refreshError) {
       notifications.show({
         title: 'Oops!',
@@ -177,6 +185,11 @@ const Auth = () => {
       });
     }
   }, [passwordLoginData, passwordLoginError, handleLogin, navigate]);
+
+  const useGoogleLogin = () => {
+    const ssoUrl = import.meta.env.VITE_SSO_URL;
+    window.location.href = ssoUrl;
+  };
 
   if (refreshLoading) {
     return (
@@ -246,6 +259,14 @@ const Auth = () => {
                 }
               >
                 {authMode === AuthMode.LOGIN_CODE ? 'Use password' : 'Use login code'}
+              </Button>
+              <Button
+                variant="transparent"
+                color={theme.colors!.tomato![6]}
+                onClick={useGoogleLogin}
+              >
+                <IconBrandGoogle size={16} style={{ marginRight: 8 }} />
+                Log in with Google
               </Button>
             </form>
           ) : (

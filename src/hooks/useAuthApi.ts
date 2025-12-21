@@ -1,5 +1,4 @@
 import { ApiClient } from '../lib/apiClient.ts';
-import { USER_KEY } from '../lib/constants.ts';
 import { AuthData as User } from '../types';
 
 export const useAuthApi = () => {
@@ -18,9 +17,7 @@ export const useAuthApi = () => {
   }
 
   async function refresh(): Promise<User> {
-    const stored = localStorage.getItem(USER_KEY);
-    const { email, token } = JSON.parse(stored as string);
-    return await api.post<User>('/auth/token-refresh', { email, token }, true);
+    return await api.post<User>('/auth/token-refresh', undefined, true);
   }
 
   return {
