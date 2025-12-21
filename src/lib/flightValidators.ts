@@ -94,8 +94,8 @@ export const flightSchema = yup.object({
     .required(ValidationError.NUMBER_REQUIRED),
   airline: airlineSchema.required(ValidationError.OBJECT_REQUIRED),
   aircraft: aircraftSchema.required(ValidationError.OBJECT_REQUIRED),
-  registration: yup.string().strict().defined(ValidationError.STRING_REQUIRED).default(''),
-  seatNumber: yup.string().strict().defined(ValidationError.STRING_REQUIRED).default(''),
+  registration: yup.string().strict().nullable().default(''),
+  seatNumber: yup.string().strict().nullable().default(''),
   seatType: yup
     .string()
     .strict()
@@ -111,6 +111,6 @@ export const flightSchema = yup.object({
     .strict()
     .oneOf(Object.values(FlightReason))
     .required(ValidationError.STRING_REQUIRED),
-  note: yup.string().strict().defined(ValidationError.STRING_REQUIRED).default(''),
+  note: yup.string().strict().nullable().default(''),
   isPlanned: yup.boolean().optional().default(undefined),
 });
