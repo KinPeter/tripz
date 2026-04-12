@@ -2,7 +2,7 @@ import { ActionIcon, Popover, Tooltip } from '@mantine/core';
 import { IconCheck, IconEdit, IconTrash, IconX } from '@tabler/icons-react';
 import { useNavigate } from 'react-router-dom';
 import { Flight, Visit } from '../../types';
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useFlightsApi } from '../../hooks/useFlightsApi.ts';
 import { useVisitsApi } from '../../hooks/useVisitsApi.ts';
 import { useMutation } from '@tanstack/react-query';
@@ -25,18 +25,14 @@ const TableActions = ({ item, dataType }: Props) => {
     data: deleteVisitData,
     error: deleteVisitError,
     isPending: deleteVisitLoading,
-  } = useMutation({
-    mutationFn: () => deleteVisit(item.id),
-  });
+  } = useMutation({ mutationFn: () => deleteVisit(item.id) });
 
   const {
     mutate: startDeleteFlight,
     data: deleteFlightData,
     error: deleteFlightError,
     isPending: deleteFlightLoading,
-  } = useMutation({
-    mutationFn: () => deleteFlight(item.id),
-  });
+  } = useMutation({ mutationFn: () => deleteFlight(item.id) });
 
   useEffect(() => {
     if (deleteVisitData) {
@@ -47,11 +43,7 @@ const TableActions = ({ item, dataType }: Props) => {
         color: 'green',
       });
     } else if (deleteVisitError) {
-      notifications.show({
-        title: 'Oops!',
-        message: deleteVisitError.message,
-        color: 'red',
-      });
+      notifications.show({ title: 'Oops!', message: deleteVisitError.message, color: 'red' });
     }
   }, [deleteVisitData, deleteVisitError, navigate]);
 
@@ -64,19 +56,15 @@ const TableActions = ({ item, dataType }: Props) => {
         color: 'green',
       });
     } else if (deleteFlightError) {
-      notifications.show({
-        title: 'Oops!',
-        message: deleteFlightError.message,
-        color: 'red',
-      });
+      notifications.show({ title: 'Oops!', message: deleteFlightError.message, color: 'red' });
     }
   }, [deleteFlightData, deleteFlightError, navigate]);
 
-  const navigateToEdit = useCallback(() => {
+  const navigateToEdit = () => {
     navigate(`/${dataType}/edit/${item.id}`);
-  }, [dataType, item]);
+  };
 
-  const processDelete = useCallback(() => {
+  const processDelete = () => {
     switch (dataType) {
       case 'visits':
         startDeleteVisit();
@@ -85,7 +73,7 @@ const TableActions = ({ item, dataType }: Props) => {
         startDeleteFlight();
         break;
     }
-  }, [dataType, item]);
+  };
 
   const confirmationContent = (
     <div className={styles.confirmationContent}>
