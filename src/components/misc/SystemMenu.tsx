@@ -2,7 +2,7 @@ import { ActionIcon, Tooltip } from '@mantine/core';
 import { useStore } from '../../store';
 import ColorSchemeToggle from './ColorSchemeToggle.tsx';
 import { useState } from 'react';
-import styles from './SystemMenu.module.scss';
+import styles from './SystemMenu.module.css';
 import { IconDots, IconLogin, IconLogout, IconX } from '@tabler/icons-react';
 import { useLocation, useNavigate } from 'react-router-dom';
 

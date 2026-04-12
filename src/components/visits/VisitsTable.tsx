@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useVisitTableData } from '../../hooks/useVisitTableData.ts';
 import { Button, Table } from '@mantine/core';
 import { VisitWithPosition } from '../../types/visits.ts';
-import styles from './VisitsTable.module.scss';
+import styles from './VisitsTable.module.css';
 import { useReducedTableData } from '../../hooks/useReducedTableData.ts';
 import TableActions from '../misc/TableActions.tsx';
 

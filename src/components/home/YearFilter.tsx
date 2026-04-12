@@ -1,4 +1,4 @@
-import styles from './Map.module.scss';
+import styles from './Map.module.css';
 import { ActionIcon, NativeSelect, Tooltip } from '@mantine/core';
 import { useStore } from '../../store';
 import { ChangeEvent, useState } from 'react';

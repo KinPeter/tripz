@@ -1,4 +1,4 @@
-import styles from './Visits.module.scss';
+import styles from './Visits.module.css';
 import PageHeader from '../misc/PageHeader.tsx';
 import { useDebouncedValue, useMediaQuery } from '@mantine/hooks';
 import { useNavigate } from 'react-router-dom';

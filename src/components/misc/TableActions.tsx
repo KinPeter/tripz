@@ -7,7 +7,7 @@ import { useFlightsApi } from '../../hooks/useFlightsApi.ts';
 import { useVisitsApi } from '../../hooks/useVisitsApi.ts';
 import { useMutation } from '@tanstack/react-query';
 import { notifications } from '@mantine/notifications';
-import styles from './TableActions.module.scss';
+import styles from './TableActions.module.css';
 
 interface Props {
   item: Flight | Visit;

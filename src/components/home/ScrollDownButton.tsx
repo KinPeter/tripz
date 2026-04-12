@@ -1,4 +1,4 @@
-import styles from './Map.module.scss';
+import styles from './Map.module.css';
 import { ActionIcon, Tooltip } from '@mantine/core';
 import { IconChevronsDown } from '@tabler/icons-react';
 import { useEffect, useState } from 'react';

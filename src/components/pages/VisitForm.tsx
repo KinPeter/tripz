@@ -1,4 +1,4 @@
-import styles from './VisitForm.module.scss';
+import styles from './VisitForm.module.css';
 import PageHeader from '../misc/PageHeader.tsx';
 import { useNavigate, useParams } from 'react-router-dom';
 import { yupResolver } from 'mantine-form-yup-resolver';

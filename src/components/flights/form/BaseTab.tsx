@@ -1,6 +1,6 @@
 import { Checkbox, Flex, TextInput } from '@mantine/core';
 import { formFlexProps, useFlightFormContext } from '../../../lib/flightFormTools';
-import styles from './FormTabs.module.scss';
+import styles from './FormTabs.module.css';
 
 export const BaseTab = () => {
   const form = useFlightFormContext();

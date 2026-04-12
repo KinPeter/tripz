@@ -13,7 +13,7 @@ import {
   IconBrandGoogle,
 } from '@tabler/icons-react';
 import { theme } from '../../lib/mantine.ts';
-import styles from './Auth.module.scss';
+import styles from './Auth.module.css';
 import { notifications } from '@mantine/notifications';
 import { hasLength, isEmail, useForm } from '@mantine/form';
 

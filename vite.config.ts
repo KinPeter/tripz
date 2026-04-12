@@ -4,13 +4,6 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react({ babel: { plugins: ['babel-plugin-react-compiler'] } })],
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: '@import "/src/global.scss";',
-      },
-    },
-  },
   server: {
     port: 5100,
   },

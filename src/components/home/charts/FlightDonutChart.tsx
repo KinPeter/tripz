@@ -1,5 +1,5 @@
 import { DonutChart, DonutChartCell } from '@mantine/charts';
-import styles from './Charts.module.scss';
+import styles from './Charts.module.css';
 
 interface Props {
   title: string;

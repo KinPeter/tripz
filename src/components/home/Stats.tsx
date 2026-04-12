@@ -1,4 +1,4 @@
-import styles from './Stats.module.scss';
+import styles from './Stats.module.css';
 import { useStore } from '../../store';
 import { useFlightCharts } from '../../hooks/useFlightCharts.ts';
 import FlightDonutChart from './charts/FlightDonutChart.tsx';

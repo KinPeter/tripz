@@ -1,6 +1,6 @@
 import { StatsFlightData } from '../../types/flights.ts';
 import { StatsVisitsData } from '../../types/visits.ts';
-import styles from './Stats.module.scss';
+import styles from './Stats.module.css';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { numberFormatOptions } from '../../lib/constants.ts';

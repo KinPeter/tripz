@@ -1,4 +1,4 @@
-import styles from './PageHeader.module.scss';
+import styles from './PageHeader.module.css';
 import { PropsWithChildren } from 'react';
 import { ActionIcon } from '@mantine/core';
 import { useNavigate } from 'react-router-dom';

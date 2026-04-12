@@ -1,6 +1,6 @@
 import { BarChart } from '@mantine/charts';
 import { Chip, Group, Paper } from '@mantine/core';
-import styles from './Charts.module.scss';
+import styles from './Charts.module.css';
 import { numberFormatOptions } from '../../../lib/constants.ts';
 import { useChartPropsData } from '../../../hooks/useChartPropsData.ts';
 

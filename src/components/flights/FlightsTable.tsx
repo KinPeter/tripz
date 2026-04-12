@@ -1,5 +1,5 @@
 import { Button, Table, Tooltip } from '@mantine/core';
-import styles from './FlightsTable.module.scss';
+import styles from './FlightsTable.module.css';
 import { numberFormatOptions } from '../../lib/constants.ts';
 import { useEffect } from 'react';
 import { useFlightTableData } from '../../hooks/useFlightTableData.ts';

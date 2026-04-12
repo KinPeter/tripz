@@ -1,4 +1,4 @@
-import styles from './Flights.module.scss';
+import styles from './Flights.module.css';
 import FlightsTable from '../flights/FlightsTable.tsx';
 import PageHeader from '../misc/PageHeader.tsx';
 import { IconPlus, IconSearch } from '@tabler/icons-react';

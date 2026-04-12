@@ -1,4 +1,4 @@
-import styles from './FlightForm.module.scss';
+import styles from './FlightForm.module.css';
 import PageHeader from '../misc/PageHeader.tsx';
 import { yupResolver } from 'mantine-form-yup-resolver';
 import { Button, Flex, Loader, Tabs } from '@mantine/core';

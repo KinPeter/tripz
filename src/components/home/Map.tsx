@@ -1,5 +1,5 @@
 import { MapContainer } from 'react-leaflet';
-import styles from './Map.module.scss';
+import styles from './Map.module.css';
 import MapManager from './MapManager.tsx';
 import { useFullScreenMap } from '../../hooks/useFullScreenMap.ts';
 
