@@ -11,3 +11,25 @@
 .authModeButton {
   margin-top: 2rem;
 }
+
+.authModeButtonLabel {
+  margin-left: 0.5rem;
+  color: #abc;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.authModeButtonLabel:hover {
+  color: #fff;
+}
+
+.authModeButtonLabel:active {
+  color: #abc;
+}
+
+.authModeButton:hover .authModeButtonLabel {
+  color: #fff;
+}
+
+.authModeButton:active .authModeButtonLabel {
+  color: #a1b2c3;
+}

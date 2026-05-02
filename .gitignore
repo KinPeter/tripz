@@ -26,3 +26,6 @@ dist-ssr
 # Custom
 .env
 supabase/.temp
+
+# AI
+.kilo/plans
