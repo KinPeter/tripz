@@ -1,7 +1,6 @@
 import { useStore } from '../../store';
 import { useAuthApi } from '../../hooks/useAuthApi.ts';
 import { useEffect, useState } from 'react';
-import { useMutation } from '@tanstack/react-query';
 import { USER_KEY } from '../../lib/constants.ts';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Button, Center, Flex, Loader, TextInput } from '@mantine/core';
@@ -55,41 +54,96 @@ const Auth = () => {
     validateInputOnChange: true,
   });
 
-  const {
-    mutate: startLogin,
-    data: loginData,
-    error: loginError,
-    isPending: loginLoading,
-  } = useMutation({
-    mutationFn: () => login(emailForm.values.email),
-  });
+  const [loginLoading, setLoginLoading] = useState(false);
+  const [passwordLoginLoading, setPasswordLoginLoading] = useState(false);
+  const [verifyLoading, setVerifyLoading] = useState(false);
+  const [refreshLoading, setRefreshLoading] = useState(false);
 
-  const {
-    mutate: startPasswordLogin,
-    data: passwordLoginData,
-    error: passwordLoginError,
-    isPending: passwordLoginLoading,
-  } = useMutation({
-    mutationFn: () => passwordLogin(emailForm.values.email, emailForm.values.password),
-  });
+  const useGoogleLogin = () => {
+    const ssoUrl = import.meta.env.VITE_SSO_URL;
+    window.location.href = ssoUrl;
+  };
 
-  const {
-    mutate: startVerify,
-    data: verifyData,
-    error: verifyError,
-    isPending: verifyLoading,
-  } = useMutation({
-    mutationFn: () => verify(emailForm.values.email, otpForm.values.otpToken),
-  });
+  const handleLoginSuccess = async (user: Parameters<typeof handleLogin>[0]) => {
+    handleLogin(user);
+    navigate('/home');
+    notifications.show({
+      title: 'Welcome!',
+      message: 'Redirecting you to the home page.',
+      color: 'green',
+    });
+  };
 
-  const {
-    mutate: refreshSession,
-    data: refreshData,
-    error: refreshError,
-    isPending: refreshLoading,
-  } = useMutation({
-    mutationFn: refresh,
-  });
+  const handleLoginCode = async () => {
+    setLoginLoading(true);
+    try {
+      await login(emailForm.values.email);
+      setAuthProgressState(AuthProgressState.VERIFYING);
+      notifications.show({
+        title: 'Great!',
+        message: 'Check your inbox, and use the one time password or click the magic link.',
+        color: 'green',
+      });
+    } catch (err) {
+      notifications.show({
+        title: 'Oops!',
+        message: (err as Error).message,
+        color: 'red',
+      });
+    } finally {
+      setLoginLoading(false);
+    }
+  };
+
+  const handlePasswordLogin = async () => {
+    setPasswordLoginLoading(true);
+    try {
+      const user = await passwordLogin(emailForm.values.email, emailForm.values.password);
+      await handleLoginSuccess(user);
+    } catch (err) {
+      notifications.show({
+        title: 'Oops!',
+        message: (err as Error).message,
+        color: 'red',
+      });
+    } finally {
+      setPasswordLoginLoading(false);
+    }
+  };
+
+  const handleVerify = async () => {
+    setVerifyLoading(true);
+    try {
+      const user = await verify(emailForm.values.email, otpForm.values.otpToken);
+      await handleLoginSuccess(user);
+    } catch (err) {
+      notifications.show({
+        title: 'Oops!',
+        message: (err as Error).message,
+        color: 'red',
+      });
+    } finally {
+      setVerifyLoading(false);
+    }
+  };
+
+  const doRefresh = async () => {
+    setRefreshLoading(true);
+    try {
+      const user = await refresh();
+      handleLoginSuccess(user);
+    } catch (err) {
+      notifications.show({
+        title: 'Oops!',
+        message: (err as Error).message + ' Try to log in again.',
+        color: 'red',
+      });
+      setAuthProgressState(AuthProgressState.INITIAL);
+      handleLogout();
+    } finally {
+      setRefreshLoading(false);
+    }
+  };
 
   useEffect(() => {
     if (queryParams.size) {
@@ -104,92 +158,14 @@ const Auth = () => {
         return;
       }
       localStorage.setItem(USER_KEY, JSON.stringify({ token }));
-      refreshSession();
+      doRefresh();
     } else {
       const storedSessionData = localStorage.getItem(USER_KEY);
       if (storedSessionData) {
-        refreshSession();
+        doRefresh();
       }
     }
-  }, [queryParams, refreshSession, handleLogin, handleLogout, navigate]);
-
-  useEffect(() => {
-    if (refreshData) {
-      handleLogin(refreshData);
-      navigate('/home');
-      notifications.show({
-        title: 'Welcome!',
-        message: 'Redirecting you to the home page.',
-        color: 'green',
-      });
-    } else if (refreshError) {
-      notifications.show({
-        title: 'Oops!',
-        message: refreshError.message + ' Try to log in again.',
-        color: 'red',
-      });
-      setAuthProgressState(AuthProgressState.INITIAL);
-      handleLogout();
-    }
-  }, [refreshData, refreshError, handleLogin, handleLogout, navigate]);
-
-  useEffect(() => {
-    if (loginData) {
-      setAuthProgressState(AuthProgressState.VERIFYING);
-      notifications.show({
-        title: 'Great!',
-        message: 'Check your inbox, and use the one time password or click the magic link.',
-        color: 'green',
-      });
-    } else if (loginError) {
-      notifications.show({
-        title: 'Oops!',
-        message: loginError.message,
-        color: 'red',
-      });
-    }
-  }, [loginData, loginError]);
-
-  useEffect(() => {
-    if (verifyData) {
-      handleLogin(verifyData);
-      navigate('/home');
-      notifications.show({
-        title: 'Welcome!',
-        message: 'Redirecting you to the home page.',
-        color: 'green',
-      });
-    } else if (verifyError) {
-      notifications.show({
-        title: 'Oops!',
-        message: verifyError.message,
-        color: 'red',
-      });
-    }
-  }, [verifyData, verifyError, handleLogin, navigate]);
-
-  useEffect(() => {
-    if (passwordLoginData) {
-      handleLogin(passwordLoginData);
-      navigate('/home');
-      notifications.show({
-        title: 'Welcome!',
-        message: 'Redirecting you to the home page.',
-        color: 'green',
-      });
-    } else if (passwordLoginError) {
-      notifications.show({
-        title: 'Oops!',
-        message: passwordLoginError.message,
-        color: 'red',
-      });
-    }
-  }, [passwordLoginData, passwordLoginError, handleLogin, navigate]);
-
-  const useGoogleLogin = () => {
-    const ssoUrl = import.meta.env.VITE_SSO_URL;
-    window.location.href = ssoUrl;
-  };
+  }, [queryParams, handleLogin, handleLogout, navigate]);
 
   if (refreshLoading) {
     return (
@@ -211,11 +187,11 @@ const Auth = () => {
           {authProgressState === AuthProgressState.INITIAL ? (
             <form
               className={styles.form}
-              onSubmit={emailForm.onSubmit(() => {
+              onSubmit={emailForm.onSubmit(async () => {
                 if (authMode === AuthMode.LOGIN_CODE) {
-                  startLogin();
+                  await handleLoginCode();
                 } else if (authMode === AuthMode.PASSWORD) {
-                  startPasswordLogin();
+                  await handlePasswordLogin();
                 }
               })}
             >
@@ -270,7 +246,12 @@ const Auth = () => {
               </Button>
             </form>
           ) : (
-            <form className={styles.form} onSubmit={otpForm.onSubmit(() => startVerify())}>
+            <form
+              className={styles.form}
+              onSubmit={otpForm.onSubmit(async () => {
+                await handleVerify();
+              })}
+            >
               <TextInput
                 size="md"
                 w={300}
